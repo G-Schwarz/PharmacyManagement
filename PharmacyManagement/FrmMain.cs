@@ -71,7 +71,7 @@ namespace PharmacyManagement
             Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.Orange;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
+            Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
 
             // Visible
             uC_overview1.Visible = false;
