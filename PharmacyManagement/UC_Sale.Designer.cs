@@ -30,10 +30,10 @@
         {
             this.btn_BanHang = new System.Windows.Forms.Button();
             this.pnl_SaleMain = new System.Windows.Forms.Panel();
+            this.pnl_SaleUC = new System.Windows.Forms.Panel();
+            this.uC_Sale_Main1 = new PharmacyManagement.UC_Sale_Main();
             this.uC_Sale_Receipt1 = new PharmacyManagement.UC_Sale_Receipt();
             this.btn_HoaDon = new System.Windows.Forms.Button();
-            this.uC_Sale_Main1 = new PharmacyManagement.UC_Sale_Main();
-            this.pnl_SaleUC = new System.Windows.Forms.Panel();
             this.pnl_SaleMain.SuspendLayout();
             this.pnl_SaleUC.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,25 @@
             this.pnl_SaleMain.Size = new System.Drawing.Size(976, 514);
             this.pnl_SaleMain.TabIndex = 1;
             // 
+            // pnl_SaleUC
+            // 
+            this.pnl_SaleUC.Controls.Add(this.uC_Sale_Main1);
+            this.pnl_SaleUC.Controls.Add(this.uC_Sale_Receipt1);
+            this.pnl_SaleUC.Location = new System.Drawing.Point(3, 51);
+            this.pnl_SaleUC.Name = "pnl_SaleUC";
+            this.pnl_SaleUC.Size = new System.Drawing.Size(973, 463);
+            this.pnl_SaleUC.TabIndex = 3;
+            // 
+            // uC_Sale_Main1
+            // 
+            this.uC_Sale_Main1.AutoScroll = true;
+            this.uC_Sale_Main1.BackColor = System.Drawing.Color.White;
+            this.uC_Sale_Main1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Sale_Main1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Sale_Main1.Name = "uC_Sale_Main1";
+            this.uC_Sale_Main1.Size = new System.Drawing.Size(973, 463);
+            this.uC_Sale_Main1.TabIndex = 0;
+            // 
             // uC_Sale_Receipt1
             // 
             this.uC_Sale_Receipt1.BackColor = System.Drawing.Color.White;
@@ -90,24 +109,6 @@
             this.btn_HoaDon.Text = "Hóa Đơn";
             this.btn_HoaDon.UseVisualStyleBackColor = false;
             this.btn_HoaDon.Click += new System.EventHandler(this.btn_HoaDon_Click);
-            // 
-            // uC_Sale_Main1
-            // 
-            this.uC_Sale_Main1.BackColor = System.Drawing.Color.White;
-            this.uC_Sale_Main1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Sale_Main1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Sale_Main1.Name = "uC_Sale_Main1";
-            this.uC_Sale_Main1.Size = new System.Drawing.Size(973, 463);
-            this.uC_Sale_Main1.TabIndex = 0;
-            // 
-            // pnl_SaleUC
-            // 
-            this.pnl_SaleUC.Controls.Add(this.uC_Sale_Main1);
-            this.pnl_SaleUC.Controls.Add(this.uC_Sale_Receipt1);
-            this.pnl_SaleUC.Location = new System.Drawing.Point(3, 51);
-            this.pnl_SaleUC.Name = "pnl_SaleUC";
-            this.pnl_SaleUC.Size = new System.Drawing.Size(973, 463);
-            this.pnl_SaleUC.TabIndex = 3;
             // 
             // UC_Sale
             // 

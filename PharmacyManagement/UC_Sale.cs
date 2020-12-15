@@ -19,7 +19,8 @@ namespace PharmacyManagement
 
         private void UC_Sale_Load(object sender, EventArgs e)
         {
-
+            btn_BanHang.BackColor = System.Drawing.Color.Orange;
+            btn_HoaDon.BackColor = System.Drawing.Color.SteelBlue;
             uC_Sale_Main1.Visible = true;
             uC_Sale_Receipt1.Visible = false;
         }
