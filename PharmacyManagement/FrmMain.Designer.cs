@@ -33,6 +33,8 @@ namespace PharmacyManagement
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.Pnl_Sidemenu = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Lb_Name = new System.Windows.Forms.Label();
             this.Btn_Customers = new System.Windows.Forms.Button();
             this.Btn_Storage = new System.Windows.Forms.Button();
             this.Btn_Sale = new System.Windows.Forms.Button();
@@ -44,13 +46,11 @@ namespace PharmacyManagement
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_employee1 = new PharmacyManagement.UC_Employee();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Lb_Name = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.Pnl_Sidemenu.SuspendLayout();
-            this.Pnl_Main.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.Pnl_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +68,29 @@ namespace PharmacyManagement
             this.Pnl_Sidemenu.Name = "Pnl_Sidemenu";
             this.Pnl_Sidemenu.Size = new System.Drawing.Size(172, 638);
             this.Pnl_Sidemenu.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Orange;
+            this.panel3.Controls.Add(this.Lb_Name);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(172, 74);
+            this.panel3.TabIndex = 1;
+            // 
+            // Lb_Name
+            // 
+            this.Lb_Name.AutoSize = true;
+            this.Lb_Name.BackColor = System.Drawing.Color.Orange;
+            this.Lb_Name.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_Name.Location = new System.Drawing.Point(0, 0);
+            this.Lb_Name.Name = "Lb_Name";
+            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
+            this.Lb_Name.TabIndex = 0;
+            this.Lb_Name.Text = "G7 Ph";
+            this.Lb_Name.Click += new System.EventHandler(this.label1_Click);
             // 
             // Btn_Customers
             // 
@@ -211,29 +234,6 @@ namespace PharmacyManagement
             this.uC_overview1.Size = new System.Drawing.Size(839, 566);
             this.uC_overview1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Controls.Add(this.Lb_Name);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(172, 74);
-            this.panel3.TabIndex = 1;
-            // 
-            // Lb_Name
-            // 
-            this.Lb_Name.AutoSize = true;
-            this.Lb_Name.BackColor = System.Drawing.Color.Orange;
-            this.Lb_Name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Name.Location = new System.Drawing.Point(0, 0);
-            this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
-            this.Lb_Name.TabIndex = 0;
-            this.Lb_Name.Text = "G7 Ph";
-            this.Lb_Name.Click += new System.EventHandler(this.label1_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -258,9 +258,9 @@ namespace PharmacyManagement
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.Pnl_Sidemenu.ResumeLayout(false);
-            this.Pnl_Main.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.Pnl_Main.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
