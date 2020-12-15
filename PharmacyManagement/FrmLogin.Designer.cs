@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.lblPharmacy = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lnklblUnable = new System.Windows.Forms.LinkLabel();
@@ -45,12 +44,12 @@
             // 
             this.lblPharmacy.AutoSize = true;
             this.lblPharmacy.BackColor = System.Drawing.Color.Transparent;
-            this.lblPharmacy.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPharmacy.Location = new System.Drawing.Point(80, 36);
+            this.lblPharmacy.Font = new System.Drawing.Font("Monotype Corsiva", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPharmacy.Location = new System.Drawing.Point(107, 40);
             this.lblPharmacy.Name = "lblPharmacy";
-            this.lblPharmacy.Size = new System.Drawing.Size(274, 45);
+            this.lblPharmacy.Size = new System.Drawing.Size(226, 49);
             this.lblPharmacy.TabIndex = 0;
-            this.lblPharmacy.Text = "Nhà Thuốc G7";
+            this.lblPharmacy.Text = "G7 Pharmacy";
             this.lblPharmacy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -146,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::PharmacyManagement.Properties.Resources.pills;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.panel1);
