@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txb_SearchProduct = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgv_ProductList = new System.Windows.Forms.DataGridView();
             this.pnl_ThongTinHoaDon = new System.Windows.Forms.Panel();
             this.pnl_ThanhToan = new System.Windows.Forms.Panel();
             this.cb_NhanVien = new System.Windows.Forms.ComboBox();
@@ -58,7 +59,7 @@
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ProductList)).BeginInit();
             this.pnl_ThongTinHoaDon.SuspendLayout();
             this.pnl_ThanhToan.SuspendLayout();
             this.SuspendLayout();
@@ -71,26 +72,30 @@
             this.txb_SearchProduct.TabIndex = 0;
             this.txb_SearchProduct.Text = "Tìm kiếm hàng hóa theo tên hoặc mã vạch";
             // 
-            // dataGridView1
+            // Dgv_ProductList
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Dgv_ProductList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_ProductList.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Dgv_ProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dgv_ProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_ProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductsName,
             this.Currency,
             this.Amount,
             this.Price,
             this.Total});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 29);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(634, 400);
-            this.dataGridView1.TabIndex = 1;
+            this.Dgv_ProductList.Location = new System.Drawing.Point(14, 29);
+            this.Dgv_ProductList.Name = "Dgv_ProductList";
+            this.Dgv_ProductList.Size = new System.Drawing.Size(634, 400);
+            this.Dgv_ProductList.TabIndex = 1;
             // 
             // pnl_ThongTinHoaDon
             // 
+            this.pnl_ThongTinHoaDon.BackColor = System.Drawing.Color.White;
             this.pnl_ThongTinHoaDon.Controls.Add(this.button3);
             this.pnl_ThongTinHoaDon.Controls.Add(this.txb_SearchProduct);
-            this.pnl_ThongTinHoaDon.Controls.Add(this.dataGridView1);
+            this.pnl_ThongTinHoaDon.Controls.Add(this.Dgv_ProductList);
             this.pnl_ThongTinHoaDon.Location = new System.Drawing.Point(3, 3);
             this.pnl_ThongTinHoaDon.Name = "pnl_ThongTinHoaDon";
             this.pnl_ThongTinHoaDon.Size = new System.Drawing.Size(660, 454);
@@ -257,39 +262,63 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(22, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 45);
             this.button1.TabIndex = 18;
             this.button1.Text = "Thanh Toán";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.OliveDrab;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(165, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 45);
             this.button2.TabIndex = 19;
             this.button2.Text = "Thanh Toán và In Hóa Đơn";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(525, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 20);
             this.button3.TabIndex = 19;
             this.button3.Text = "Tìm kiếm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.SteelBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(246, 75);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(55, 20);
             this.button4.TabIndex = 20;
             this.button4.Text = "Tìm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // ProductsName
             // 
@@ -331,11 +360,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnl_ThanhToan);
             this.Controls.Add(this.pnl_ThongTinHoaDon);
             this.Name = "UC_Sale_Main";
             this.Size = new System.Drawing.Size(976, 460);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ProductList)).EndInit();
             this.pnl_ThongTinHoaDon.ResumeLayout(false);
             this.pnl_ThongTinHoaDon.PerformLayout();
             this.pnl_ThanhToan.ResumeLayout(false);
@@ -347,7 +377,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txb_SearchProduct;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Dgv_ProductList;
         private System.Windows.Forms.Panel pnl_ThongTinHoaDon;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel pnl_ThanhToan;

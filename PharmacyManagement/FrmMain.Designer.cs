@@ -42,19 +42,16 @@ namespace PharmacyManagement
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_UControls = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
             this.uC_employee1 = new PharmacyManagement.UC_Employee();
-            this.pnl_Topmenu = new System.Windows.Forms.Panel();
-            this.lb_Status = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
             this.pnl_UControls.SuspendLayout();
-            this.pnl_Topmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +91,6 @@ namespace PharmacyManagement
             this.Lb_Name.Size = new System.Drawing.Size(153, 64);
             this.Lb_Name.TabIndex = 0;
             this.Lb_Name.Text = "G7 Ph";
-            this.Lb_Name.Click += new System.EventHandler(this.label1_Click);
             // 
             // Btn_Customers
             // 
@@ -190,7 +186,6 @@ namespace PharmacyManagement
             // 
             this.Pnl_Main.BackColor = System.Drawing.Color.White;
             this.Pnl_Main.Controls.Add(this.pnl_UControls);
-            this.Pnl_Main.Controls.Add(this.pnl_Topmenu);
             this.Pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_Main.Location = new System.Drawing.Point(172, 0);
             this.Pnl_Main.Name = "Pnl_Main";
@@ -205,25 +200,30 @@ namespace PharmacyManagement
             this.pnl_UControls.Controls.Add(this.uC_overview1);
             this.pnl_UControls.Controls.Add(this.uC_employee1);
             this.pnl_UControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_UControls.Location = new System.Drawing.Point(0, 74);
+            this.pnl_UControls.Location = new System.Drawing.Point(0, 0);
             this.pnl_UControls.Name = "pnl_UControls";
-            this.pnl_UControls.Size = new System.Drawing.Size(976, 515);
+            this.pnl_UControls.Size = new System.Drawing.Size(976, 589);
             this.pnl_UControls.TabIndex = 5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // uC_Customers1
             // 
             this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Customers1.Location = new System.Drawing.Point(0, 0);
             this.uC_Customers1.Name = "uC_Customers1";
-            this.uC_Customers1.Size = new System.Drawing.Size(976, 515);
+            this.uC_Customers1.Size = new System.Drawing.Size(976, 589);
             this.uC_Customers1.TabIndex = 4;
+            this.uC_Customers1.Visible = false;
             // 
             // uC_Storage1
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
             this.uC_Storage1.Name = "uC_Storage1";
-            this.uC_Storage1.Size = new System.Drawing.Size(976, 515);
+            this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;
             // 
             // uC_Sale1
@@ -231,7 +231,7 @@ namespace PharmacyManagement
             this.uC_Sale1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Sale1.Location = new System.Drawing.Point(0, 0);
             this.uC_Sale1.Name = "uC_Sale1";
-            this.uC_Sale1.Size = new System.Drawing.Size(976, 515);
+            this.uC_Sale1.Size = new System.Drawing.Size(976, 589);
             this.uC_Sale1.TabIndex = 2;
             // 
             // uC_overview1
@@ -239,7 +239,7 @@ namespace PharmacyManagement
             this.uC_overview1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_overview1.Location = new System.Drawing.Point(0, 0);
             this.uC_overview1.Name = "uC_overview1";
-            this.uC_overview1.Size = new System.Drawing.Size(976, 515);
+            this.uC_overview1.Size = new System.Drawing.Size(976, 589);
             this.uC_overview1.TabIndex = 0;
             // 
             // uC_employee1
@@ -247,32 +247,8 @@ namespace PharmacyManagement
             this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_employee1.Location = new System.Drawing.Point(0, 0);
             this.uC_employee1.Name = "uC_employee1";
-            this.uC_employee1.Size = new System.Drawing.Size(976, 515);
+            this.uC_employee1.Size = new System.Drawing.Size(976, 589);
             this.uC_employee1.TabIndex = 1;
-            // 
-            // pnl_Topmenu
-            // 
-            this.pnl_Topmenu.Controls.Add(this.lb_Status);
-            this.pnl_Topmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Topmenu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Topmenu.Name = "pnl_Topmenu";
-            this.pnl_Topmenu.Size = new System.Drawing.Size(976, 74);
-            this.pnl_Topmenu.TabIndex = 3;
-            // 
-            // lb_Status
-            // 
-            this.lb_Status.AutoSize = true;
-            this.lb_Status.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_Status.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Status.Location = new System.Drawing.Point(724, 0);
-            this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(252, 64);
-            this.lb_Status.TabIndex = 0;
-            this.lb_Status.Text = "Tổng Quan";
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 
@@ -289,8 +265,6 @@ namespace PharmacyManagement
             this.panel3.PerformLayout();
             this.Pnl_Main.ResumeLayout(false);
             this.pnl_UControls.ResumeLayout(false);
-            this.pnl_Topmenu.ResumeLayout(false);
-            this.pnl_Topmenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -312,9 +286,7 @@ namespace PharmacyManagement
         private PharmacyManagement.UC_Employee uC_employee1;
         private PharmacyManagement.UC_Overview uC_overview1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel pnl_Topmenu;
         private System.Windows.Forms.Panel pnl_UControls;
-        private System.Windows.Forms.Label lb_Status;
     }
 }
 

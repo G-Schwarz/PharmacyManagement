@@ -46,7 +46,7 @@
             this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_BanHang.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BanHang.ForeColor = System.Drawing.Color.White;
-            this.btn_BanHang.Location = new System.Drawing.Point(3, 3);
+            this.btn_BanHang.Location = new System.Drawing.Point(21, 3);
             this.btn_BanHang.Name = "btn_BanHang";
             this.btn_BanHang.Size = new System.Drawing.Size(130, 42);
             this.btn_BanHang.TabIndex = 0;
@@ -83,7 +83,7 @@
             this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDon.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_HoaDon.Location = new System.Drawing.Point(151, 3);
+            this.btn_HoaDon.Location = new System.Drawing.Point(174, 3);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(130, 42);
             this.btn_HoaDon.TabIndex = 1;

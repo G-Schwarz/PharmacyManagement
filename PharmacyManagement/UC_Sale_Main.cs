@@ -16,7 +16,9 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+        private void UC_Sale_Main_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
