@@ -46,7 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UC_Sale";
-            this.Size = new System.Drawing.Size(839, 566);
+            this.Size = new System.Drawing.Size(976, 514);
             this.ResumeLayout(false);
             this.PerformLayout();
 

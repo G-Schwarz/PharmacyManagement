@@ -38,6 +38,7 @@ namespace PharmacyManagement
 
         private void Btn_Overview_Click(object sender, EventArgs e)
         {
+            lb_Status.Text = "Tổng Quan";
             uC_overview1.Visible = true;
             uC_employee1.Visible = false;
             uC_Sale1.Visible = false;
@@ -47,6 +48,7 @@ namespace PharmacyManagement
 
         private void Btn_Employee_Click(object sender, EventArgs e)
         {
+            lb_Status.Text = "Nhân Sự";
             uC_overview1.Visible = false;
             uC_employee1.Visible = true;
             uC_Sale1.Visible = false;
@@ -56,6 +58,7 @@ namespace PharmacyManagement
 
         private void Btn_Sale_Click(object sender, EventArgs e)
         {
+            lb_Status.Text = "Bán Hàng";
             uC_overview1.Visible = false;
             uC_employee1.Visible = false;
             uC_Sale1.Visible = true;
@@ -65,6 +68,7 @@ namespace PharmacyManagement
 
         private void Btn_Storage_Click(object sender, EventArgs e)
         {
+            lb_Status.Text = "Quản Lý Kho";
             uC_overview1.Visible = false;
             uC_employee1.Visible = false;
             uC_Sale1.Visible = false;
@@ -74,6 +78,7 @@ namespace PharmacyManagement
 
         private void Btn_Customers_Click(object sender, EventArgs e)
         {
+            lb_Status.Text = "Khách Hàng";
             uC_overview1.Visible = false;
             uC_employee1.Visible = false;
             uC_Sale1.Visible = false;
