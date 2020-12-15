@@ -41,21 +41,21 @@ namespace PharmacyManagement
             this.Btn_Employee = new System.Windows.Forms.Button();
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
+            this.pnl_UControls = new System.Windows.Forms.Panel();
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
-            this.uC_employee1 = new PharmacyManagement.UC_Employee();
-            this.uC_overview1 = new PharmacyManagement.UC_Overview();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.uC_overview1 = new PharmacyManagement.UC_Overview();
+            this.uC_employee1 = new PharmacyManagement.UC_Employee();
             this.pnl_Topmenu = new System.Windows.Forms.Panel();
-            this.pnl_UControls = new System.Windows.Forms.Panel();
             this.lb_Status = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.pnl_Topmenu.SuspendLayout();
             this.pnl_UControls.SuspendLayout();
+            this.pnl_Topmenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Sidemenu
@@ -197,6 +197,19 @@ namespace PharmacyManagement
             this.Pnl_Main.Size = new System.Drawing.Size(976, 589);
             this.Pnl_Main.TabIndex = 2;
             // 
+            // pnl_UControls
+            // 
+            this.pnl_UControls.Controls.Add(this.uC_Customers1);
+            this.pnl_UControls.Controls.Add(this.uC_Storage1);
+            this.pnl_UControls.Controls.Add(this.uC_Sale1);
+            this.pnl_UControls.Controls.Add(this.uC_overview1);
+            this.pnl_UControls.Controls.Add(this.uC_employee1);
+            this.pnl_UControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_UControls.Location = new System.Drawing.Point(0, 74);
+            this.pnl_UControls.Name = "pnl_UControls";
+            this.pnl_UControls.Size = new System.Drawing.Size(976, 515);
+            this.pnl_UControls.TabIndex = 5;
+            // 
             // uC_Customers1
             // 
             this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -213,13 +226,13 @@ namespace PharmacyManagement
             this.uC_Storage1.Size = new System.Drawing.Size(976, 515);
             this.uC_Storage1.TabIndex = 3;
             // 
-            // uC_employee1
+            // uC_Sale1
             // 
-            this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_employee1.Name = "uC_employee1";
-            this.uC_employee1.Size = new System.Drawing.Size(976, 515);
-            this.uC_employee1.TabIndex = 1;
+            this.uC_Sale1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Sale1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Sale1.Name = "uC_Sale1";
+            this.uC_Sale1.Size = new System.Drawing.Size(976, 515);
+            this.uC_Sale1.TabIndex = 2;
             // 
             // uC_overview1
             // 
@@ -229,17 +242,13 @@ namespace PharmacyManagement
             this.uC_overview1.Size = new System.Drawing.Size(976, 515);
             this.uC_overview1.TabIndex = 0;
             // 
-            // uC_Sale1
+            // uC_employee1
             // 
-            this.uC_Sale1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Sale1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Sale1.Name = "uC_Sale1";
-            this.uC_Sale1.Size = new System.Drawing.Size(976, 515);
-            this.uC_Sale1.TabIndex = 2;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_employee1.Location = new System.Drawing.Point(0, 0);
+            this.uC_employee1.Name = "uC_employee1";
+            this.uC_employee1.Size = new System.Drawing.Size(976, 515);
+            this.uC_employee1.TabIndex = 1;
             // 
             // pnl_Topmenu
             // 
@@ -249,19 +258,6 @@ namespace PharmacyManagement
             this.pnl_Topmenu.Name = "pnl_Topmenu";
             this.pnl_Topmenu.Size = new System.Drawing.Size(976, 74);
             this.pnl_Topmenu.TabIndex = 3;
-            // 
-            // pnl_UControls
-            // 
-            this.pnl_UControls.Controls.Add(this.uC_Customers1);
-            this.pnl_UControls.Controls.Add(this.uC_Storage1);
-            this.pnl_UControls.Controls.Add(this.uC_Sale1);
-            this.pnl_UControls.Controls.Add(this.uC_overview1);
-            this.pnl_UControls.Controls.Add(this.uC_employee1);
-            this.pnl_UControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_UControls.Location = new System.Drawing.Point(0, 74);
-            this.pnl_UControls.Name = "pnl_UControls";
-            this.pnl_UControls.Size = new System.Drawing.Size(976, 515);
-            this.pnl_UControls.TabIndex = 5;
             // 
             // lb_Status
             // 
@@ -273,6 +269,10 @@ namespace PharmacyManagement
             this.lb_Status.Size = new System.Drawing.Size(252, 64);
             this.lb_Status.TabIndex = 0;
             this.lb_Status.Text = "Tổng Quan";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 
@@ -288,10 +288,10 @@ namespace PharmacyManagement
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.Pnl_Main.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.pnl_UControls.ResumeLayout(false);
             this.pnl_Topmenu.ResumeLayout(false);
             this.pnl_Topmenu.PerformLayout();
-            this.pnl_UControls.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -16,5 +16,22 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+
+        private void UC_Sale_Load(object sender, EventArgs e)
+        {
+            uC_Sale_Main1.Visible = true;
+            uC_Sale_Receipt1.Visible = false;
+        }
+        private void btn_BanHang_Click(object sender, EventArgs e)
+        {
+            uC_Sale_Main1.Visible = true;
+            uC_Sale_Receipt1.Visible = false;
+        }
+
+        private void btn_HoaDon_Click(object sender, EventArgs e)
+        {
+            uC_Sale_Main1.Visible = false;
+            uC_Sale_Receipt1.Visible = true;
+        }
     }
 }
