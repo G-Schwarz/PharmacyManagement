@@ -39,5 +39,10 @@ namespace PharmacyManagement
             uC_Sale_Main1.Visible = false;
             uC_Sale_Receipt1.Visible = true;
         }
+
+        private void uC_Sale_Main1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

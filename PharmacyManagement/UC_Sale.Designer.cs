@@ -83,6 +83,7 @@
             this.uC_Sale_Main1.Name = "uC_Sale_Main1";
             this.uC_Sale_Main1.Size = new System.Drawing.Size(973, 463);
             this.uC_Sale_Main1.TabIndex = 0;
+            this.uC_Sale_Main1.Load += new System.EventHandler(this.uC_Sale_Main1_Load);
             // 
             // uC_Sale_Receipt1
             // 
