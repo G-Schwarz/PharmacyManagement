@@ -55,6 +55,7 @@
             this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
             this.dtp_HSD = new System.Windows.Forms.DateTimePicker();
             this.bt_TimKiem = new System.Windows.Forms.Button();
+            this.uC_Storage_PillDetail1 = new PharmacyManagement.UC_Storage_PillDetail();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,13 +112,14 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Thuoc.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_Thuoc.Location = new System.Drawing.Point(0, 224);
+            this.dgv_Thuoc.Location = new System.Drawing.Point(12, 211);
             this.dgv_Thuoc.Name = "dgv_Thuoc";
             this.dgv_Thuoc.ReadOnly = true;
             this.dgv_Thuoc.ShowRowErrors = false;
-            this.dgv_Thuoc.Size = new System.Drawing.Size(976, 290);
+            this.dgv_Thuoc.Size = new System.Drawing.Size(941, 290);
             this.dgv_Thuoc.TabIndex = 0;
             this.dgv_Thuoc.TabStop = false;
+            this.dgv_Thuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thuoc_CellContentClick);
             // 
             // MaThuoc
             // 
@@ -319,10 +321,20 @@
             this.bt_TimKiem.Text = "Tìm kiếm";
             this.bt_TimKiem.UseVisualStyleBackColor = false;
             // 
+            // uC_Storage_PillDetail1
+            // 
+            this.uC_Storage_PillDetail1.Location = new System.Drawing.Point(0, 51);
+            this.uC_Storage_PillDetail1.Name = "uC_Storage_PillDetail1";
+            this.uC_Storage_PillDetail1.Size = new System.Drawing.Size(976, 463);
+            this.uC_Storage_PillDetail1.TabIndex = 16;
+            this.uC_Storage_PillDetail1.Hide();
+            // 
             // UC_Storage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uC_Storage_PillDetail1);
+            this.Controls.Add(this.dgv_Thuoc);
             this.Controls.Add(this.bt_TimKiem);
             this.Controls.Add(this.dtp_HSD);
             this.Controls.Add(this.dtp_NgayNhap);
@@ -338,7 +350,6 @@
             this.Controls.Add(this.lbl_TenThuoc);
             this.Controls.Add(this.txt_MaThuoc);
             this.Controls.Add(this.lbl_MaThuoc);
-            this.Controls.Add(this.dgv_Thuoc);
             this.Controls.Add(this.btn_NhapHang);
             this.Controls.Add(this.label1);
             this.Name = "UC_Storage";
@@ -376,5 +387,6 @@
         private System.Windows.Forms.DateTimePicker dtp_NgayNhap;
         private System.Windows.Forms.DateTimePicker dtp_HSD;
         private System.Windows.Forms.Button bt_TimKiem;
+        private UC_Storage_PillDetail uC_Storage_PillDetail1;
     }
 }

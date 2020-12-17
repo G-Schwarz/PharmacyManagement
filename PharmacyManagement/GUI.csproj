@@ -103,6 +103,18 @@
     <Compile Include="UC_Customers.Designer.cs">
       <DependentUpon>UC_Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Storage_PillDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Storage_PillDetail.Designer.cs">
+      <DependentUpon>UC_Storage_PillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Test.Designer.cs">
+      <DependentUpon>UC_Test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Storage.resx">
       <DependentUpon>UC_Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Storage_PillDetail.resx">
+      <DependentUpon>UC_Storage_PillDetail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

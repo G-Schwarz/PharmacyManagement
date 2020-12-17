@@ -16,5 +16,15 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+
+        private void dgv_Thuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                //Get cell information for pill detail
+                //this.uC_Storage_PillDetail1.Show();
+            }
+            this.uC_Storage_PillDetail1.Show();
+        }
     }
 }
