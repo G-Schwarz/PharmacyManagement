@@ -40,7 +40,7 @@
             // 
             // btn_BanHang
             // 
-            this.btn_BanHang.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_BanHang.BackColor = System.Drawing.Color.Orange;
             this.btn_BanHang.FlatAppearance.BorderSize = 0;
             this.btn_BanHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

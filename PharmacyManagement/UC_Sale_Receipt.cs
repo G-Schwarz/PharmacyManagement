@@ -16,5 +16,10 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+
+        private void dgv_ReceiptList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
