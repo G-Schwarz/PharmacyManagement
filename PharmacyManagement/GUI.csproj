@@ -91,6 +91,12 @@
     <Compile Include="UC_Sale_Receipt.Designer.cs">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Sale_Receipt_Details.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Sale_Receipt_Details.Designer.cs">
+      <DependentUpon>UC_Sale_Receipt_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Storage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Sale_Receipt.resx">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Sale_Receipt_Details.resx">
+      <DependentUpon>UC_Sale_Receipt_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Storage.resx">
       <DependentUpon>UC_Storage.cs</DependentUpon>

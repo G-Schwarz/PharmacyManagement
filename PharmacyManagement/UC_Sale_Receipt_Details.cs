@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace PharmacyManagement
 {
-    public partial class UC_Sale_Receipt : UserControl
+    public partial class UC_Sale_Receipt_Details : UserControl
     {
-        public UC_Sale_Receipt()
+        public UC_Sale_Receipt_Details()
         {
             InitializeComponent();
         }
 
-        private void dgv_ReceiptList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_Return_Click(object sender, EventArgs e)
         {
-            UserControl userControl = new UC_Sale_Receipt_Details();
-            userControl.Show();
+            
         }
     }
 }
