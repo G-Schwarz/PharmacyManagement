@@ -112,5 +112,10 @@ namespace PharmacyManagement
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = true;
         }
+
+        private void uC_Customers1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

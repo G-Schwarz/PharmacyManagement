@@ -32,5 +32,10 @@ namespace PharmacyManagement
         {
             MessageBox.Show("Liên hệ SĐT: 0793449343");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

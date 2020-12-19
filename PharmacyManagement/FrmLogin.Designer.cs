@@ -45,9 +45,10 @@
             this.lblPharmacy.AutoSize = true;
             this.lblPharmacy.BackColor = System.Drawing.Color.Transparent;
             this.lblPharmacy.Font = new System.Drawing.Font("Monotype Corsiva", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPharmacy.Location = new System.Drawing.Point(107, 40);
+            this.lblPharmacy.Location = new System.Drawing.Point(143, 49);
+            this.lblPharmacy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPharmacy.Name = "lblPharmacy";
-            this.lblPharmacy.Size = new System.Drawing.Size(226, 49);
+            this.lblPharmacy.Size = new System.Drawing.Size(274, 60);
             this.lblPharmacy.TabIndex = 0;
             this.lblPharmacy.Text = "G7 Pharmacy";
             this.lblPharmacy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,19 +64,22 @@
             this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.lblAccount);
             this.panel1.Controls.Add(this.lblPharmacy);
-            this.panel1.Location = new System.Drawing.Point(176, 33);
+            this.panel1.Location = new System.Drawing.Point(235, 41);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(430, 353);
+            this.panel1.Size = new System.Drawing.Size(573, 434);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lnklblUnable
             // 
             this.lnklblUnable.AutoSize = true;
             this.lnklblUnable.BackColor = System.Drawing.Color.Transparent;
             this.lnklblUnable.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblUnable.Location = new System.Drawing.Point(239, 299);
+            this.lnklblUnable.Location = new System.Drawing.Point(319, 368);
+            this.lnklblUnable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnklblUnable.Name = "lnklblUnable";
-            this.lnklblUnable.Size = new System.Drawing.Size(75, 16);
+            this.lnklblUnable.Size = new System.Drawing.Size(97, 19);
             this.lnklblUnable.TabIndex = 7;
             this.lnklblUnable.TabStop = true;
             this.lnklblUnable.Text = "Ấn vào đây!";
@@ -86,18 +90,20 @@
             this.lblUnable.AutoSize = true;
             this.lblUnable.BackColor = System.Drawing.Color.Transparent;
             this.lblUnable.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnable.Location = new System.Drawing.Point(95, 299);
+            this.lblUnable.Location = new System.Drawing.Point(127, 368);
+            this.lblUnable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUnable.Name = "lblUnable";
-            this.lblUnable.Size = new System.Drawing.Size(138, 16);
+            this.lblUnable.Size = new System.Drawing.Size(175, 19);
             this.lblUnable.TabIndex = 6;
             this.lblUnable.Text = "Không thể đăng nhập?";
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(167, 236);
+            this.btnLogin.Location = new System.Drawing.Point(223, 290);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(105, 40);
+            this.btnLogin.Size = new System.Drawing.Size(140, 49);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -106,17 +112,19 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(127, 178);
+            this.txtPassword.Location = new System.Drawing.Point(169, 219);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(252, 26);
+            this.txtPassword.Size = new System.Drawing.Size(335, 30);
             this.txtPassword.TabIndex = 4;
             // 
             // txtAccount
             // 
             this.txtAccount.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccount.Location = new System.Drawing.Point(127, 125);
+            this.txtAccount.Location = new System.Drawing.Point(169, 154);
+            this.txtAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAccount.Name = "txtAccount";
-            this.txtAccount.Size = new System.Drawing.Size(252, 26);
+            this.txtAccount.Size = new System.Drawing.Size(335, 30);
             this.txtAccount.TabIndex = 3;
             // 
             // lblPassword
@@ -124,9 +132,10 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(46, 181);
+            this.lblPassword.Location = new System.Drawing.Point(61, 223);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(75, 18);
+            this.lblPassword.Size = new System.Drawing.Size(97, 23);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Mật khẩu:";
             // 
@@ -135,21 +144,23 @@
             this.lblAccount.AutoSize = true;
             this.lblAccount.BackColor = System.Drawing.Color.Transparent;
             this.lblAccount.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccount.Location = new System.Drawing.Point(41, 128);
+            this.lblAccount.Location = new System.Drawing.Point(55, 158);
+            this.lblAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(80, 18);
+            this.lblAccount.Size = new System.Drawing.Size(101, 23);
             this.lblAccount.TabIndex = 1;
             this.lblAccount.Text = "Tài khoản:";
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PharmacyManagement.Properties.Resources.pills;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(784, 411);
+            this.ClientSize = new System.Drawing.Size(1045, 506);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
             this.panel1.ResumeLayout(false);
