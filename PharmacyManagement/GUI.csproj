@@ -47,17 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCustomer.Designer.cs">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Add_Customer.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="FrmReceiptDetails.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UC_Add_Customer.Designer.cs">
-      <DependentUpon>UC_Add_Customer.cs</DependentUpon>
+    <Compile Include="FrmReceiptDetails.Designer.cs">
+      <DependentUpon>FrmReceiptDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_Employee.cs">
       <SubType>UserControl</SubType>
@@ -97,12 +103,6 @@
     <Compile Include="UC_Sale_Receipt.Designer.cs">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Sale_Receipt_Details.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_Sale_Receipt_Details.Designer.cs">
-      <DependentUpon>UC_Sale_Receipt_Details.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_Storage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,11 +127,14 @@
     <Compile Include="UC_Test.Designer.cs">
       <DependentUpon>UC_Test.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAddCustomer.resx">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Add_Customer.resx">
-      <DependentUpon>UC_Add_Customer.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReceiptDetails.resx">
+      <DependentUpon>FrmReceiptDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Employee.resx">
       <DependentUpon>UC_Employee.cs</DependentUpon>
@@ -163,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Sale_Receipt.resx">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Sale_Receipt_Details.resx">
-      <DependentUpon>UC_Sale_Receipt_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Storage.resx">
       <DependentUpon>UC_Storage.cs</DependentUpon>

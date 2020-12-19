@@ -19,7 +19,8 @@ namespace PharmacyManagement
 
         private void btn_AddCustomer_Click(object sender, EventArgs e)
         {
-
+            Form form = new FrmAddCustomer();
+            form.Show();
         }
     }
 }
