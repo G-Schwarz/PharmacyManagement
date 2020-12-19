@@ -106,8 +106,8 @@ namespace PharmacyManagement
             this.Btn_Customers.Name = "Btn_Customers";
             this.Btn_Customers.Size = new System.Drawing.Size(175, 65);
             this.Btn_Customers.TabIndex = 4;
-            this.Btn_Customers.Text = "Khách Hàng";
-            this.Btn_Customers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Customers.Text = "     Khách Hàng";
+            this.Btn_Customers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Customers.UseVisualStyleBackColor = false;
             this.Btn_Customers.Click += new System.EventHandler(this.Btn_Customers_Click);
             // 
@@ -125,8 +125,8 @@ namespace PharmacyManagement
             this.Btn_Storage.Name = "Btn_Storage";
             this.Btn_Storage.Size = new System.Drawing.Size(175, 65);
             this.Btn_Storage.TabIndex = 3;
-            this.Btn_Storage.Text = "Quản lý kho";
-            this.Btn_Storage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Storage.Text = "     Quản lý kho";
+            this.Btn_Storage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Storage.UseVisualStyleBackColor = false;
             this.Btn_Storage.Click += new System.EventHandler(this.Btn_Storage_Click);
             // 
@@ -144,8 +144,8 @@ namespace PharmacyManagement
             this.Btn_Sale.Name = "Btn_Sale";
             this.Btn_Sale.Size = new System.Drawing.Size(175, 65);
             this.Btn_Sale.TabIndex = 2;
-            this.Btn_Sale.Text = "Bán Hàng";
-            this.Btn_Sale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Sale.Text = "     Bán Hàng";
+            this.Btn_Sale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Sale.UseVisualStyleBackColor = false;
             this.Btn_Sale.Click += new System.EventHandler(this.Btn_Sale_Click);
             // 
@@ -163,8 +163,8 @@ namespace PharmacyManagement
             this.Btn_Employee.Name = "Btn_Employee";
             this.Btn_Employee.Size = new System.Drawing.Size(175, 65);
             this.Btn_Employee.TabIndex = 1;
-            this.Btn_Employee.Text = "Nhân Sự";
-            this.Btn_Employee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Employee.Text = "     Nhân Sự";
+            this.Btn_Employee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Employee.UseVisualStyleBackColor = false;
             this.Btn_Employee.Click += new System.EventHandler(this.Btn_Employee_Click);
             // 
@@ -182,8 +182,8 @@ namespace PharmacyManagement
             this.Btn_Overview.Name = "Btn_Overview";
             this.Btn_Overview.Size = new System.Drawing.Size(175, 65);
             this.Btn_Overview.TabIndex = 0;
-            this.Btn_Overview.Text = "  Tổng Quan";
-            this.Btn_Overview.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Overview.Text = "     Tổng Quan";
+            this.Btn_Overview.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Overview.UseVisualStyleBackColor = false;
             this.Btn_Overview.Click += new System.EventHandler(this.Btn_Overview_Click);
             // 

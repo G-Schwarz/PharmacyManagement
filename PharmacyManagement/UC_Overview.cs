@@ -16,5 +16,10 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+
+        private void lb_Doanhso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.lblAccount);
             this.panel1.Controls.Add(this.lblPharmacy);
             this.panel1.Location = new System.Drawing.Point(235, 41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 434);
             this.panel1.TabIndex = 1;
@@ -101,7 +101,7 @@
             // 
             this.btnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(223, 290);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(140, 49);
             this.btnLogin.TabIndex = 5;
@@ -113,7 +113,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(169, 219);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(335, 30);
             this.txtPassword.TabIndex = 4;
@@ -122,7 +122,7 @@
             // 
             this.txtAccount.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccount.Location = new System.Drawing.Point(169, 154);
-            this.txtAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.Size = new System.Drawing.Size(335, 30);
             this.txtAccount.TabIndex = 3;
@@ -160,7 +160,7 @@
             this.ClientSize = new System.Drawing.Size(1045, 506);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
             this.panel1.ResumeLayout(false);

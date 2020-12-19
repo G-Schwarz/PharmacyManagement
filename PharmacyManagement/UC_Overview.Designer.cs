@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_DoanhSoThangNay = new System.Windows.Forms.Label();
             this.lb_DoanhSoThangTruoc = new System.Windows.Forms.Label();
@@ -71,24 +71,24 @@
             // lb_DoanhSoThangNay
             // 
             this.lb_DoanhSoThangNay.AutoSize = true;
-            this.lb_DoanhSoThangNay.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_DoanhSoThangNay.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_DoanhSoThangNay.ForeColor = System.Drawing.Color.White;
             this.lb_DoanhSoThangNay.Location = new System.Drawing.Point(4, 62);
             this.lb_DoanhSoThangNay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_DoanhSoThangNay.Name = "lb_DoanhSoThangNay";
-            this.lb_DoanhSoThangNay.Size = new System.Drawing.Size(98, 24);
+            this.lb_DoanhSoThangNay.Size = new System.Drawing.Size(105, 22);
             this.lb_DoanhSoThangNay.TabIndex = 2;
             this.lb_DoanhSoThangNay.Text = "Tháng này:";
             // 
             // lb_DoanhSoThangTruoc
             // 
             this.lb_DoanhSoThangTruoc.AutoSize = true;
-            this.lb_DoanhSoThangTruoc.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_DoanhSoThangTruoc.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_DoanhSoThangTruoc.ForeColor = System.Drawing.Color.White;
             this.lb_DoanhSoThangTruoc.Location = new System.Drawing.Point(4, 27);
             this.lb_DoanhSoThangTruoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_DoanhSoThangTruoc.Name = "lb_DoanhSoThangTruoc";
-            this.lb_DoanhSoThangTruoc.Size = new System.Drawing.Size(114, 24);
+            this.lb_DoanhSoThangTruoc.Size = new System.Drawing.Size(118, 22);
             this.lb_DoanhSoThangTruoc.TabIndex = 1;
             this.lb_DoanhSoThangTruoc.Text = "Tháng trước:";
             // 
@@ -104,21 +104,24 @@
             this.lb_Doanhso.Size = new System.Drawing.Size(106, 28);
             this.lb_Doanhso.TabIndex = 0;
             this.lb_Doanhso.Text = "Doanh Số";
+            this.lb_Doanhso.Click += new System.EventHandler(this.lb_Doanhso_Click);
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(64, 209);
             this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(853, 369);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(871, 369);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
@@ -138,24 +141,24 @@
             // lb_HoaDonThangNay
             // 
             this.lb_HoaDonThangNay.AutoSize = true;
-            this.lb_HoaDonThangNay.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_HoaDonThangNay.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_HoaDonThangNay.ForeColor = System.Drawing.Color.White;
             this.lb_HoaDonThangNay.Location = new System.Drawing.Point(4, 64);
             this.lb_HoaDonThangNay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_HoaDonThangNay.Name = "lb_HoaDonThangNay";
-            this.lb_HoaDonThangNay.Size = new System.Drawing.Size(98, 24);
+            this.lb_HoaDonThangNay.Size = new System.Drawing.Size(105, 22);
             this.lb_HoaDonThangNay.TabIndex = 3;
             this.lb_HoaDonThangNay.Text = "Tháng này:";
             // 
             // lb_HoaDonThangTruoc
             // 
             this.lb_HoaDonThangTruoc.AutoSize = true;
-            this.lb_HoaDonThangTruoc.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_HoaDonThangTruoc.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_HoaDonThangTruoc.ForeColor = System.Drawing.Color.White;
             this.lb_HoaDonThangTruoc.Location = new System.Drawing.Point(4, 27);
             this.lb_HoaDonThangTruoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_HoaDonThangTruoc.Name = "lb_HoaDonThangTruoc";
-            this.lb_HoaDonThangTruoc.Size = new System.Drawing.Size(114, 24);
+            this.lb_HoaDonThangTruoc.Size = new System.Drawing.Size(118, 22);
             this.lb_HoaDonThangTruoc.TabIndex = 2;
             this.lb_HoaDonThangTruoc.Text = "Tháng trước:";
             // 
@@ -189,24 +192,24 @@
             // lb_BaoCaoDoanhSo
             // 
             this.lb_BaoCaoDoanhSo.AutoSize = true;
-            this.lb_BaoCaoDoanhSo.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_BaoCaoDoanhSo.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_BaoCaoDoanhSo.ForeColor = System.Drawing.Color.White;
             this.lb_BaoCaoDoanhSo.Location = new System.Drawing.Point(4, 64);
             this.lb_BaoCaoDoanhSo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_BaoCaoDoanhSo.Name = "lb_BaoCaoDoanhSo";
-            this.lb_BaoCaoDoanhSo.Size = new System.Drawing.Size(95, 24);
+            this.lb_BaoCaoDoanhSo.Size = new System.Drawing.Size(99, 22);
             this.lb_BaoCaoDoanhSo.TabIndex = 3;
             this.lb_BaoCaoDoanhSo.Text = "Doanh Số:";
             // 
             // lb_BaoCaoHoaDon
             // 
             this.lb_BaoCaoHoaDon.AutoSize = true;
-            this.lb_BaoCaoHoaDon.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_BaoCaoHoaDon.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_BaoCaoHoaDon.ForeColor = System.Drawing.Color.White;
             this.lb_BaoCaoHoaDon.Location = new System.Drawing.Point(-4, 27);
             this.lb_BaoCaoHoaDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_BaoCaoHoaDon.Name = "lb_BaoCaoHoaDon";
-            this.lb_BaoCaoHoaDon.Size = new System.Drawing.Size(95, 24);
+            this.lb_BaoCaoHoaDon.Size = new System.Drawing.Size(97, 22);
             this.lb_BaoCaoHoaDon.TabIndex = 2;
             this.lb_BaoCaoHoaDon.Text = " Hóa Đơn:";
             // 
