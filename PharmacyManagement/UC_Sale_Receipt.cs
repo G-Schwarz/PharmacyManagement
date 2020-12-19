@@ -19,8 +19,8 @@ namespace PharmacyManagement
 
         private void dgv_ReceiptList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            UserControl userControl = new UC_Sale_Receipt_Details();
-            userControl.Show();
+            Form form = new FrmReceiptDetails();
+            form.Show();
         }
     }
 }
