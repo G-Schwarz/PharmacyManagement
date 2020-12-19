@@ -22,5 +22,10 @@ namespace PharmacyManagement
             Form form = new FrmReceiptDetails();
             form.Show();
         }
+
+        private void UC_Sale_Receipt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

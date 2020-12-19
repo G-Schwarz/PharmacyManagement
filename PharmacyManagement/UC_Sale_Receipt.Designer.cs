@@ -38,7 +38,6 @@
             this.lb_From = new System.Windows.Forms.Label();
             this.lb_To = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.dgv_ReceiptList = new System.Windows.Forms.DataGridView();
             this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ReceiptCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,13 +47,14 @@
             this.PayOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lb_Status = new System.Windows.Forms.Label();
-            this.lb_Type = new System.Windows.Forms.Label();
-            this.lb_ProductsSearch = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lb_ReceiptCodeSearch = new System.Windows.Forms.Label();
+            this.lb_ProductsSearch = new System.Windows.Forms.Label();
+            this.lb_Type = new System.Windows.Forms.Label();
+            this.lb_Status = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ReceiptList)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -144,26 +144,6 @@
             this.panel1.Size = new System.Drawing.Size(970, 348);
             this.panel1.TabIndex = 10;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lb_ReceiptCodeSearch);
-            this.panel2.Controls.Add(this.lb_ProductsSearch);
-            this.panel2.Controls.Add(this.lb_Type);
-            this.panel2.Controls.Add(this.lb_Status);
-            this.panel2.Controls.Add(this.dtp_From);
-            this.panel2.Controls.Add(this.dtp_To);
-            this.panel2.Controls.Add(this.btn_Search);
-            this.panel2.Controls.Add(this.lb_To);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.cb_Status);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.lb_From);
-            this.panel2.Controls.Add(this.cb_Type);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(970, 100);
-            this.panel2.TabIndex = 11;
-            // 
             // dgv_ReceiptList
             // 
             this.dgv_ReceiptList.BackgroundColor = System.Drawing.Color.White;
@@ -238,35 +218,25 @@
             this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // lb_Status
+            // panel2
             // 
-            this.lb_Status.AutoSize = true;
-            this.lb_Status.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Status.Location = new System.Drawing.Point(483, 4);
-            this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(65, 15);
-            this.lb_Status.TabIndex = 9;
-            this.lb_Status.Text = "Trạng thái";
-            // 
-            // lb_Type
-            // 
-            this.lb_Type.AutoSize = true;
-            this.lb_Type.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Type.Location = new System.Drawing.Point(648, 4);
-            this.lb_Type.Name = "lb_Type";
-            this.lb_Type.Size = new System.Drawing.Size(58, 15);
-            this.lb_Type.TabIndex = 10;
-            this.lb_Type.Text = "Theo đơn";
-            // 
-            // lb_ProductsSearch
-            // 
-            this.lb_ProductsSearch.AutoSize = true;
-            this.lb_ProductsSearch.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ProductsSearch.Location = new System.Drawing.Point(11, 43);
-            this.lb_ProductsSearch.Name = "lb_ProductsSearch";
-            this.lb_ProductsSearch.Size = new System.Drawing.Size(140, 15);
-            this.lb_ProductsSearch.TabIndex = 11;
-            this.lb_ProductsSearch.Text = "Tìm kiếm theo hàng hóa";
+            this.panel2.Controls.Add(this.lb_ReceiptCodeSearch);
+            this.panel2.Controls.Add(this.lb_ProductsSearch);
+            this.panel2.Controls.Add(this.lb_Type);
+            this.panel2.Controls.Add(this.lb_Status);
+            this.panel2.Controls.Add(this.dtp_From);
+            this.panel2.Controls.Add(this.dtp_To);
+            this.panel2.Controls.Add(this.btn_Search);
+            this.panel2.Controls.Add(this.lb_To);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.cb_Status);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.lb_From);
+            this.panel2.Controls.Add(this.cb_Type);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(970, 100);
+            this.panel2.TabIndex = 11;
             // 
             // lb_ReceiptCodeSearch
             // 
@@ -278,6 +248,36 @@
             this.lb_ReceiptCodeSearch.TabIndex = 12;
             this.lb_ReceiptCodeSearch.Text = "Tìm kiếm theo mã hóa đơn";
             // 
+            // lb_ProductsSearch
+            // 
+            this.lb_ProductsSearch.AutoSize = true;
+            this.lb_ProductsSearch.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ProductsSearch.Location = new System.Drawing.Point(11, 43);
+            this.lb_ProductsSearch.Name = "lb_ProductsSearch";
+            this.lb_ProductsSearch.Size = new System.Drawing.Size(140, 15);
+            this.lb_ProductsSearch.TabIndex = 11;
+            this.lb_ProductsSearch.Text = "Tìm kiếm theo hàng hóa";
+            // 
+            // lb_Type
+            // 
+            this.lb_Type.AutoSize = true;
+            this.lb_Type.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Type.Location = new System.Drawing.Point(648, 4);
+            this.lb_Type.Name = "lb_Type";
+            this.lb_Type.Size = new System.Drawing.Size(58, 15);
+            this.lb_Type.TabIndex = 10;
+            this.lb_Type.Text = "Theo đơn";
+            // 
+            // lb_Status
+            // 
+            this.lb_Status.AutoSize = true;
+            this.lb_Status.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Status.Location = new System.Drawing.Point(483, 4);
+            this.lb_Status.Name = "lb_Status";
+            this.lb_Status.Size = new System.Drawing.Size(65, 15);
+            this.lb_Status.TabIndex = 9;
+            this.lb_Status.Text = "Trạng thái";
+            // 
             // UC_Sale_Receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,10 +287,11 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_Sale_Receipt";
             this.Size = new System.Drawing.Size(976, 460);
+            this.Load += new System.EventHandler(this.UC_Sale_Receipt_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ReceiptList)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ReceiptList)).EndInit();
             this.ResumeLayout(false);
 
         }

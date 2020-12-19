@@ -33,6 +33,8 @@ namespace PharmacyManagement
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.Pnl_Sidemenu = new System.Windows.Forms.Panel();
+            this.btn_Setting = new System.Windows.Forms.Button();
+            this.btn_Index = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Lb_Name = new System.Windows.Forms.Label();
             this.Btn_Customers = new System.Windows.Forms.Button();
@@ -42,12 +44,14 @@ namespace PharmacyManagement
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_UControls = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.uC_Settings1 = new PharmacyManagement.UC_Settings();
+            this.uC_Index1 = new PharmacyManagement.UC_Index();
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
             this.uC_employee1 = new PharmacyManagement.UC_Employee();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
@@ -58,6 +62,8 @@ namespace PharmacyManagement
             // Pnl_Sidemenu
             // 
             this.Pnl_Sidemenu.BackColor = System.Drawing.Color.SteelBlue;
+            this.Pnl_Sidemenu.Controls.Add(this.btn_Setting);
+            this.Pnl_Sidemenu.Controls.Add(this.btn_Index);
             this.Pnl_Sidemenu.Controls.Add(this.panel3);
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Customers);
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Storage);
@@ -69,6 +75,42 @@ namespace PharmacyManagement
             this.Pnl_Sidemenu.Name = "Pnl_Sidemenu";
             this.Pnl_Sidemenu.Size = new System.Drawing.Size(172, 589);
             this.Pnl_Sidemenu.TabIndex = 1;
+            // 
+            // btn_Setting
+            // 
+            this.btn_Setting.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Setting.FlatAppearance.BorderSize = 0;
+            this.btn_Setting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Setting.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Setting.ForeColor = System.Drawing.Color.Snow;
+            this.btn_Setting.Image = ((System.Drawing.Image)(resources.GetObject("btn_Setting.Image")));
+            this.btn_Setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Setting.Location = new System.Drawing.Point(0, 521);
+            this.btn_Setting.Name = "btn_Setting";
+            this.btn_Setting.Size = new System.Drawing.Size(175, 65);
+            this.btn_Setting.TabIndex = 6;
+            this.btn_Setting.Text = "Cài Đặt";
+            this.btn_Setting.UseVisualStyleBackColor = false;
+            this.btn_Setting.Click += new System.EventHandler(this.btn_Setting_Click);
+            // 
+            // btn_Index
+            // 
+            this.btn_Index.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Index.FlatAppearance.BorderSize = 0;
+            this.btn_Index.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_Index.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Index.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Index.ForeColor = System.Drawing.Color.Snow;
+            this.btn_Index.Image = ((System.Drawing.Image)(resources.GetObject("btn_Index.Image")));
+            this.btn_Index.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Index.Location = new System.Drawing.Point(0, 375);
+            this.btn_Index.Name = "btn_Index";
+            this.btn_Index.Size = new System.Drawing.Size(175, 65);
+            this.btn_Index.TabIndex = 5;
+            this.btn_Index.Text = "Danh Mục";
+            this.btn_Index.UseVisualStyleBackColor = false;
+            this.btn_Index.Click += new System.EventHandler(this.btn_Index_Click);
             // 
             // panel3
             // 
@@ -88,7 +130,7 @@ namespace PharmacyManagement
             this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Name.Location = new System.Drawing.Point(0, 0);
             this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(191, 82);
+            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
             this.Lb_Name.TabIndex = 0;
             this.Lb_Name.Text = "G7 Ph";
             // 
@@ -102,12 +144,11 @@ namespace PharmacyManagement
             this.Btn_Customers.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Customers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Customers.Image")));
             this.Btn_Customers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Customers.Location = new System.Drawing.Point(0, 375);
+            this.Btn_Customers.Location = new System.Drawing.Point(0, 446);
             this.Btn_Customers.Name = "Btn_Customers";
             this.Btn_Customers.Size = new System.Drawing.Size(175, 65);
             this.Btn_Customers.TabIndex = 4;
             this.Btn_Customers.Text = "     Khách Hàng";
-            this.Btn_Customers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Customers.UseVisualStyleBackColor = false;
             this.Btn_Customers.Click += new System.EventHandler(this.Btn_Customers_Click);
             // 
@@ -126,7 +167,6 @@ namespace PharmacyManagement
             this.Btn_Storage.Size = new System.Drawing.Size(175, 65);
             this.Btn_Storage.TabIndex = 3;
             this.Btn_Storage.Text = "     Quản lý kho";
-            this.Btn_Storage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Storage.UseVisualStyleBackColor = false;
             this.Btn_Storage.Click += new System.EventHandler(this.Btn_Storage_Click);
             // 
@@ -145,7 +185,6 @@ namespace PharmacyManagement
             this.Btn_Sale.Size = new System.Drawing.Size(175, 65);
             this.Btn_Sale.TabIndex = 2;
             this.Btn_Sale.Text = "     Bán Hàng";
-            this.Btn_Sale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Sale.UseVisualStyleBackColor = false;
             this.Btn_Sale.Click += new System.EventHandler(this.Btn_Sale_Click);
             // 
@@ -164,7 +203,6 @@ namespace PharmacyManagement
             this.Btn_Employee.Size = new System.Drawing.Size(175, 65);
             this.Btn_Employee.TabIndex = 1;
             this.Btn_Employee.Text = "     Nhân Sự";
-            this.Btn_Employee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Employee.UseVisualStyleBackColor = false;
             this.Btn_Employee.Click += new System.EventHandler(this.Btn_Employee_Click);
             // 
@@ -183,12 +221,13 @@ namespace PharmacyManagement
             this.Btn_Overview.Size = new System.Drawing.Size(175, 65);
             this.Btn_Overview.TabIndex = 0;
             this.Btn_Overview.Text = "     Tổng Quan";
-            this.Btn_Overview.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_Overview.UseVisualStyleBackColor = false;
             this.Btn_Overview.Click += new System.EventHandler(this.Btn_Overview_Click);
             // 
             // Pnl_Main
             // 
+            this.Pnl_Main.AutoScroll = true;
+            this.Pnl_Main.AutoSize = true;
             this.Pnl_Main.BackColor = System.Drawing.Color.White;
             this.Pnl_Main.Controls.Add(this.pnl_UControls);
             this.Pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -199,6 +238,8 @@ namespace PharmacyManagement
             // 
             // pnl_UControls
             // 
+            this.pnl_UControls.Controls.Add(this.uC_Settings1);
+            this.pnl_UControls.Controls.Add(this.uC_Index1);
             this.pnl_UControls.Controls.Add(this.uC_Customers1);
             this.pnl_UControls.Controls.Add(this.uC_Storage1);
             this.pnl_UControls.Controls.Add(this.uC_Sale1);
@@ -209,6 +250,26 @@ namespace PharmacyManagement
             this.pnl_UControls.Name = "pnl_UControls";
             this.pnl_UControls.Size = new System.Drawing.Size(976, 589);
             this.pnl_UControls.TabIndex = 5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // uC_Settings1
+            // 
+            this.uC_Settings1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Settings1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Settings1.Name = "uC_Settings1";
+            this.uC_Settings1.Size = new System.Drawing.Size(976, 589);
+            this.uC_Settings1.TabIndex = 6;
+            // 
+            // uC_Index1
+            // 
+            this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Index1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Index1.Name = "uC_Index1";
+            this.uC_Index1.Size = new System.Drawing.Size(976, 589);
+            this.uC_Index1.TabIndex = 5;
             // 
             // uC_Customers1
             // 
@@ -226,7 +287,7 @@ namespace PharmacyManagement
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Storage1.Name = "uC_Storage1";
             this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;
@@ -235,7 +296,7 @@ namespace PharmacyManagement
             // 
             this.uC_Sale1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Sale1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Sale1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Sale1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Sale1.Name = "uC_Sale1";
             this.uC_Sale1.Size = new System.Drawing.Size(976, 589);
             this.uC_Sale1.TabIndex = 2;
@@ -247,7 +308,7 @@ namespace PharmacyManagement
             this.uC_overview1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.uC_overview1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_overview1.Location = new System.Drawing.Point(0, 0);
-            this.uC_overview1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_overview1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_overview1.Name = "uC_overview1";
             this.uC_overview1.Size = new System.Drawing.Size(976, 589);
             this.uC_overview1.TabIndex = 0;
@@ -256,14 +317,10 @@ namespace PharmacyManagement
             // 
             this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_employee1.Name = "uC_employee1";
             this.uC_employee1.Size = new System.Drawing.Size(976, 589);
             this.uC_employee1.TabIndex = 1;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 
@@ -282,6 +339,7 @@ namespace PharmacyManagement
             this.pnl_UControls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -302,6 +360,10 @@ namespace PharmacyManagement
         private PharmacyManagement.UC_Overview uC_overview1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnl_UControls;
+        private System.Windows.Forms.Button btn_Setting;
+        private System.Windows.Forms.Button btn_Index;
+        private UC_Settings uC_Settings1;
+        private UC_Index uC_Index1;
     }
 }
 

@@ -77,6 +77,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Index.Designer.cs">
+      <DependentUpon>UC_Index.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Overview.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,12 @@
     </Compile>
     <Compile Include="UC_Sale_Receipt.Designer.cs">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Settings.Designer.cs">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_Storage.cs">
       <SubType>UserControl</SubType>
@@ -142,6 +154,9 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_Index.resx">
+      <DependentUpon>UC_Index.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Overview.resx">
       <DependentUpon>UC_Overview.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Sale_Receipt.resx">
       <DependentUpon>UC_Sale_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Settings.resx">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Storage.resx">
       <DependentUpon>UC_Storage.cs</DependentUpon>
