@@ -207,6 +207,7 @@ namespace PharmacyManagement
             // 
             // uC_Customers1
             // 
+            this.uC_Customers1.BackColor = System.Drawing.Color.White;
             this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Customers1.Location = new System.Drawing.Point(0, 0);
             this.uC_Customers1.Name = "uC_Customers1";

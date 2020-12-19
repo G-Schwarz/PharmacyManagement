@@ -10,16 +10,12 @@ using System.Windows.Forms;
 
 namespace PharmacyManagement
 {
-    public partial class UC_Customers : UserControl
+    public partial class UC_Add_Customer : UserControl
     {
-        public UC_Customers()
+        public UC_Add_Customer()
         {
             InitializeComponent();
         }
 
-        private void btn_AddCustomer_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

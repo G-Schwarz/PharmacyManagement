@@ -47,16 +47,16 @@
             this.txb_Seller = new System.Windows.Forms.TextBox();
             this.tb_CustomerType = new System.Windows.Forms.TextBox();
             this.dgv_RecptDetails = new System.Windows.Forms.DataGridView();
+            this.btn_Return = new System.Windows.Forms.Button();
+            this.cb_Status = new System.Windows.Forms.ComboBox();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BlockNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Return = new System.Windows.Forms.Button();
-            this.cb_Status = new System.Windows.Forms.ComboBox();
             this.pnl_RecpDetailsBanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_RecptDetails)).BeginInit();
             this.SuspendLayout();
@@ -216,7 +216,7 @@
             this.dgv_RecptDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_RecptDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductID,
-            this.ProductName,
+            this.ProductsName,
             this.BlockNo,
             this.Amount,
             this.Price,
@@ -228,15 +228,38 @@
             this.dgv_RecptDetails.Size = new System.Drawing.Size(770, 297);
             this.dgv_RecptDetails.TabIndex = 29;
             // 
+            // btn_Return
+            // 
+            this.btn_Return.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Return.FlatAppearance.BorderSize = 0;
+            this.btn_Return.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_Return.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Return.ForeColor = System.Drawing.Color.White;
+            this.btn_Return.Location = new System.Drawing.Point(20, 549);
+            this.btn_Return.Name = "btn_Return";
+            this.btn_Return.Size = new System.Drawing.Size(157, 42);
+            this.btn_Return.TabIndex = 30;
+            this.btn_Return.Text = "Trở lại";
+            this.btn_Return.UseVisualStyleBackColor = false;
+            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
+            // 
+            // cb_Status
+            // 
+            this.cb_Status.FormattingEnabled = true;
+            this.cb_Status.Location = new System.Drawing.Point(567, 97);
+            this.cb_Status.Name = "cb_Status";
+            this.cb_Status.Size = new System.Drawing.Size(200, 21);
+            this.cb_Status.TabIndex = 31;
+            // 
             // ProductID
             // 
             this.ProductID.HeaderText = "Mã Hàng Hóa";
             this.ProductID.Name = "ProductID";
             // 
-            // ProductName
+            // ProductsName
             // 
-            this.ProductName.HeaderText = "Tên Hàng Hóa";
-            this.ProductName.Name = "ProductName";
+            this.ProductsName.HeaderText = "Tên Hàng Hóa";
+            this.ProductsName.Name = "ProductsName";
             // 
             // BlockNo
             // 
@@ -268,29 +291,6 @@
             this.Total.HeaderText = "Thành Tiền";
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
-            // 
-            // btn_Return
-            // 
-            this.btn_Return.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Return.FlatAppearance.BorderSize = 0;
-            this.btn_Return.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btn_Return.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Return.ForeColor = System.Drawing.Color.White;
-            this.btn_Return.Location = new System.Drawing.Point(20, 549);
-            this.btn_Return.Name = "btn_Return";
-            this.btn_Return.Size = new System.Drawing.Size(157, 42);
-            this.btn_Return.TabIndex = 30;
-            this.btn_Return.Text = "Trở lại";
-            this.btn_Return.UseVisualStyleBackColor = false;
-            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
-            // 
-            // cb_Status
-            // 
-            this.cb_Status.FormattingEnabled = true;
-            this.cb_Status.Location = new System.Drawing.Point(567, 97);
-            this.cb_Status.Name = "cb_Status";
-            this.cb_Status.Size = new System.Drawing.Size(200, 21);
-            this.cb_Status.TabIndex = 31;
             // 
             // UC_Sale_Receipt_Details
             // 
@@ -344,15 +344,15 @@
         private System.Windows.Forms.TextBox txb_Seller;
         private System.Windows.Forms.TextBox tb_CustomerType;
         private System.Windows.Forms.DataGridView dgv_RecptDetails;
+        private System.Windows.Forms.Button btn_Return;
+        private System.Windows.Forms.ComboBox cb_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductsName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BlockNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tax;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        private System.Windows.Forms.Button btn_Return;
-        private System.Windows.Forms.ComboBox cb_Status;
     }
 }
