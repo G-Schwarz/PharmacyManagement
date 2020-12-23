@@ -15,6 +15,7 @@ namespace PharmacyManagement
         public UC_Storage()
         {
             InitializeComponent();
+            uC_Storage_PillDetail1.Hide();
         }
 
         private void dgv_Thuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -25,6 +26,12 @@ namespace PharmacyManagement
                 //this.uC_Storage_PillDetail1.Show();
             }
             this.uC_Storage_PillDetail1.Show();
+        }
+
+        private void btn_NhapHang_Click(object sender, EventArgs e)
+        {
+            Form form_NhapHang = new FrmImport();
+            form_NhapHang.Show();
         }
     }
 }
