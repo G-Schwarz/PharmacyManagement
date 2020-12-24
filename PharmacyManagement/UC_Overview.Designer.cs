@@ -73,22 +73,22 @@
             // lb_DoanhSoThangNay
             // 
             this.lb_DoanhSoThangNay.AutoSize = true;
-            this.lb_DoanhSoThangNay.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lb_DoanhSoThangNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_DoanhSoThangNay.ForeColor = System.Drawing.Color.White;
             this.lb_DoanhSoThangNay.Location = new System.Drawing.Point(3, 50);
             this.lb_DoanhSoThangNay.Name = "lb_DoanhSoThangNay";
-            this.lb_DoanhSoThangNay.Size = new System.Drawing.Size(86, 18);
+            this.lb_DoanhSoThangNay.Size = new System.Drawing.Size(90, 17);
             this.lb_DoanhSoThangNay.TabIndex = 2;
             this.lb_DoanhSoThangNay.Text = "Tháng này:";
             // 
             // lb_DoanhSoThangTruoc
             // 
             this.lb_DoanhSoThangTruoc.AutoSize = true;
-            this.lb_DoanhSoThangTruoc.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_DoanhSoThangTruoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_DoanhSoThangTruoc.ForeColor = System.Drawing.Color.White;
             this.lb_DoanhSoThangTruoc.Location = new System.Drawing.Point(3, 22);
             this.lb_DoanhSoThangTruoc.Name = "lb_DoanhSoThangTruoc";
-            this.lb_DoanhSoThangTruoc.Size = new System.Drawing.Size(96, 18);
+            this.lb_DoanhSoThangTruoc.Size = new System.Drawing.Size(101, 17);
             this.lb_DoanhSoThangTruoc.TabIndex = 1;
             this.lb_DoanhSoThangTruoc.Text = "Tháng trước:";
             // 
@@ -144,22 +144,22 @@
             // lb_HoaDonThangNay
             // 
             this.lb_HoaDonThangNay.AutoSize = true;
-            this.lb_HoaDonThangNay.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lb_HoaDonThangNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_HoaDonThangNay.ForeColor = System.Drawing.Color.White;
             this.lb_HoaDonThangNay.Location = new System.Drawing.Point(3, 52);
             this.lb_HoaDonThangNay.Name = "lb_HoaDonThangNay";
-            this.lb_HoaDonThangNay.Size = new System.Drawing.Size(86, 18);
+            this.lb_HoaDonThangNay.Size = new System.Drawing.Size(90, 17);
             this.lb_HoaDonThangNay.TabIndex = 3;
             this.lb_HoaDonThangNay.Text = "Tháng này:";
             // 
             // lb_HoaDonThangTruoc
             // 
             this.lb_HoaDonThangTruoc.AutoSize = true;
-            this.lb_HoaDonThangTruoc.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lb_HoaDonThangTruoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_HoaDonThangTruoc.ForeColor = System.Drawing.Color.White;
             this.lb_HoaDonThangTruoc.Location = new System.Drawing.Point(3, 22);
             this.lb_HoaDonThangTruoc.Name = "lb_HoaDonThangTruoc";
-            this.lb_HoaDonThangTruoc.Size = new System.Drawing.Size(96, 18);
+            this.lb_HoaDonThangTruoc.Size = new System.Drawing.Size(101, 17);
             this.lb_HoaDonThangTruoc.TabIndex = 2;
             this.lb_HoaDonThangTruoc.Text = "Tháng trước:";
             // 
@@ -194,22 +194,22 @@
             // lb_BaoCaoDoanhSo
             // 
             this.lb_BaoCaoDoanhSo.AutoSize = true;
-            this.lb_BaoCaoDoanhSo.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lb_BaoCaoDoanhSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_BaoCaoDoanhSo.ForeColor = System.Drawing.Color.White;
             this.lb_BaoCaoDoanhSo.Location = new System.Drawing.Point(3, 52);
             this.lb_BaoCaoDoanhSo.Name = "lb_BaoCaoDoanhSo";
-            this.lb_BaoCaoDoanhSo.Size = new System.Drawing.Size(81, 18);
+            this.lb_BaoCaoDoanhSo.Size = new System.Drawing.Size(84, 17);
             this.lb_BaoCaoDoanhSo.TabIndex = 3;
             this.lb_BaoCaoDoanhSo.Text = "Doanh Số:";
             // 
             // lb_BaoCaoHoaDon
             // 
             this.lb_BaoCaoHoaDon.AutoSize = true;
-            this.lb_BaoCaoHoaDon.Font = new System.Drawing.Font("Futura", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lb_BaoCaoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lb_BaoCaoHoaDon.ForeColor = System.Drawing.Color.White;
             this.lb_BaoCaoHoaDon.Location = new System.Drawing.Point(-3, 22);
             this.lb_BaoCaoHoaDon.Name = "lb_BaoCaoHoaDon";
-            this.lb_BaoCaoHoaDon.Size = new System.Drawing.Size(79, 18);
+            this.lb_BaoCaoHoaDon.Size = new System.Drawing.Size(81, 17);
             this.lb_BaoCaoHoaDon.TabIndex = 2;
             this.lb_BaoCaoHoaDon.Text = " Hóa Đơn:";
             // 

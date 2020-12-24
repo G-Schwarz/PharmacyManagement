@@ -82,6 +82,7 @@
             this.btn_NhapHang.TabIndex = 1;
             this.btn_NhapHang.Text = "Nhập Hàng";
             this.btn_NhapHang.UseVisualStyleBackColor = false;
+            this.btn_NhapHang.Click += new System.EventHandler(this.btn_NhapHang_Click);
             // 
             // dgv_Thuoc
             // 
@@ -327,13 +328,11 @@
             this.uC_Storage_PillDetail1.Name = "uC_Storage_PillDetail1";
             this.uC_Storage_PillDetail1.Size = new System.Drawing.Size(976, 463);
             this.uC_Storage_PillDetail1.TabIndex = 16;
-            this.uC_Storage_PillDetail1.Hide();
             // 
             // UC_Storage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.uC_Storage_PillDetail1);
             this.Controls.Add(this.dgv_Thuoc);
             this.Controls.Add(this.bt_TimKiem);
             this.Controls.Add(this.dtp_HSD);
@@ -352,6 +351,7 @@
             this.Controls.Add(this.lbl_MaThuoc);
             this.Controls.Add(this.btn_NhapHang);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.uC_Storage_PillDetail1);
             this.Name = "UC_Storage";
             this.Size = new System.Drawing.Size(976, 514);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).EndInit();

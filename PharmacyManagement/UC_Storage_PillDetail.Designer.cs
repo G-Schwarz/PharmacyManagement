@@ -65,7 +65,7 @@ namespace PharmacyManagement
             this.dtp_HSD.Location = new System.Drawing.Point(335, 246);
             this.dtp_HSD.Name = "dtp_HSD";
             this.dtp_HSD.Size = new System.Drawing.Size(200, 26);
-            this.dtp_HSD.TabIndex = 27;
+            this.dtp_HSD.TabIndex = 26;
             this.dtp_HSD.ValueChanged += new System.EventHandler(this.dtp_HSD_ValueChanged);
             // 
             // dtp_NgayNhap
@@ -76,7 +76,7 @@ namespace PharmacyManagement
             this.dtp_NgayNhap.Location = new System.Drawing.Point(0, 246);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(200, 26);
-            this.dtp_NgayNhap.TabIndex = 23;
+            this.dtp_NgayNhap.TabIndex = 25;
             this.dtp_NgayNhap.ValueChanged += new System.EventHandler(this.dtp_NgayNhap_ValueChanged);
             // 
             // lbl_HSD
@@ -95,7 +95,7 @@ namespace PharmacyManagement
             this.txt_SoLuong.Location = new System.Drawing.Point(335, 147);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.Size = new System.Drawing.Size(215, 26);
-            this.txt_SoLuong.TabIndex = 25;
+            this.txt_SoLuong.TabIndex = 23;
             this.txt_SoLuong.TextChanged += new System.EventHandler(this.txt_SoLuong_TextChanged);
             // 
             // lbl_SoLuong
@@ -200,7 +200,7 @@ namespace PharmacyManagement
             this.txt_DonGia.Location = new System.Drawing.Point(666, 147);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.Size = new System.Drawing.Size(215, 26);
-            this.txt_DonGia.TabIndex = 30;
+            this.txt_DonGia.TabIndex = 24;
             this.txt_DonGia.TextChanged += new System.EventHandler(this.txt_DonGia_TextChanged);
             // 
             // lbl_DonGia
@@ -219,7 +219,7 @@ namespace PharmacyManagement
             this.txt_VAT.Location = new System.Drawing.Point(669, 246);
             this.txt_VAT.Name = "txt_VAT";
             this.txt_VAT.Size = new System.Drawing.Size(215, 26);
-            this.txt_VAT.TabIndex = 32;
+            this.txt_VAT.TabIndex = 27;
             this.txt_VAT.TextChanged += new System.EventHandler(this.txt_VAT_TextChanged);
             // 
             // lvl_VAT
