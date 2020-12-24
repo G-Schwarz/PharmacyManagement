@@ -39,7 +39,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomersName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -70,6 +72,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1266, 110);
             this.panel1.TabIndex = 20;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btn_AddCustomer
             // 
@@ -156,7 +159,9 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CustomerID,
             this.CustomersName,
+            this.Gender,
             this.Phone,
+            this.Addr,
             this.Email,
             this.Note});
             this.dataGridView1.Location = new System.Drawing.Point(20, 20);
@@ -165,6 +170,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1250, 501);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // CustomerID
             // 
@@ -180,12 +186,26 @@
             this.CustomersName.Name = "CustomersName";
             this.CustomersName.Width = 200;
             // 
+            // Gender
+            // 
+            this.Gender.HeaderText = "Giới Tính";
+            this.Gender.MinimumWidth = 6;
+            this.Gender.Name = "Gender";
+            this.Gender.Width = 125;
+            // 
             // Phone
             // 
             this.Phone.HeaderText = "SĐT";
             this.Phone.MinimumWidth = 6;
             this.Phone.Name = "Phone";
             this.Phone.Width = 200;
+            // 
+            // Addr
+            // 
+            this.Addr.HeaderText = "Địa Chỉ";
+            this.Addr.MinimumWidth = 6;
+            this.Addr.Name = "Addr";
+            this.Addr.Width = 125;
             // 
             // Email
             // 
@@ -232,7 +252,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomersName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Addr;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Note;
     }
