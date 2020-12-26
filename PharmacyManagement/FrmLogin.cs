@@ -7,25 +7,65 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace PharmacyManagement
 {
     public partial class FrmLogin : Form
     {
-
+        SqlConnection con = new SqlConnection();
+        SqlCommand com = new SqlCommand();
         public FrmLogin()
         {
             MaximizeBox = false;
             MinimizeBox = false;
             this.Size = new Size(800, 450);
             InitializeComponent();
+
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form form = new FrmMain();
-            form.Show();
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from USERNAME";
+
+            SqlDataReader dr = com.ExecuteReader();
+            if (dr.Read())
+            {
+                if (txtAccount.Text.Equals(dr["Username"].ToString()) && txtPassword.Text.Equals(dr["Pword"].ToString()))
+                {
+                    //MessageBox.Show("meow");
+                    this.Close();
+                    Form form = new FrmMain();
+                    form.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Tên đăng nhập ho8a5c mật khẩu không đúng");
+                }
+
+                    
+                    //() );
+                {
+
+                    
+                }
+                //else (MessageBox.Show("Liên hệ SĐT: 0793449343"));
+
+                //txtAccount
+                //    txtPassword
+            }
+            con.Close();
+
+
+            //txtAccount.Text = "1111111111111";
+
+
         }
 
         private void lnklblUnable_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -34,6 +74,21 @@ namespace PharmacyManagement
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAccount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

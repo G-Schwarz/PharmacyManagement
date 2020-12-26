@@ -44,7 +44,6 @@ namespace PharmacyManagement
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_UControls = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.uC_Settings1 = new PharmacyManagement.UC_Settings();
             this.uC_Index1 = new PharmacyManagement.UC_Index();
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
@@ -52,6 +51,7 @@ namespace PharmacyManagement
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
             this.uC_employee1 = new PharmacyManagement.UC_Employee();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
@@ -130,7 +130,7 @@ namespace PharmacyManagement
             this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Name.Location = new System.Drawing.Point(0, 0);
             this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
+            this.Lb_Name.Size = new System.Drawing.Size(191, 82);
             this.Lb_Name.TabIndex = 0;
             this.Lb_Name.Text = "G7 Ph";
             // 
@@ -251,14 +251,11 @@ namespace PharmacyManagement
             this.pnl_UControls.Size = new System.Drawing.Size(976, 589);
             this.pnl_UControls.TabIndex = 5;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // uC_Settings1
             // 
             this.uC_Settings1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Settings1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Settings1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Settings1.Name = "uC_Settings1";
             this.uC_Settings1.Size = new System.Drawing.Size(976, 589);
             this.uC_Settings1.TabIndex = 6;
@@ -267,6 +264,7 @@ namespace PharmacyManagement
             // 
             this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Index1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Index1.Name = "uC_Index1";
             this.uC_Index1.Size = new System.Drawing.Size(976, 589);
             this.uC_Index1.TabIndex = 5;
@@ -287,7 +285,7 @@ namespace PharmacyManagement
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Storage1.Name = "uC_Storage1";
             this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;
@@ -317,10 +315,14 @@ namespace PharmacyManagement
             // 
             this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_employee1.Name = "uC_employee1";
             this.uC_employee1.Size = new System.Drawing.Size(976, 589);
             this.uC_employee1.TabIndex = 1;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 
