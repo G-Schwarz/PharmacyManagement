@@ -63,7 +63,7 @@
             this.panel1.Controls.Add(this.lb_DoanhSoThangTruoc);
             this.panel1.Controls.Add(this.lb_Doanhso);
             this.panel1.Location = new System.Drawing.Point(85, 59);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 106);
             this.panel1.TabIndex = 1;
@@ -115,7 +115,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(85, 257);
-            this.chart1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.chart1.Margin = new System.Windows.Forms.Padding(5);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -133,7 +133,7 @@
             this.panel2.Controls.Add(this.lb_HoaDonThangTruoc);
             this.panel2.Controls.Add(this.lb_HoaDon);
             this.panel2.Location = new System.Drawing.Point(511, 59);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(236, 106);
             this.panel2.TabIndex = 2;
@@ -184,7 +184,7 @@
             this.panel3.Controls.Add(this.lb_BaoCaoHoaDon);
             this.panel3.Controls.Add(this.lb_BaoCaoTrongNgay);
             this.panel3.Location = new System.Drawing.Point(932, 59);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(236, 106);
             this.panel3.TabIndex = 2;
@@ -233,7 +233,7 @@
             this.panel4.Controls.Add(this.lb_CanhBaoHangHetHan);
             this.panel4.Controls.Add(this.lb_CanhBao);
             this.panel4.Location = new System.Drawing.Point(1348, 59);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(236, 106);
             this.panel4.TabIndex = 2;
@@ -290,7 +290,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_Overview";
             this.Size = new System.Drawing.Size(1589, 633);
             this.panel1.ResumeLayout(false);

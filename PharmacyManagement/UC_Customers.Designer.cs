@@ -111,6 +111,7 @@
             this.btn_CustomerSearch.TabIndex = 23;
             this.btn_CustomerSearch.Text = "Tìm Kiếm";
             this.btn_CustomerSearch.UseVisualStyleBackColor = false;
+            this.btn_CustomerSearch.Click += new System.EventHandler(this.btn_CustomerSearch_Click);
             // 
             // lb_CustomerType
             // 
@@ -143,6 +144,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1297, 508);
             this.panel2.TabIndex = 21;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 

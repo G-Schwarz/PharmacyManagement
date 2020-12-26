@@ -33,8 +33,6 @@
             this.txb_Addresses = new System.Windows.Forms.TextBox();
             this.txb_CompanyName = new System.Windows.Forms.TextBox();
             this.txb_CMND = new System.Windows.Forms.TextBox();
-            this.txb_Age = new System.Windows.Forms.TextBox();
-            this.txb_TaxID = new System.Windows.Forms.TextBox();
             this.txb_PhoneNo = new System.Windows.Forms.TextBox();
             this.txb_Email = new System.Windows.Forms.TextBox();
             this.rbtn_Sex = new System.Windows.Forms.Label();
@@ -47,10 +45,8 @@
             this.lb_CompanyName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lb_Email = new System.Windows.Forms.Label();
-            this.lb_TaxID = new System.Windows.Forms.Label();
             this.lb_PhoneNo = new System.Windows.Forms.Label();
             this.lb_CustomerGroup = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_CustomerName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +71,7 @@
             this.pnl_RecpDetailsBanner.Controls.Add(this.lb_AddCustomer);
             this.pnl_RecpDetailsBanner.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_RecpDetailsBanner.Location = new System.Drawing.Point(0, 0);
-            this.pnl_RecpDetailsBanner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_RecpDetailsBanner.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_RecpDetailsBanner.Name = "pnl_RecpDetailsBanner";
             this.pnl_RecpDetailsBanner.Size = new System.Drawing.Size(1301, 65);
             this.pnl_RecpDetailsBanner.TabIndex = 2;
@@ -96,7 +92,7 @@
             // 
             this.txb_Addresses.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Addresses.Location = new System.Drawing.Point(45, 370);
-            this.txb_Addresses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_Addresses.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Addresses.Name = "txb_Addresses";
             this.txb_Addresses.Size = new System.Drawing.Size(1200, 31);
             this.txb_Addresses.TabIndex = 93;
@@ -105,7 +101,7 @@
             // 
             this.txb_CompanyName.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CompanyName.Location = new System.Drawing.Point(980, 287);
-            this.txb_CompanyName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CompanyName.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CompanyName.Name = "txb_CompanyName";
             this.txb_CompanyName.Size = new System.Drawing.Size(261, 31);
             this.txb_CompanyName.TabIndex = 92;
@@ -114,34 +110,16 @@
             // 
             this.txb_CMND.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CMND.Location = new System.Drawing.Point(45, 192);
-            this.txb_CMND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CMND.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CMND.Name = "txb_CMND";
             this.txb_CMND.Size = new System.Drawing.Size(261, 31);
             this.txb_CMND.TabIndex = 91;
-            // 
-            // txb_Age
-            // 
-            this.txb_Age.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Age.Location = new System.Drawing.Point(352, 192);
-            this.txb_Age.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txb_Age.Name = "txb_Age";
-            this.txb_Age.Size = new System.Drawing.Size(261, 31);
-            this.txb_Age.TabIndex = 90;
-            // 
-            // txb_TaxID
-            // 
-            this.txb_TaxID.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_TaxID.Location = new System.Drawing.Point(45, 283);
-            this.txb_TaxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txb_TaxID.Name = "txb_TaxID";
-            this.txb_TaxID.Size = new System.Drawing.Size(261, 31);
-            this.txb_TaxID.TabIndex = 89;
             // 
             // txb_PhoneNo
             // 
             this.txb_PhoneNo.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_PhoneNo.Location = new System.Drawing.Point(352, 287);
-            this.txb_PhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_PhoneNo.Margin = new System.Windows.Forms.Padding(4);
             this.txb_PhoneNo.Name = "txb_PhoneNo";
             this.txb_PhoneNo.Size = new System.Drawing.Size(261, 31);
             this.txb_PhoneNo.TabIndex = 88;
@@ -150,7 +128,7 @@
             // 
             this.txb_Email.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Email.Location = new System.Drawing.Point(671, 287);
-            this.txb_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Email.Name = "txb_Email";
             this.txb_Email.Size = new System.Drawing.Size(261, 31);
             this.txb_Email.TabIndex = 87;
@@ -186,7 +164,7 @@
             this.btn_Cancel.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.White;
             this.btn_Cancel.Location = new System.Drawing.Point(1077, 569);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(165, 37);
             this.btn_Cancel.TabIndex = 84;
@@ -203,7 +181,7 @@
             this.btn_AddCustomer.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AddCustomer.ForeColor = System.Drawing.Color.White;
             this.btn_AddCustomer.Location = new System.Drawing.Point(883, 569);
-            this.btn_AddCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AddCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddCustomer.Name = "btn_AddCustomer";
             this.btn_AddCustomer.Size = new System.Drawing.Size(165, 37);
             this.btn_AddCustomer.TabIndex = 83;
@@ -224,7 +202,7 @@
             // rtxb_CustomerNote
             // 
             this.rtxb_CustomerNote.Location = new System.Drawing.Point(45, 443);
-            this.rtxb_CustomerNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxb_CustomerNote.Margin = new System.Windows.Forms.Padding(4);
             this.rtxb_CustomerNote.Name = "rtxb_CustomerNote";
             this.rtxb_CustomerNote.Size = new System.Drawing.Size(1200, 117);
             this.rtxb_CustomerNote.TabIndex = 81;
@@ -274,17 +252,6 @@
             this.lb_Email.TabIndex = 77;
             this.lb_Email.Text = "Email";
             // 
-            // lb_TaxID
-            // 
-            this.lb_TaxID.AutoSize = true;
-            this.lb_TaxID.Font = new System.Drawing.Font("Futura Bk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_TaxID.Location = new System.Drawing.Point(45, 260);
-            this.lb_TaxID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_TaxID.Name = "lb_TaxID";
-            this.lb_TaxID.Size = new System.Drawing.Size(97, 20);
-            this.lb_TaxID.TabIndex = 76;
-            this.lb_TaxID.Text = "Mã Số Thuế";
-            // 
             // lb_PhoneNo
             // 
             this.lb_PhoneNo.AutoSize = true;
@@ -306,17 +273,6 @@
             this.lb_CustomerGroup.Size = new System.Drawing.Size(152, 20);
             this.lb_CustomerGroup.TabIndex = 74;
             this.lb_CustomerGroup.Text = "Nhóm Khách Hàng";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Futura Bk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(348, 170);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
-            this.label4.TabIndex = 73;
-            this.label4.Text = "Tuổi";
             // 
             // label3
             // 
@@ -354,7 +310,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(671, 196);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 69;
@@ -364,7 +320,7 @@
             this.panel2.Controls.Add(this.rbtn_Male);
             this.panel2.Controls.Add(this.rbtn_Femal);
             this.panel2.Location = new System.Drawing.Point(980, 196);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 30);
             this.panel2.TabIndex = 68;
@@ -374,7 +330,7 @@
             this.rbtn_Male.AutoSize = true;
             this.rbtn_Male.FlatAppearance.BorderSize = 0;
             this.rbtn_Male.Location = new System.Drawing.Point(0, 4);
-            this.rbtn_Male.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Male.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Male.Name = "rbtn_Male";
             this.rbtn_Male.Size = new System.Drawing.Size(58, 21);
             this.rbtn_Male.TabIndex = 28;
@@ -387,7 +343,7 @@
             this.rbtn_Femal.AutoSize = true;
             this.rbtn_Femal.FlatAppearance.BorderSize = 0;
             this.rbtn_Femal.Location = new System.Drawing.Point(139, 4);
-            this.rbtn_Femal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Femal.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Femal.Name = "rbtn_Femal";
             this.rbtn_Femal.Size = new System.Drawing.Size(47, 21);
             this.rbtn_Femal.TabIndex = 29;
@@ -400,7 +356,7 @@
             this.panel1.Controls.Add(this.rbtn_Personal);
             this.panel1.Controls.Add(this.rtbn_Company);
             this.panel1.Location = new System.Drawing.Point(980, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 30);
             this.panel1.TabIndex = 67;
@@ -410,7 +366,7 @@
             this.rbtn_Personal.AutoSize = true;
             this.rbtn_Personal.Font = new System.Drawing.Font("Futura Bk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_Personal.Location = new System.Drawing.Point(0, 4);
-            this.rbtn_Personal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Personal.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Personal.Name = "rbtn_Personal";
             this.rbtn_Personal.Size = new System.Drawing.Size(98, 24);
             this.rbtn_Personal.TabIndex = 28;
@@ -423,7 +379,7 @@
             this.rtbn_Company.AutoSize = true;
             this.rtbn_Company.Font = new System.Drawing.Font("Futura Bk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbn_Company.Location = new System.Drawing.Point(139, 4);
-            this.rtbn_Company.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbn_Company.Margin = new System.Windows.Forms.Padding(4);
             this.rtbn_Company.Name = "rtbn_Company";
             this.rtbn_Company.Size = new System.Drawing.Size(92, 24);
             this.rtbn_Company.TabIndex = 29;
@@ -435,7 +391,7 @@
             // 
             this.txb_CustomerName.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CustomerName.Location = new System.Drawing.Point(352, 105);
-            this.txb_CustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CustomerName.Name = "txb_CustomerName";
             this.txb_CustomerName.Size = new System.Drawing.Size(261, 31);
             this.txb_CustomerName.TabIndex = 66;
@@ -444,7 +400,7 @@
             // 
             this.txb_CustomerID.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CustomerID.Location = new System.Drawing.Point(45, 100);
-            this.txb_CustomerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CustomerID.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CustomerID.Name = "txb_CustomerID";
             this.txb_CustomerID.Size = new System.Drawing.Size(261, 31);
             this.txb_CustomerID.TabIndex = 65;
@@ -454,7 +410,7 @@
             this.cb_CustomerGroup.Font = new System.Drawing.Font("Futura Bk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_CustomerGroup.FormattingEnabled = true;
             this.cb_CustomerGroup.Location = new System.Drawing.Point(671, 102);
-            this.cb_CustomerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_CustomerGroup.Margin = new System.Windows.Forms.Padding(4);
             this.cb_CustomerGroup.Name = "cb_CustomerGroup";
             this.cb_CustomerGroup.Size = new System.Drawing.Size(261, 32);
             this.cb_CustomerGroup.TabIndex = 64;
@@ -468,8 +424,6 @@
             this.Controls.Add(this.txb_Addresses);
             this.Controls.Add(this.txb_CompanyName);
             this.Controls.Add(this.txb_CMND);
-            this.Controls.Add(this.txb_Age);
-            this.Controls.Add(this.txb_TaxID);
             this.Controls.Add(this.txb_PhoneNo);
             this.Controls.Add(this.txb_Email);
             this.Controls.Add(this.rbtn_Sex);
@@ -482,10 +436,8 @@
             this.Controls.Add(this.lb_CompanyName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lb_Email);
-            this.Controls.Add(this.lb_TaxID);
             this.Controls.Add(this.lb_PhoneNo);
             this.Controls.Add(this.lb_CustomerGroup);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_CustomerName);
             this.Controls.Add(this.label1);
@@ -497,9 +449,10 @@
             this.Controls.Add(this.cb_CustomerGroup);
             this.Controls.Add(this.pnl_RecpDetailsBanner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAddCustomer";
             this.Text = "FrmAddCustomer";
+            this.Load += new System.EventHandler(this.FrmAddCustomer_Load);
             this.pnl_RecpDetailsBanner.ResumeLayout(false);
             this.pnl_RecpDetailsBanner.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -518,8 +471,6 @@
         private System.Windows.Forms.TextBox txb_Addresses;
         private System.Windows.Forms.TextBox txb_CompanyName;
         private System.Windows.Forms.TextBox txb_CMND;
-        private System.Windows.Forms.TextBox txb_Age;
-        private System.Windows.Forms.TextBox txb_TaxID;
         private System.Windows.Forms.TextBox txb_PhoneNo;
         private System.Windows.Forms.TextBox txb_Email;
         private System.Windows.Forms.Label rbtn_Sex;
@@ -532,10 +483,8 @@
         private System.Windows.Forms.Label lb_CompanyName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lb_Email;
-        private System.Windows.Forms.Label lb_TaxID;
         private System.Windows.Forms.Label lb_PhoneNo;
         private System.Windows.Forms.Label lb_CustomerGroup;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_CustomerName;
         private System.Windows.Forms.Label label1;

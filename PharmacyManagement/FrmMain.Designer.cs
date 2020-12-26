@@ -285,7 +285,7 @@ namespace PharmacyManagement
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Storage1.Name = "uC_Storage1";
             this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;

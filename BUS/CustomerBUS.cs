@@ -33,6 +33,13 @@ namespace BUS
         }
 
         */
+
+                public void get_data()
+        {
+            //con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+        }
+
+
         public List<CustomerDTO> select()
         {
             return khdal.select();
