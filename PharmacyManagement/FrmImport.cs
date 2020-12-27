@@ -146,5 +146,10 @@ namespace PharmacyManagement
         {
 
         }
+
+        private void FrmImport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
