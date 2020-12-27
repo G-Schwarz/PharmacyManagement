@@ -74,5 +74,10 @@ namespace PharmacyManagement
             dtp_NgayNhap.Value = DateTime.Today;
             dtp_HSD.Value = DateTime.Today;
         }
+
+        private void pn_ThongTinThuoc_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
