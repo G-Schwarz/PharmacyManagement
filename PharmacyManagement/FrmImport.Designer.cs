@@ -33,7 +33,6 @@ namespace PharmacyManagement
             this.txt_GiamGia = new System.Windows.Forms.TextBox();
             this.lbl_GiamGia = new System.Windows.Forms.Label();
             this.btn_LuuVaoGio = new System.Windows.Forms.Button();
-            this.cbb_NhaCungCap = new System.Windows.Forms.ComboBox();
             this.btn_XoaNhapHang = new System.Windows.Forms.Button();
             this.cbb_MaThuoc = new System.Windows.Forms.ComboBox();
             this.cbb_TenThuoc = new System.Windows.Forms.ComboBox();
@@ -71,16 +70,17 @@ namespace PharmacyManagement
             this.btn_XoaPhieuNhap = new System.Windows.Forms.Button();
             this.btn_LuuPhieuNhap = new System.Windows.Forms.Button();
             this.btn_XoaHang = new System.Windows.Forms.Button();
+            this.txt_NhaCungCap = new System.Windows.Forms.TextBox();
             this.pn_ThongTinThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GioHang)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_ThongTinThuoc
             // 
+            this.pn_ThongTinThuoc.Controls.Add(this.txt_NhaCungCap);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_GiamGia);
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_GiamGia);
             this.pn_ThongTinThuoc.Controls.Add(this.btn_LuuVaoGio);
-            this.pn_ThongTinThuoc.Controls.Add(this.cbb_NhaCungCap);
             this.pn_ThongTinThuoc.Controls.Add(this.btn_XoaNhapHang);
             this.pn_ThongTinThuoc.Controls.Add(this.cbb_MaThuoc);
             this.pn_ThongTinThuoc.Controls.Add(this.cbb_TenThuoc);
@@ -137,15 +137,6 @@ namespace PharmacyManagement
             this.btn_LuuVaoGio.Text = "Lưu hàng";
             this.btn_LuuVaoGio.UseVisualStyleBackColor = false;
             this.btn_LuuVaoGio.Click += new System.EventHandler(this.btn_LuuVaoGio_Click);
-            // 
-            // cbb_NhaCungCap
-            // 
-            this.cbb_NhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbb_NhaCungCap.FormattingEnabled = true;
-            this.cbb_NhaCungCap.Location = new System.Drawing.Point(975, 44);
-            this.cbb_NhaCungCap.Name = "cbb_NhaCungCap";
-            this.cbb_NhaCungCap.Size = new System.Drawing.Size(215, 26);
-            this.cbb_NhaCungCap.TabIndex = 4;
             // 
             // btn_XoaNhapHang
             // 
@@ -515,6 +506,14 @@ namespace PharmacyManagement
             this.btn_XoaHang.UseVisualStyleBackColor = false;
             this.btn_XoaHang.Click += new System.EventHandler(this.btn_XoaHang_Click);
             // 
+            // txt_NhaCungCap
+            // 
+            this.txt_NhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NhaCungCap.Location = new System.Drawing.Point(975, 44);
+            this.txt_NhaCungCap.Name = "txt_NhaCungCap";
+            this.txt_NhaCungCap.Size = new System.Drawing.Size(215, 26);
+            this.txt_NhaCungCap.TabIndex = 4;
+            // 
             // FrmImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -560,7 +559,6 @@ namespace PharmacyManagement
         private System.Windows.Forms.TextBox txt_SoLuong;
         private System.Windows.Forms.Label lbl_HSD;
         private System.Windows.Forms.DataGridView dgv_GioHang;
-        private System.Windows.Forms.ComboBox cbb_NhaCungCap;
         private System.Windows.Forms.ComboBox cbb_MaThuoc;
         private System.Windows.Forms.ComboBox cbb_TenThuoc;
         private System.Windows.Forms.Button btn_XoaNhapHang;
@@ -585,5 +583,6 @@ namespace PharmacyManagement
         private System.Windows.Forms.Button btn_XoaPhieuNhap;
         private System.Windows.Forms.Button btn_LuuPhieuNhap;
         private System.Windows.Forms.Button btn_XoaHang;
+        private System.Windows.Forms.TextBox txt_NhaCungCap;
     }
 }

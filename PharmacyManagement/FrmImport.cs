@@ -31,7 +31,7 @@ namespace PharmacyManagement
             if (MessageBox.Show("Bạn có muốn xóa thông tin đã nhập?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 cbb_MaThuoc.ResetText();
-                cbb_NhaCungCap.ResetText();
+                txt_NhaCungCap.ResetText();
                 cbb_TenThuoc.ResetText();
                 txt_DonGia.Clear();
                 txt_SoLo.Clear();
@@ -52,7 +52,7 @@ namespace PharmacyManagement
             if (txt_GiamGia.Text == "") { txt_GiamGia.Text = "0"; }
             string mt, ncc, tt, dg, solo, soluong, vat, nnh, hsd;
             mt = cbb_MaThuoc.Text.ToString();
-            ncc = cbb_NhaCungCap.Text.ToString();
+            ncc = txt_NhaCungCap.Text.ToString();
             tt = cbb_TenThuoc.Text.ToString();
             dg = txt_DonGia.Text.ToString();
             long long_dongia = long.Parse(txt_DonGia.Text);
@@ -69,7 +69,7 @@ namespace PharmacyManagement
             string[] row = { mt, tt, solo, ncc, soluong, dg, nnh, hsd, vat, txt_GiamGia.Text, thanhtien.ToString() };
             dgv_GioHang.Rows.Add(row);
             cbb_MaThuoc.ResetText();
-            cbb_NhaCungCap.ResetText();
+            txt_NhaCungCap.Clear();
             cbb_TenThuoc.ResetText();
             txt_DonGia.Clear();
             txt_SoLo.Clear();
@@ -88,7 +88,7 @@ namespace PharmacyManagement
                 dgv_GioHang.Rows.Clear();
                 dgv_GioHang.Refresh();
                 cbb_MaThuoc.ResetText();
-                cbb_NhaCungCap.ResetText();
+                txt_NhaCungCap.Clear();
                 cbb_TenThuoc.ResetText();
                 txt_DonGia.Clear();
                 txt_SoLo.Clear();
