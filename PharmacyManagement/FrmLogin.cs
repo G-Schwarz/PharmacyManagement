@@ -76,6 +76,9 @@ namespace PharmacyManagement
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            //panel1.Location = new Point(0, 0);
+            //panel1.Size = new Size(this.Width, this.Height);
+            //panel1.Width=this.form 
             Graphics panel1_graphics = e.Graphics;
             Pen pen = new Pen(Color.FromArgb(64, 196, 255));
             Rectangle area = new Rectangle(0, 0, this.panel1.Width, this.panel1.Height);

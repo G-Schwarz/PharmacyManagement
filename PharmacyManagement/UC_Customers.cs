@@ -121,26 +121,42 @@ namespace PharmacyManagement
         {
             listopen();
 
-            dataGridView1.Rows.Add
-                  (
-              txb_CustomerID.Text,
-              txb_CustomerID.Text,
-              txb_CustomerName.Text,
-              cb_CustomerGroup.Text,
-              rbtn_Personal.Checked,
-              rtbn_Company.Checked,
-
-              txb_CMND.Text,
-
-              rbtn_Male.Checked,
-              rbtn_Femal.Checked,
-              txb_PhoneNo.Text,
-              txb_Email.Text,
-              txb_CompanyName.Text,
-              txb_Addresses.Text
-              );
-
             
+
+
+
+            SqlCommand com = new SqlCommand("INSERT INTO CUSTOMER " +
+                "(CustomerID ,CustomerName  ,Phone ,Addr ,Company ,TIN ,Email ,Facebook ,Debts) " +
+                "VALUES (@CustomerID ,@CustomerName  ,@Phone ,@Addr ,@Company ,@TIN ,@Email ,@Facebook ,@Debts)", con);
+            //com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@CustomerID", txb_CustomerID.Text);
+            com.Parameters.AddWithValue("@CustomerType", false);
+            com.Parameters.AddWithValue("@CustomerName", txb_CustomerName.Text);
+            com.Parameters.AddWithValue("@Gender", false);
+            com.Parameters.AddWithValue("@Phone", txb_PhoneNo.Text);
+            com.Parameters.AddWithValue("@Addr", txb_Addresses.Text);
+            com.Parameters.AddWithValue("@Company", txb_CompanyName.Text);
+            com.Parameters.AddWithValue("@TIN", "");
+            com.Parameters.AddWithValue("@Email", txb_Email.Text);
+            com.Parameters.AddWithValue("@Facebook", "");
+            com.Parameters.AddWithValue("@Debts", "");
+
+            con.Open();
+
+                int result = com.ExecuteNonQuery();
+
+            con.Close();
+
+
+
+
+
+            load_data("");
+
+
+
+
+
         }
 
         void add_data()
@@ -160,6 +176,16 @@ namespace PharmacyManagement
             get_data();
             load_combo();
             
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txb_CompanyName_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btn_AddCustomer_Click(object sender, EventArgs e)

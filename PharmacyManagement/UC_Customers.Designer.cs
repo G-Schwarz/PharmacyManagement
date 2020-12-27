@@ -198,6 +198,7 @@
             this.txb_CompanyName.Name = "txb_CompanyName";
             this.txb_CompanyName.Size = new System.Drawing.Size(261, 31);
             this.txb_CompanyName.TabIndex = 119;
+            this.txb_CompanyName.TextChanged += new System.EventHandler(this.txb_CompanyName_TextChanged);
             // 
             // txb_CMND
             // 
@@ -530,6 +531,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1266, 110);
             this.panel6.TabIndex = 27;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // UC_Customers
             // 
