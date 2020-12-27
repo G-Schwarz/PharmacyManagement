@@ -77,9 +77,9 @@ namespace PharmacyManagement
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Graphics panel1_graphics = e.Graphics;
-            Pen pen = new Pen(Color.FromArgb(113, 208, 255,1));
-            Rectangle area = new Rectangle(panel1.Location.X, panel1.Location.Y, this.panel1.Width - 1, this.panel1.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(113, 208, 255, 1), Color.FromArgb(69, 189, 229), LinearGradientMode.Vertical);
+            Pen pen = new Pen(Color.FromArgb(64, 196, 255));
+            Rectangle area = new Rectangle(0, 0, this.panel1.Width, this.panel1.Height);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(64, 196, 255), Color.FromArgb(69, 128, 229), LinearGradientMode.Vertical);
             panel1_graphics.FillRectangle(lgb, area);
             panel1_graphics.DrawRectangle(pen, area);
         }

@@ -30,6 +30,7 @@ namespace PharmacyManagement
         private void InitializeComponent()
         {
             this.pn_ThongTinThuoc = new System.Windows.Forms.Panel();
+            this.txt_NhaCungCap = new System.Windows.Forms.TextBox();
             this.txt_GiamGia = new System.Windows.Forms.TextBox();
             this.lbl_GiamGia = new System.Windows.Forms.Label();
             this.btn_LuuVaoGio = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@ namespace PharmacyManagement
             this.VAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiamGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
             this.lbl_SoHang = new System.Windows.Forms.Label();
             this.lbl_TongTien = new System.Windows.Forms.Label();
             this.txt_SoHang = new System.Windows.Forms.TextBox();
@@ -71,8 +71,6 @@ namespace PharmacyManagement
             this.btn_XoaPhieuNhap = new System.Windows.Forms.Button();
             this.btn_LuuPhieuNhap = new System.Windows.Forms.Button();
             this.btn_XoaHang = new System.Windows.Forms.Button();
-            this.txt_NhaCungCap = new System.Windows.Forms.TextBox();
-
             this.pn_ThongTinThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GioHang)).BeginInit();
             this.SuspendLayout();
@@ -102,38 +100,27 @@ namespace PharmacyManagement
             this.pn_ThongTinThuoc.Controls.Add(this.txt_SoLuong);
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_HSD);
             this.pn_ThongTinThuoc.Location = new System.Drawing.Point(52, 15);
-            this.pn_ThongTinThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_ThongTinThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.pn_ThongTinThuoc.Name = "pn_ThongTinThuoc";
             this.pn_ThongTinThuoc.Size = new System.Drawing.Size(1617, 354);
             this.pn_ThongTinThuoc.TabIndex = 41;
             this.pn_ThongTinThuoc.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_ThongTinThuoc_Paint);
             // 
-            // txt_GiamGia
+            // txt_NhaCungCap
             // 
-            this.txt_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GiamGia.Location = new System.Drawing.Point(1300, 148);
-            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_GiamGia.Name = "txt_GiamGia";
-            this.txt_GiamGia.Size = new System.Drawing.Size(285, 30);
-            this.txt_GiamGia.TabIndex = 46;
-            // 
-            // lbl_GiamGia
-            // 
-            this.lbl_GiamGia.AutoSize = true;
-            this.lbl_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GiamGia.Location = new System.Drawing.Point(1296, 122);
-            this.lbl_GiamGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_GiamGia.Name = "lbl_GiamGia";
-            this.lbl_GiamGia.Size = new System.Drawing.Size(95, 23);
-            this.lbl_GiamGia.TabIndex = 47;
-            this.lbl_GiamGia.Text = "Giảm giá:";
+            this.txt_NhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NhaCungCap.Location = new System.Drawing.Point(975, 44);
+            this.txt_NhaCungCap.Name = "txt_NhaCungCap";
+            this.txt_NhaCungCap.Size = new System.Drawing.Size(215, 30);
+            this.txt_NhaCungCap.TabIndex = 4;
             // 
             // txt_GiamGia
             // 
             this.txt_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GiamGia.Location = new System.Drawing.Point(975, 120);
+            this.txt_GiamGia.Margin = new System.Windows.Forms.Padding(4);
             this.txt_GiamGia.Name = "txt_GiamGia";
-            this.txt_GiamGia.Size = new System.Drawing.Size(215, 26);
+            this.txt_GiamGia.Size = new System.Drawing.Size(215, 30);
             this.txt_GiamGia.TabIndex = 46;
             // 
             // lbl_GiamGia
@@ -141,8 +128,9 @@ namespace PharmacyManagement
             this.lbl_GiamGia.AutoSize = true;
             this.lbl_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_GiamGia.Location = new System.Drawing.Point(972, 99);
+            this.lbl_GiamGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_GiamGia.Name = "lbl_GiamGia";
-            this.lbl_GiamGia.Size = new System.Drawing.Size(104, 18);
+            this.lbl_GiamGia.Size = new System.Drawing.Size(133, 23);
             this.lbl_GiamGia.TabIndex = 47;
             this.lbl_GiamGia.Text = "Giảm giá (%):";
             // 
@@ -154,7 +142,7 @@ namespace PharmacyManagement
             this.btn_LuuVaoGio.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LuuVaoGio.ForeColor = System.Drawing.Color.White;
             this.btn_LuuVaoGio.Location = new System.Drawing.Point(1225, 228);
-            this.btn_LuuVaoGio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_LuuVaoGio.Margin = new System.Windows.Forms.Padding(4);
             this.btn_LuuVaoGio.Name = "btn_LuuVaoGio";
             this.btn_LuuVaoGio.Size = new System.Drawing.Size(213, 52);
             this.btn_LuuVaoGio.TabIndex = 45;
@@ -163,10 +151,6 @@ namespace PharmacyManagement
             this.btn_LuuVaoGio.UseVisualStyleBackColor = false;
             this.btn_LuuVaoGio.Click += new System.EventHandler(this.btn_LuuVaoGio_Click);
             // 
-
-
-            // 
-
             // btn_XoaNhapHang
             // 
             this.btn_XoaNhapHang.BackColor = System.Drawing.Color.SteelBlue;
@@ -175,7 +159,7 @@ namespace PharmacyManagement
             this.btn_XoaNhapHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaNhapHang.ForeColor = System.Drawing.Color.White;
             this.btn_XoaNhapHang.Location = new System.Drawing.Point(965, 228);
-            this.btn_XoaNhapHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_XoaNhapHang.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaNhapHang.Name = "btn_XoaNhapHang";
             this.btn_XoaNhapHang.Size = new System.Drawing.Size(213, 52);
             this.btn_XoaNhapHang.TabIndex = 44;
@@ -189,7 +173,7 @@ namespace PharmacyManagement
             this.cbb_MaThuoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_MaThuoc.FormattingEnabled = true;
             this.cbb_MaThuoc.Location = new System.Drawing.Point(0, 54);
-            this.cbb_MaThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_MaThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_MaThuoc.Name = "cbb_MaThuoc";
             this.cbb_MaThuoc.Size = new System.Drawing.Size(285, 31);
             this.cbb_MaThuoc.TabIndex = 1;
@@ -199,7 +183,7 @@ namespace PharmacyManagement
             this.cbb_TenThuoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_TenThuoc.FormattingEnabled = true;
             this.cbb_TenThuoc.Location = new System.Drawing.Point(447, 54);
-            this.cbb_TenThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_TenThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_TenThuoc.Name = "cbb_TenThuoc";
             this.cbb_TenThuoc.Size = new System.Drawing.Size(285, 31);
             this.cbb_TenThuoc.TabIndex = 2;
@@ -241,7 +225,7 @@ namespace PharmacyManagement
             // 
             this.txt_VAT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_VAT.Location = new System.Drawing.Point(892, 148);
-            this.txt_VAT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_VAT.Margin = new System.Windows.Forms.Padding(4);
             this.txt_VAT.Name = "txt_VAT";
             this.txt_VAT.Size = new System.Drawing.Size(285, 30);
             this.txt_VAT.TabIndex = 7;
@@ -250,7 +234,7 @@ namespace PharmacyManagement
             // 
             this.txt_SoLo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SoLo.Location = new System.Drawing.Point(892, 54);
-            this.txt_SoLo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_SoLo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoLo.Name = "txt_SoLo";
             this.txt_SoLo.Size = new System.Drawing.Size(285, 30);
             this.txt_SoLo.TabIndex = 3;
@@ -262,8 +246,7 @@ namespace PharmacyManagement
             this.lvl_VAT.Location = new System.Drawing.Point(888, 122);
             this.lvl_VAT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lvl_VAT.Name = "lvl_VAT";
-            this.lvl_VAT.Size = new System.Drawing.Size(50, 23);
-
+            this.lvl_VAT.Size = new System.Drawing.Size(90, 23);
             this.lvl_VAT.TabIndex = 33;
             this.lvl_VAT.Text = "VAT (%):";
             // 
@@ -271,7 +254,7 @@ namespace PharmacyManagement
             // 
             this.txt_DonGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DonGia.Location = new System.Drawing.Point(447, 148);
-            this.txt_DonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_DonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.Size = new System.Drawing.Size(285, 30);
             this.txt_DonGia.TabIndex = 6;
@@ -294,10 +277,7 @@ namespace PharmacyManagement
             this.lbl_DonGia.Location = new System.Drawing.Point(447, 118);
             this.lbl_DonGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DonGia.Name = "lbl_DonGia";
-
-            this.lbl_DonGia.Size = new System.Drawing.Size(85, 23);
-
-
+            this.lbl_DonGia.Size = new System.Drawing.Size(116, 23);
             this.lbl_DonGia.TabIndex = 31;
             this.lbl_DonGia.Text = "Đơn giá (đ):";
             // 
@@ -318,7 +298,7 @@ namespace PharmacyManagement
             this.dtp_HSD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_HSD.Location = new System.Drawing.Point(451, 228);
-            this.dtp_HSD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_HSD.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_HSD.Name = "dtp_HSD";
             this.dtp_HSD.Size = new System.Drawing.Size(265, 30);
             this.dtp_HSD.TabIndex = 9;
@@ -340,7 +320,7 @@ namespace PharmacyManagement
             this.dtp_NgayNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_NgayNhap.Location = new System.Drawing.Point(5, 228);
-            this.dtp_NgayNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_NgayNhap.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(265, 30);
             this.dtp_NgayNhap.TabIndex = 8;
@@ -349,7 +329,7 @@ namespace PharmacyManagement
             // 
             this.txt_SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SoLuong.Location = new System.Drawing.Point(4, 148);
-            this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.Size = new System.Drawing.Size(285, 30);
             this.txt_SoLuong.TabIndex = 5;
@@ -380,14 +360,12 @@ namespace PharmacyManagement
             this.VAT,
             this.GiamGia,
             this.ThanhTien});
-            this.dgv_GioHang.Location = new System.Drawing.Point(52, 398);
-            this.dgv_GioHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_GioHang.Location = new System.Drawing.Point(52, 377);
+            this.dgv_GioHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_GioHang.Name = "dgv_GioHang";
             this.dgv_GioHang.ReadOnly = true;
-
             this.dgv_GioHang.RowHeadersWidth = 51;
-            this.dgv_GioHang.Size = new System.Drawing.Size(1119, 613);
-
+            this.dgv_GioHang.Size = new System.Drawing.Size(892, 521);
             this.dgv_GioHang.TabIndex = 43;
             this.dgv_GioHang.TabStop = false;
             this.dgv_GioHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_GioHang_CellContentClick);
@@ -398,9 +376,7 @@ namespace PharmacyManagement
             this.MaThuoc.MinimumWidth = 6;
             this.MaThuoc.Name = "MaThuoc";
             this.MaThuoc.ReadOnly = true;
-
             this.MaThuoc.Width = 125;
-
             // 
             // TenThuoc
             // 
@@ -409,7 +385,6 @@ namespace PharmacyManagement
             this.TenThuoc.Name = "TenThuoc";
             this.TenThuoc.ReadOnly = true;
             this.TenThuoc.Width = 125;
-
             // 
             // SoLo
             // 
@@ -417,9 +392,7 @@ namespace PharmacyManagement
             this.SoLo.MinimumWidth = 6;
             this.SoLo.Name = "SoLo";
             this.SoLo.ReadOnly = true;
-
             this.SoLo.Width = 125;
-
             // 
             // NhaCungCap
             // 
@@ -427,9 +400,7 @@ namespace PharmacyManagement
             this.NhaCungCap.MinimumWidth = 6;
             this.NhaCungCap.Name = "NhaCungCap";
             this.NhaCungCap.ReadOnly = true;
-
             this.NhaCungCap.Width = 125;
-
             // 
             // SoLuong
             // 
@@ -437,9 +408,7 @@ namespace PharmacyManagement
             this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
-
             this.SoLuong.Width = 125;
-
             // 
             // DonGia
             // 
@@ -447,9 +416,7 @@ namespace PharmacyManagement
             this.DonGia.MinimumWidth = 6;
             this.DonGia.Name = "DonGia";
             this.DonGia.ReadOnly = true;
-
             this.DonGia.Width = 125;
-
             // 
             // NgayNhap
             // 
@@ -457,9 +424,7 @@ namespace PharmacyManagement
             this.NgayNhap.MinimumWidth = 6;
             this.NgayNhap.Name = "NgayNhap";
             this.NgayNhap.ReadOnly = true;
-
             this.NgayNhap.Width = 125;
-
             // 
             // HanSuDung
             // 
@@ -467,9 +432,7 @@ namespace PharmacyManagement
             this.HanSuDung.MinimumWidth = 6;
             this.HanSuDung.Name = "HanSuDung";
             this.HanSuDung.ReadOnly = true;
-
             this.HanSuDung.Width = 125;
-
             // 
             // VAT
             // 
@@ -477,9 +440,7 @@ namespace PharmacyManagement
             this.VAT.MinimumWidth = 6;
             this.VAT.Name = "VAT";
             this.VAT.ReadOnly = true;
-
             this.VAT.Width = 125;
-
             // 
             // GiamGia
             // 
@@ -487,9 +448,7 @@ namespace PharmacyManagement
             this.GiamGia.MinimumWidth = 6;
             this.GiamGia.Name = "GiamGia";
             this.GiamGia.ReadOnly = true;
-
             this.GiamGia.Width = 125;
-
             // 
             // ThanhTien
             // 
@@ -497,7 +456,6 @@ namespace PharmacyManagement
             this.ThanhTien.MinimumWidth = 6;
             this.ThanhTien.Name = "ThanhTien";
             this.ThanhTien.ReadOnly = true;
-
             this.ThanhTien.Width = 87;
             // 
             // lbl_SoHang
@@ -506,7 +464,7 @@ namespace PharmacyManagement
             this.lbl_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_SoHang.Location = new System.Drawing.Point(992, 323);
             this.lbl_SoHang.Name = "lbl_SoHang";
-            this.lbl_SoHang.Size = new System.Drawing.Size(173, 22);
+            this.lbl_SoHang.Size = new System.Drawing.Size(222, 27);
             this.lbl_SoHang.TabIndex = 48;
             this.lbl_SoHang.Text = "Tổng số món hàng:";
             // 
@@ -516,7 +474,7 @@ namespace PharmacyManagement
             this.lbl_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TongTien.Location = new System.Drawing.Point(992, 409);
             this.lbl_TongTien.Name = "lbl_TongTien";
-            this.lbl_TongTien.Size = new System.Drawing.Size(122, 22);
+            this.lbl_TongTien.Size = new System.Drawing.Size(156, 27);
             this.lbl_TongTien.TabIndex = 50;
             this.lbl_TongTien.Text = "Tổng tiền (đ):";
             // 
@@ -528,7 +486,7 @@ namespace PharmacyManagement
             this.txt_SoHang.Location = new System.Drawing.Point(996, 348);
             this.txt_SoHang.Name = "txt_SoHang";
             this.txt_SoHang.ReadOnly = true;
-            this.txt_SoHang.Size = new System.Drawing.Size(215, 29);
+            this.txt_SoHang.Size = new System.Drawing.Size(215, 35);
             this.txt_SoHang.TabIndex = 48;
             this.txt_SoHang.TabStop = false;
             // 
@@ -540,7 +498,7 @@ namespace PharmacyManagement
             this.txt_TongTien.Location = new System.Drawing.Point(996, 434);
             this.txt_TongTien.Name = "txt_TongTien";
             this.txt_TongTien.ReadOnly = true;
-            this.txt_TongTien.Size = new System.Drawing.Size(215, 29);
+            this.txt_TongTien.Size = new System.Drawing.Size(215, 35);
             this.txt_TongTien.TabIndex = 51;
             this.txt_TongTien.TabStop = false;
             // 
@@ -592,20 +550,11 @@ namespace PharmacyManagement
             this.btn_XoaHang.UseVisualStyleBackColor = false;
             this.btn_XoaHang.Click += new System.EventHandler(this.btn_XoaHang_Click);
             // 
-            // txt_NhaCungCap
-            // 
-            this.txt_NhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NhaCungCap.Location = new System.Drawing.Point(975, 44);
-            this.txt_NhaCungCap.Name = "txt_NhaCungCap";
-            this.txt_NhaCungCap.Size = new System.Drawing.Size(215, 26);
-            this.txt_NhaCungCap.TabIndex = 4;
-            // 
             // FrmImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-
             this.ClientSize = new System.Drawing.Size(1261, 815);
             this.Controls.Add(this.btn_XoaHang);
             this.Controls.Add(this.btn_LuuPhieuNhap);
@@ -614,11 +563,10 @@ namespace PharmacyManagement
             this.Controls.Add(this.txt_SoHang);
             this.Controls.Add(this.lbl_TongTien);
             this.Controls.Add(this.lbl_SoHang);
-
             this.Controls.Add(this.dgv_GioHang);
             this.Controls.Add(this.pn_ThongTinThuoc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmImport";
             this.Text = "FrmImport";
             this.pn_ThongTinThuoc.ResumeLayout(false);
