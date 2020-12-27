@@ -30,6 +30,8 @@ namespace PharmacyManagement
         private void InitializeComponent()
         {
             this.pn_ThongTinThuoc = new System.Windows.Forms.Panel();
+            this.txt_GiamGia = new System.Windows.Forms.TextBox();
+            this.lbl_GiamGia = new System.Windows.Forms.Label();
             this.btn_LuuVaoGio = new System.Windows.Forms.Button();
             this.cbb_NhaCungCap = new System.Windows.Forms.ComboBox();
             this.btn_XoaNhapHang = new System.Windows.Forms.Button();
@@ -62,8 +64,13 @@ namespace PharmacyManagement
             this.VAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiamGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_GiamGia = new System.Windows.Forms.TextBox();
-            this.lbl_GiamGia = new System.Windows.Forms.Label();
+            this.lbl_SoHang = new System.Windows.Forms.Label();
+            this.lbl_TongTien = new System.Windows.Forms.Label();
+            this.txt_SoHang = new System.Windows.Forms.TextBox();
+            this.txt_TongTien = new System.Windows.Forms.TextBox();
+            this.btn_XoaPhieuNhap = new System.Windows.Forms.Button();
+            this.btn_LuuPhieuNhap = new System.Windows.Forms.Button();
+            this.btn_XoaHang = new System.Windows.Forms.Button();
             this.pn_ThongTinThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GioHang)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +103,24 @@ namespace PharmacyManagement
             this.pn_ThongTinThuoc.Name = "pn_ThongTinThuoc";
             this.pn_ThongTinThuoc.Size = new System.Drawing.Size(1213, 288);
             this.pn_ThongTinThuoc.TabIndex = 41;
+            // 
+            // txt_GiamGia
+            // 
+            this.txt_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_GiamGia.Location = new System.Drawing.Point(975, 120);
+            this.txt_GiamGia.Name = "txt_GiamGia";
+            this.txt_GiamGia.Size = new System.Drawing.Size(215, 26);
+            this.txt_GiamGia.TabIndex = 46;
+            // 
+            // lbl_GiamGia
+            // 
+            this.lbl_GiamGia.AutoSize = true;
+            this.lbl_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GiamGia.Location = new System.Drawing.Point(972, 99);
+            this.lbl_GiamGia.Name = "lbl_GiamGia";
+            this.lbl_GiamGia.Size = new System.Drawing.Size(104, 18);
+            this.lbl_GiamGia.TabIndex = 47;
+            this.lbl_GiamGia.Text = "Giảm giá (%):";
             // 
             // btn_LuuVaoGio
             // 
@@ -208,9 +233,9 @@ namespace PharmacyManagement
             this.lvl_VAT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvl_VAT.Location = new System.Drawing.Point(666, 99);
             this.lvl_VAT.Name = "lvl_VAT";
-            this.lvl_VAT.Size = new System.Drawing.Size(39, 18);
+            this.lvl_VAT.Size = new System.Drawing.Size(69, 18);
             this.lvl_VAT.TabIndex = 33;
-            this.lvl_VAT.Text = "VAT:";
+            this.lvl_VAT.Text = "VAT (%):";
             // 
             // txt_DonGia
             // 
@@ -236,9 +261,9 @@ namespace PharmacyManagement
             this.lbl_DonGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DonGia.Location = new System.Drawing.Point(335, 96);
             this.lbl_DonGia.Name = "lbl_DonGia";
-            this.lbl_DonGia.Size = new System.Drawing.Size(69, 18);
+            this.lbl_DonGia.Size = new System.Drawing.Size(92, 18);
             this.lbl_DonGia.TabIndex = 31;
-            this.lbl_DonGia.Text = "Đơn giá:";
+            this.lbl_DonGia.Text = "Đơn giá (đ):";
             // 
             // lbl_NgayNhap
             // 
@@ -316,7 +341,7 @@ namespace PharmacyManagement
             this.dgv_GioHang.Location = new System.Drawing.Point(39, 323);
             this.dgv_GioHang.Name = "dgv_GioHang";
             this.dgv_GioHang.ReadOnly = true;
-            this.dgv_GioHang.Size = new System.Drawing.Size(839, 498);
+            this.dgv_GioHang.Size = new System.Drawing.Size(899, 472);
             this.dgv_GioHang.TabIndex = 43;
             this.dgv_GioHang.TabStop = false;
             this.dgv_GioHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_GioHang_CellContentClick);
@@ -326,91 +351,183 @@ namespace PharmacyManagement
             this.MaThuoc.HeaderText = "Mã Thuốc";
             this.MaThuoc.Name = "MaThuoc";
             this.MaThuoc.ReadOnly = true;
+            this.MaThuoc.Width = 81;
             // 
             // TenThuoc
             // 
             this.TenThuoc.HeaderText = "Tên Thuốc";
             this.TenThuoc.Name = "TenThuoc";
             this.TenThuoc.ReadOnly = true;
+            this.TenThuoc.Width = 85;
             // 
             // SoLo
             // 
             this.SoLo.HeaderText = "Số Lô";
             this.SoLo.Name = "SoLo";
             this.SoLo.ReadOnly = true;
+            this.SoLo.Width = 60;
             // 
             // NhaCungCap
             // 
             this.NhaCungCap.HeaderText = "Nhà Cung Cấp";
             this.NhaCungCap.Name = "NhaCungCap";
             this.NhaCungCap.ReadOnly = true;
+            this.NhaCungCap.Width = 102;
             // 
             // SoLuong
             // 
             this.SoLuong.HeaderText = "Số Lượng";
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
+            this.SoLuong.Width = 78;
             // 
             // DonGia
             // 
             this.DonGia.HeaderText = "Đơn giá";
             this.DonGia.Name = "DonGia";
             this.DonGia.ReadOnly = true;
+            this.DonGia.Width = 69;
             // 
             // NgayNhap
             // 
             this.NgayNhap.HeaderText = "Ngày Nhập";
             this.NgayNhap.Name = "NgayNhap";
             this.NgayNhap.ReadOnly = true;
+            this.NgayNhap.Width = 86;
             // 
             // HanSuDung
             // 
             this.HanSuDung.HeaderText = "Hạn Sử Dụng";
             this.HanSuDung.Name = "HanSuDung";
             this.HanSuDung.ReadOnly = true;
+            this.HanSuDung.Width = 97;
             // 
             // VAT
             // 
             this.VAT.HeaderText = "VAT";
             this.VAT.Name = "VAT";
             this.VAT.ReadOnly = true;
+            this.VAT.Width = 53;
             // 
             // GiamGia
             // 
             this.GiamGia.HeaderText = "Giảm giá";
             this.GiamGia.Name = "GiamGia";
             this.GiamGia.ReadOnly = true;
+            this.GiamGia.Width = 73;
             // 
             // ThanhTien
             // 
             this.ThanhTien.HeaderText = "Thành Tiền";
             this.ThanhTien.Name = "ThanhTien";
             this.ThanhTien.ReadOnly = true;
+            this.ThanhTien.Width = 87;
             // 
-            // txt_GiamGia
+            // lbl_SoHang
             // 
-            this.txt_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GiamGia.Location = new System.Drawing.Point(975, 120);
-            this.txt_GiamGia.Name = "txt_GiamGia";
-            this.txt_GiamGia.Size = new System.Drawing.Size(215, 26);
-            this.txt_GiamGia.TabIndex = 46;
+            this.lbl_SoHang.AutoSize = true;
+            this.lbl_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SoHang.Location = new System.Drawing.Point(992, 323);
+            this.lbl_SoHang.Name = "lbl_SoHang";
+            this.lbl_SoHang.Size = new System.Drawing.Size(173, 22);
+            this.lbl_SoHang.TabIndex = 48;
+            this.lbl_SoHang.Text = "Tổng số món hàng:";
             // 
-            // lbl_GiamGia
+            // lbl_TongTien
             // 
-            this.lbl_GiamGia.AutoSize = true;
-            this.lbl_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GiamGia.Location = new System.Drawing.Point(972, 99);
-            this.lbl_GiamGia.Name = "lbl_GiamGia";
-            this.lbl_GiamGia.Size = new System.Drawing.Size(76, 18);
-            this.lbl_GiamGia.TabIndex = 47;
-            this.lbl_GiamGia.Text = "Giảm giá:";
+            this.lbl_TongTien.AutoSize = true;
+            this.lbl_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongTien.Location = new System.Drawing.Point(992, 409);
+            this.lbl_TongTien.Name = "lbl_TongTien";
+            this.lbl_TongTien.Size = new System.Drawing.Size(122, 22);
+            this.lbl_TongTien.TabIndex = 50;
+            this.lbl_TongTien.Text = "Tổng tiền (đ):";
+            // 
+            // txt_SoHang
+            // 
+            this.txt_SoHang.BackColor = System.Drawing.Color.White;
+            this.txt_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SoHang.ForeColor = System.Drawing.Color.Black;
+            this.txt_SoHang.Location = new System.Drawing.Point(996, 348);
+            this.txt_SoHang.Name = "txt_SoHang";
+            this.txt_SoHang.ReadOnly = true;
+            this.txt_SoHang.Size = new System.Drawing.Size(215, 29);
+            this.txt_SoHang.TabIndex = 48;
+            this.txt_SoHang.TabStop = false;
+            // 
+            // txt_TongTien
+            // 
+            this.txt_TongTien.BackColor = System.Drawing.Color.White;
+            this.txt_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TongTien.ForeColor = System.Drawing.Color.Black;
+            this.txt_TongTien.Location = new System.Drawing.Point(996, 434);
+            this.txt_TongTien.Name = "txt_TongTien";
+            this.txt_TongTien.ReadOnly = true;
+            this.txt_TongTien.Size = new System.Drawing.Size(215, 29);
+            this.txt_TongTien.TabIndex = 51;
+            this.txt_TongTien.TabStop = false;
+            // 
+            // btn_XoaPhieuNhap
+            // 
+            this.btn_XoaPhieuNhap.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_XoaPhieuNhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_XoaPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XoaPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1014, 559);
+            this.btn_XoaPhieuNhap.Name = "btn_XoaPhieuNhap";
+            this.btn_XoaPhieuNhap.Size = new System.Drawing.Size(160, 42);
+            this.btn_XoaPhieuNhap.TabIndex = 48;
+            this.btn_XoaPhieuNhap.TabStop = false;
+            this.btn_XoaPhieuNhap.Text = "Xóa phiếu nhập";
+            this.btn_XoaPhieuNhap.UseVisualStyleBackColor = false;
+            this.btn_XoaPhieuNhap.Click += new System.EventHandler(this.btn_XoaPhieuNhap_Click);
+            // 
+            // btn_LuuPhieuNhap
+            // 
+            this.btn_LuuPhieuNhap.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_LuuPhieuNhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_LuuPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_LuuPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LuuPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1014, 638);
+            this.btn_LuuPhieuNhap.Name = "btn_LuuPhieuNhap";
+            this.btn_LuuPhieuNhap.Size = new System.Drawing.Size(160, 42);
+            this.btn_LuuPhieuNhap.TabIndex = 48;
+            this.btn_LuuPhieuNhap.TabStop = false;
+            this.btn_LuuPhieuNhap.Text = "Lưu phiếu nhập";
+            this.btn_LuuPhieuNhap.UseVisualStyleBackColor = false;
+            this.btn_LuuPhieuNhap.Click += new System.EventHandler(this.btn_LuuPhieuNhap_Click);
+            // 
+            // btn_XoaHang
+            // 
+            this.btn_XoaHang.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_XoaHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_XoaHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XoaHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XoaHang.ForeColor = System.Drawing.Color.White;
+            this.btn_XoaHang.Location = new System.Drawing.Point(1014, 488);
+            this.btn_XoaHang.Name = "btn_XoaHang";
+            this.btn_XoaHang.Size = new System.Drawing.Size(160, 42);
+            this.btn_XoaHang.TabIndex = 52;
+            this.btn_XoaHang.TabStop = false;
+            this.btn_XoaHang.Text = "Xóa hàng";
+            this.btn_XoaHang.UseVisualStyleBackColor = false;
+            this.btn_XoaHang.Click += new System.EventHandler(this.btn_XoaHang_Click);
             // 
             // FrmImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1264, 937);
+            this.ClientSize = new System.Drawing.Size(1261, 815);
+            this.Controls.Add(this.btn_XoaHang);
+            this.Controls.Add(this.btn_LuuPhieuNhap);
+            this.Controls.Add(this.btn_XoaPhieuNhap);
+            this.Controls.Add(this.txt_TongTien);
+            this.Controls.Add(this.txt_SoHang);
+            this.Controls.Add(this.lbl_TongTien);
+            this.Controls.Add(this.lbl_SoHang);
             this.Controls.Add(this.dgv_GioHang);
             this.Controls.Add(this.pn_ThongTinThuoc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -420,6 +537,7 @@ namespace PharmacyManagement
             this.pn_ThongTinThuoc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GioHang)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -460,5 +578,12 @@ namespace PharmacyManagement
         private System.Windows.Forms.DataGridViewTextBoxColumn VAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiamGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
+        private System.Windows.Forms.Label lbl_SoHang;
+        private System.Windows.Forms.Label lbl_TongTien;
+        private System.Windows.Forms.TextBox txt_SoHang;
+        private System.Windows.Forms.TextBox txt_TongTien;
+        private System.Windows.Forms.Button btn_XoaPhieuNhap;
+        private System.Windows.Forms.Button btn_LuuPhieuNhap;
+        private System.Windows.Forms.Button btn_XoaHang;
     }
 }
