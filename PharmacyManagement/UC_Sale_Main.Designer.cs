@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txb_SearchProduct = new System.Windows.Forms.TextBox();
             this.Dgv_ProductList = new System.Windows.Forms.DataGridView();
             this.ProductsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,8 +74,8 @@
             // 
             // Dgv_ProductList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Dgv_ProductList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Dgv_ProductList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.Dgv_ProductList.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Dgv_ProductList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dgv_ProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -142,7 +142,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(525, 4);
             this.button3.Name = "button3";
@@ -182,7 +182,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(246, 75);
             this.button4.Name = "button4";
@@ -197,7 +197,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(165, 384);
             this.button2.Name = "button2";
@@ -212,7 +212,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(22, 384);
             this.button1.Name = "button1";
@@ -241,29 +241,32 @@
             // lb_Changes
             // 
             this.lb_Changes.AutoSize = true;
+            this.lb_Changes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Changes.Location = new System.Drawing.Point(233, 269);
             this.lb_Changes.Name = "lb_Changes";
-            this.lb_Changes.Size = new System.Drawing.Size(42, 13);
+            this.lb_Changes.Size = new System.Drawing.Size(13, 14);
             this.lb_Changes.TabIndex = 15;
-            this.lb_Changes.Text = "amount";
+            this.lb_Changes.Text = "đ";
             // 
             // lb_Total
             // 
             this.lb_Total.AutoSize = true;
+            this.lb_Total.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Total.Location = new System.Drawing.Point(233, 194);
             this.lb_Total.Name = "lb_Total";
-            this.lb_Total.Size = new System.Drawing.Size(42, 13);
+            this.lb_Total.Size = new System.Drawing.Size(13, 14);
             this.lb_Total.TabIndex = 14;
-            this.lb_Total.Text = "amount";
+            this.lb_Total.Text = "đ";
             // 
             // lb_Discount
             // 
             this.lb_Discount.AutoSize = true;
+            this.lb_Discount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Discount.Location = new System.Drawing.Point(233, 160);
             this.lb_Discount.Name = "lb_Discount";
-            this.lb_Discount.Size = new System.Drawing.Size(42, 13);
+            this.lb_Discount.Size = new System.Drawing.Size(13, 14);
             this.lb_Discount.TabIndex = 13;
-            this.lb_Discount.Text = "amount";
+            this.lb_Discount.Text = "đ";
             // 
             // textBox1
             // 
@@ -275,11 +278,12 @@
             // lb_Sum
             // 
             this.lb_Sum.AutoSize = true;
+            this.lb_Sum.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Sum.Location = new System.Drawing.Point(233, 128);
             this.lb_Sum.Name = "lb_Sum";
-            this.lb_Sum.Size = new System.Drawing.Size(42, 13);
+            this.lb_Sum.Size = new System.Drawing.Size(13, 14);
             this.lb_Sum.TabIndex = 8;
-            this.lb_Sum.Text = "amount";
+            this.lb_Sum.Text = "đ";
             // 
             // label5
             // 
@@ -336,6 +340,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 30);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(190, 20);

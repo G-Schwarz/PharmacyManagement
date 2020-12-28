@@ -82,6 +82,7 @@
             // 
             // dtp_From
             // 
+            this.dtp_From.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_From.Location = new System.Drawing.Point(14, 20);
             this.dtp_From.Name = "dtp_From";
             this.dtp_From.Size = new System.Drawing.Size(200, 20);
@@ -89,6 +90,7 @@
             // 
             // dtp_To
             // 
+            this.dtp_To.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_To.Location = new System.Drawing.Point(245, 20);
             this.dtp_To.Name = "dtp_To";
             this.dtp_To.Size = new System.Drawing.Size(200, 20);
@@ -107,7 +109,7 @@
             this.btn_Search.FlatAppearance.BorderSize = 0;
             this.btn_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Search.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.White;
             this.btn_Search.Location = new System.Drawing.Point(767, 59);
             this.btn_Search.Name = "btn_Search";
@@ -119,17 +121,17 @@
             // lb_From
             // 
             this.lb_From.AutoSize = true;
-            this.lb_From.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_From.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_From.Location = new System.Drawing.Point(11, 4);
             this.lb_From.Name = "lb_From";
-            this.lb_From.Size = new System.Drawing.Size(50, 15);
+            this.lb_From.Size = new System.Drawing.Size(51, 15);
             this.lb_From.TabIndex = 7;
             this.lb_From.Text = "Từ ngày";
             // 
             // lb_To
             // 
             this.lb_To.AutoSize = true;
-            this.lb_To.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_To.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_To.Location = new System.Drawing.Point(242, 4);
             this.lb_To.Name = "lb_To";
             this.lb_To.Size = new System.Drawing.Size(59, 15);
@@ -241,40 +243,40 @@
             // lb_ReceiptCodeSearch
             // 
             this.lb_ReceiptCodeSearch.AutoSize = true;
-            this.lb_ReceiptCodeSearch.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ReceiptCodeSearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ReceiptCodeSearch.Location = new System.Drawing.Point(388, 43);
             this.lb_ReceiptCodeSearch.Name = "lb_ReceiptCodeSearch";
-            this.lb_ReceiptCodeSearch.Size = new System.Drawing.Size(153, 15);
+            this.lb_ReceiptCodeSearch.Size = new System.Drawing.Size(164, 16);
             this.lb_ReceiptCodeSearch.TabIndex = 12;
             this.lb_ReceiptCodeSearch.Text = "Tìm kiếm theo mã hóa đơn";
             // 
             // lb_ProductsSearch
             // 
             this.lb_ProductsSearch.AutoSize = true;
-            this.lb_ProductsSearch.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ProductsSearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ProductsSearch.Location = new System.Drawing.Point(11, 43);
             this.lb_ProductsSearch.Name = "lb_ProductsSearch";
-            this.lb_ProductsSearch.Size = new System.Drawing.Size(140, 15);
+            this.lb_ProductsSearch.Size = new System.Drawing.Size(147, 16);
             this.lb_ProductsSearch.TabIndex = 11;
             this.lb_ProductsSearch.Text = "Tìm kiếm theo hàng hóa";
             // 
             // lb_Type
             // 
             this.lb_Type.AutoSize = true;
-            this.lb_Type.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Type.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Type.Location = new System.Drawing.Point(648, 4);
             this.lb_Type.Name = "lb_Type";
-            this.lb_Type.Size = new System.Drawing.Size(58, 15);
+            this.lb_Type.Size = new System.Drawing.Size(60, 15);
             this.lb_Type.TabIndex = 10;
             this.lb_Type.Text = "Theo đơn";
             // 
             // lb_Status
             // 
             this.lb_Status.AutoSize = true;
-            this.lb_Status.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Status.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Status.Location = new System.Drawing.Point(483, 4);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(65, 15);
+            this.lb_Status.Size = new System.Drawing.Size(62, 15);
             this.lb_Status.TabIndex = 9;
             this.lb_Status.Text = "Trạng thái";
             // 

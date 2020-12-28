@@ -182,86 +182,87 @@
             // lb_PaymentMethod
             // 
             this.lb_PaymentMethod.AutoSize = true;
-            this.lb_PaymentMethod.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_PaymentMethod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_PaymentMethod.Location = new System.Drawing.Point(300, 127);
             this.lb_PaymentMethod.Name = "lb_PaymentMethod";
-            this.lb_PaymentMethod.Size = new System.Drawing.Size(149, 15);
+            this.lb_PaymentMethod.Size = new System.Drawing.Size(174, 16);
             this.lb_PaymentMethod.TabIndex = 39;
             this.lb_PaymentMethod.Text = "Phương Thức Thanh Toán";
             // 
             // lb_CustomerType
             // 
             this.lb_CustomerType.AutoSize = true;
-            this.lb_CustomerType.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_CustomerType.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_CustomerType.Location = new System.Drawing.Point(34, 127);
             this.lb_CustomerType.Name = "lb_CustomerType";
-            this.lb_CustomerType.Size = new System.Drawing.Size(75, 15);
+            this.lb_CustomerType.Size = new System.Drawing.Size(85, 16);
             this.lb_CustomerType.TabIndex = 38;
             this.lb_CustomerType.Text = "Khách Hàng";
             // 
             // lb_Note
             // 
             this.lb_Note.AutoSize = true;
-            this.lb_Note.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Note.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Note.Location = new System.Drawing.Point(34, 183);
             this.lb_Note.Name = "lb_Note";
-            this.lb_Note.Size = new System.Drawing.Size(53, 15);
+            this.lb_Note.Size = new System.Drawing.Size(51, 16);
             this.lb_Note.TabIndex = 37;
             this.lb_Note.Text = "Ghi Chú";
             // 
             // lb_Seller
             // 
             this.lb_Seller.AutoSize = true;
-            this.lb_Seller.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Seller.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Seller.Location = new System.Drawing.Point(564, 127);
             this.lb_Seller.Name = "lb_Seller";
-            this.lb_Seller.Size = new System.Drawing.Size(65, 15);
+            this.lb_Seller.Size = new System.Drawing.Size(67, 16);
             this.lb_Seller.TabIndex = 36;
             this.lb_Seller.Text = "Người Bán";
             // 
             // lb_SaleDate
             // 
             this.lb_SaleDate.AutoSize = true;
-            this.lb_SaleDate.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_SaleDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_SaleDate.Location = new System.Drawing.Point(300, 70);
             this.lb_SaleDate.Name = "lb_SaleDate";
-            this.lb_SaleDate.Size = new System.Drawing.Size(61, 15);
+            this.lb_SaleDate.Size = new System.Drawing.Size(69, 16);
             this.lb_SaleDate.TabIndex = 35;
             this.lb_SaleDate.Text = "Ngày Bán";
             // 
             // lb_Status
             // 
             this.lb_Status.AutoSize = true;
-            this.lb_Status.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Status.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Status.Location = new System.Drawing.Point(564, 70);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(68, 15);
+            this.lb_Status.Size = new System.Drawing.Size(76, 16);
             this.lb_Status.TabIndex = 34;
             this.lb_Status.Text = "Trạng Thái";
             // 
             // lb_RecptCode
             // 
             this.lb_RecptCode.AutoSize = true;
-            this.lb_RecptCode.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_RecptCode.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_RecptCode.Location = new System.Drawing.Point(34, 70);
             this.lb_RecptCode.Name = "lb_RecptCode";
-            this.lb_RecptCode.Size = new System.Drawing.Size(79, 15);
+            this.lb_RecptCode.Size = new System.Drawing.Size(86, 16);
             this.lb_RecptCode.TabIndex = 33;
             this.lb_RecptCode.Text = "Mã Hóa Đơn";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.Size = new System.Drawing.Size(171, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chi tiết hóa đơn";
             // 
             // dtp_SellDate
             // 
+            this.dtp_SellDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_SellDate.Location = new System.Drawing.Point(303, 88);
             this.dtp_SellDate.Name = "dtp_SellDate";
             this.dtp_SellDate.Size = new System.Drawing.Size(200, 20);
