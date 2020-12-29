@@ -104,7 +104,7 @@ namespace PharmacyManagement
 
         private void btn_LuuPhieuNhap_Click(object sender, EventArgs e)
         {
-            //Luu tung dong vao gio hang
+            //Luu tung mat hang vao gio hang
             //VD: for int row = 0; row <= datagridview row; row++ {Push row vao database}
             if (MessageBox.Show("Bạn có muốn tạo phiếu nhập?","",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -148,6 +148,11 @@ namespace PharmacyManagement
         }
 
         private void FrmImport_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_SoHang_TextChanged(object sender, EventArgs e)
         {
 
         }

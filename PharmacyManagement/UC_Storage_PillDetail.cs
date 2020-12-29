@@ -17,7 +17,12 @@ namespace PharmacyManagement
             InitializeComponent();
         }
 
-        private int flag;
+        private int flag=0;
+
+        private void UC_Storage_Pilldetail_Visible_Changed(object sender, EventArgs e)
+        {
+            flag = 0;
+        }
 
         private void bt_Luu_Click(object sender, EventArgs e)
         {
@@ -130,6 +135,10 @@ namespace PharmacyManagement
         private void UC_Storage_PillDetail_Load(object sender, EventArgs e)
         {
 
+        }
+        public void Set_MaThuoc(string str)
+        {
+            this.txt_MaThuoc.Text = str;
         }
     }
 }

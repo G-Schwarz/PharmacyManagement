@@ -18,11 +18,12 @@ namespace PharmacyManagement
             uC_Storage_PillDetail1.Hide();
         }
 
-        private void dgv_Thuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_Thuoc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
                 //Get cell information for pill detail
+                this.uC_Storage_PillDetail1.Set_MaThuoc(dgv_Thuoc.Rows[e.RowIndex].Cells[0].Value.ToString());
                 //this.uC_Storage_PillDetail1.Show();
             }
             this.uC_Storage_PillDetail1.Show();

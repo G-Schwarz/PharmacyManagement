@@ -71,6 +71,8 @@ namespace PharmacyManagement
             this.btn_XoaPhieuNhap = new System.Windows.Forms.Button();
             this.btn_LuuPhieuNhap = new System.Windows.Forms.Button();
             this.btn_XoaHang = new System.Windows.Forms.Button();
+            this.cbb_NhanVien = new System.Windows.Forms.ComboBox();
+            this.lbl_NhanVien = new System.Windows.Forms.Label();
             this.pn_ThongTinThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_GioHang)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +103,7 @@ namespace PharmacyManagement
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_HSD);
             this.pn_ThongTinThuoc.Location = new System.Drawing.Point(39, 12);
             this.pn_ThongTinThuoc.Name = "pn_ThongTinThuoc";
-            this.pn_ThongTinThuoc.Size = new System.Drawing.Size(1213, 288);
+            this.pn_ThongTinThuoc.Size = new System.Drawing.Size(1213, 247);
             this.pn_ThongTinThuoc.TabIndex = 41;
             this.pn_ThongTinThuoc.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_ThongTinThuoc_Paint);
             // 
@@ -120,7 +122,7 @@ namespace PharmacyManagement
             this.txt_GiamGia.Location = new System.Drawing.Point(975, 120);
             this.txt_GiamGia.Name = "txt_GiamGia";
             this.txt_GiamGia.Size = new System.Drawing.Size(215, 26);
-            this.txt_GiamGia.TabIndex = 46;
+            this.txt_GiamGia.TabIndex = 8;
             // 
             // lbl_GiamGia
             // 
@@ -142,7 +144,7 @@ namespace PharmacyManagement
             this.btn_LuuVaoGio.Location = new System.Drawing.Point(975, 185);
             this.btn_LuuVaoGio.Name = "btn_LuuVaoGio";
             this.btn_LuuVaoGio.Size = new System.Drawing.Size(160, 42);
-            this.btn_LuuVaoGio.TabIndex = 45;
+            this.btn_LuuVaoGio.TabIndex = 12;
             this.btn_LuuVaoGio.TabStop = false;
             this.btn_LuuVaoGio.Text = "Lưu hàng";
             this.btn_LuuVaoGio.UseVisualStyleBackColor = false;
@@ -158,7 +160,7 @@ namespace PharmacyManagement
             this.btn_XoaNhapHang.Location = new System.Drawing.Point(724, 185);
             this.btn_XoaNhapHang.Name = "btn_XoaNhapHang";
             this.btn_XoaNhapHang.Size = new System.Drawing.Size(160, 42);
-            this.btn_XoaNhapHang.TabIndex = 44;
+            this.btn_XoaNhapHang.TabIndex = 11;
             this.btn_XoaNhapHang.TabStop = false;
             this.btn_XoaNhapHang.Text = "Xóa nhập";
             this.btn_XoaNhapHang.UseVisualStyleBackColor = false;
@@ -284,7 +286,7 @@ namespace PharmacyManagement
             this.dtp_HSD.Location = new System.Drawing.Point(338, 185);
             this.dtp_HSD.Name = "dtp_HSD";
             this.dtp_HSD.Size = new System.Drawing.Size(200, 26);
-            this.dtp_HSD.TabIndex = 9;
+            this.dtp_HSD.TabIndex = 10;
             // 
             // lbl_SoLuong
             // 
@@ -304,7 +306,7 @@ namespace PharmacyManagement
             this.dtp_NgayNhap.Location = new System.Drawing.Point(4, 185);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(200, 26);
-            this.dtp_NgayNhap.TabIndex = 8;
+            this.dtp_NgayNhap.TabIndex = 9;
             // 
             // txt_SoLuong
             // 
@@ -440,7 +442,7 @@ namespace PharmacyManagement
             // 
             this.lbl_SoHang.AutoSize = true;
             this.lbl_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SoHang.Location = new System.Drawing.Point(1010, 306);
+            this.lbl_SoHang.Location = new System.Drawing.Point(1010, 372);
             this.lbl_SoHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_SoHang.Name = "lbl_SoHang";
             this.lbl_SoHang.Size = new System.Drawing.Size(173, 22);
@@ -451,7 +453,7 @@ namespace PharmacyManagement
             // 
             this.lbl_TongTien.AutoSize = true;
             this.lbl_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TongTien.Location = new System.Drawing.Point(1010, 386);
+            this.lbl_TongTien.Location = new System.Drawing.Point(1010, 446);
             this.lbl_TongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TongTien.Name = "lbl_TongTien";
             this.lbl_TongTien.Size = new System.Drawing.Size(122, 22);
@@ -463,24 +465,25 @@ namespace PharmacyManagement
             this.txt_SoHang.BackColor = System.Drawing.Color.White;
             this.txt_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SoHang.ForeColor = System.Drawing.Color.Black;
-            this.txt_SoHang.Location = new System.Drawing.Point(1014, 332);
+            this.txt_SoHang.Location = new System.Drawing.Point(1014, 396);
             this.txt_SoHang.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SoHang.Name = "txt_SoHang";
             this.txt_SoHang.ReadOnly = true;
-            this.txt_SoHang.Size = new System.Drawing.Size(162, 29);
+            this.txt_SoHang.Size = new System.Drawing.Size(215, 29);
             this.txt_SoHang.TabIndex = 48;
             this.txt_SoHang.TabStop = false;
+            this.txt_SoHang.TextChanged += new System.EventHandler(this.txt_SoHang_TextChanged);
             // 
             // txt_TongTien
             // 
             this.txt_TongTien.BackColor = System.Drawing.Color.White;
             this.txt_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TongTien.ForeColor = System.Drawing.Color.Black;
-            this.txt_TongTien.Location = new System.Drawing.Point(1014, 410);
+            this.txt_TongTien.Location = new System.Drawing.Point(1014, 470);
             this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TongTien.Name = "txt_TongTien";
             this.txt_TongTien.ReadOnly = true;
-            this.txt_TongTien.Size = new System.Drawing.Size(162, 29);
+            this.txt_TongTien.Size = new System.Drawing.Size(215, 29);
             this.txt_TongTien.TabIndex = 51;
             this.txt_TongTien.TabStop = false;
             // 
@@ -491,7 +494,7 @@ namespace PharmacyManagement
             this.btn_XoaPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaPhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1014, 539);
+            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1040, 589);
             this.btn_XoaPhieuNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XoaPhieuNhap.Name = "btn_XoaPhieuNhap";
             this.btn_XoaPhieuNhap.Size = new System.Drawing.Size(160, 42);
@@ -508,7 +511,7 @@ namespace PharmacyManagement
             this.btn_LuuPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_LuuPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LuuPhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1014, 614);
+            this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1040, 656);
             this.btn_LuuPhieuNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LuuPhieuNhap.Name = "btn_LuuPhieuNhap";
             this.btn_LuuPhieuNhap.Size = new System.Drawing.Size(160, 42);
@@ -525,7 +528,7 @@ namespace PharmacyManagement
             this.btn_XoaHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XoaHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaHang.ForeColor = System.Drawing.Color.White;
-            this.btn_XoaHang.Location = new System.Drawing.Point(1014, 469);
+            this.btn_XoaHang.Location = new System.Drawing.Point(1040, 519);
             this.btn_XoaHang.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XoaHang.Name = "btn_XoaHang";
             this.btn_XoaHang.Size = new System.Drawing.Size(160, 42);
@@ -535,12 +538,33 @@ namespace PharmacyManagement
             this.btn_XoaHang.UseVisualStyleBackColor = false;
             this.btn_XoaHang.Click += new System.EventHandler(this.btn_XoaHang_Click);
             // 
+            // cbb_NhanVien
+            // 
+            this.cbb_NhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_NhanVien.FormattingEnabled = true;
+            this.cbb_NhanVien.Location = new System.Drawing.Point(1014, 325);
+            this.cbb_NhanVien.Name = "cbb_NhanVien";
+            this.cbb_NhanVien.Size = new System.Drawing.Size(215, 26);
+            this.cbb_NhanVien.TabIndex = 13;
+            // 
+            // lbl_NhanVien
+            // 
+            this.lbl_NhanVien.AutoSize = true;
+            this.lbl_NhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NhanVien.Location = new System.Drawing.Point(1011, 304);
+            this.lbl_NhanVien.Name = "lbl_NhanVien";
+            this.lbl_NhanVien.Size = new System.Drawing.Size(147, 18);
+            this.lbl_NhanVien.TabIndex = 49;
+            this.lbl_NhanVien.Text = "Nhân viên lập phiếu:";
+            // 
             // FrmImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1282, 750);
+            this.Controls.Add(this.cbb_NhanVien);
+            this.Controls.Add(this.lbl_NhanVien);
             this.Controls.Add(this.btn_XoaHang);
             this.Controls.Add(this.btn_LuuPhieuNhap);
             this.Controls.Add(this.btn_XoaPhieuNhap);
@@ -606,5 +630,7 @@ namespace PharmacyManagement
         private System.Windows.Forms.Button btn_LuuPhieuNhap;
         private System.Windows.Forms.Button btn_XoaHang;
         private System.Windows.Forms.TextBox txt_NhaCungCap;
+        private System.Windows.Forms.ComboBox cbb_NhanVien;
+        private System.Windows.Forms.Label lbl_NhanVien;
     }
 }

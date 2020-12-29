@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_DoanhSoThangNay = new System.Windows.Forms.Label();
             this.lb_DoanhSoThangTruoc = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.lb_DoanhSoThangNay);
             this.panel1.Controls.Add(this.lb_DoanhSoThangTruoc);
             this.panel1.Controls.Add(this.lb_Doanhso);
-            this.panel1.Location = new System.Drawing.Point(64, 48);
+            this.panel1.Location = new System.Drawing.Point(25, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(177, 86);
@@ -107,17 +107,17 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(64, 209);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(653, 300);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -129,7 +129,7 @@
             this.panel2.Controls.Add(this.lb_HoaDonThangNay);
             this.panel2.Controls.Add(this.lb_HoaDonThangTruoc);
             this.panel2.Controls.Add(this.lb_HoaDon);
-            this.panel2.Location = new System.Drawing.Point(383, 48);
+            this.panel2.Location = new System.Drawing.Point(334, 48);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(177, 86);
@@ -177,7 +177,7 @@
             this.panel3.Controls.Add(this.lb_BaoCaoDoanhSo);
             this.panel3.Controls.Add(this.lb_BaoCaoHoaDon);
             this.panel3.Controls.Add(this.lb_BaoCaoTrongNgay);
-            this.panel3.Location = new System.Drawing.Point(699, 48);
+            this.panel3.Location = new System.Drawing.Point(670, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(177, 86);
@@ -223,7 +223,7 @@
             this.panel4.Controls.Add(this.lb_CanhBaoHetHang);
             this.panel4.Controls.Add(this.lb_CanhBaoHangHetHan);
             this.panel4.Controls.Add(this.lb_CanhBao);
-            this.panel4.Location = new System.Drawing.Point(1011, 48);
+            this.panel4.Location = new System.Drawing.Point(992, 48);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(177, 86);

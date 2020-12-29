@@ -46,7 +46,7 @@ namespace PharmacyManagement
             this.txt_DonGia = new System.Windows.Forms.TextBox();
             this.lbl_DonGia = new System.Windows.Forms.Label();
             this.txt_VAT = new System.Windows.Forms.TextBox();
-            this.lvl_VAT = new System.Windows.Forms.Label();
+            this.lbl_VAT = new System.Windows.Forms.Label();
             this.bt_Xoa = new System.Windows.Forms.Button();
             this.bt_Sua = new System.Windows.Forms.Button();
             this.bt_TroLai = new System.Windows.Forms.Button();
@@ -209,9 +209,9 @@ namespace PharmacyManagement
             this.lbl_DonGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_DonGia.Location = new System.Drawing.Point(666, 123);
             this.lbl_DonGia.Name = "lbl_DonGia";
-            this.lbl_DonGia.Size = new System.Drawing.Size(69, 18);
+            this.lbl_DonGia.Size = new System.Drawing.Size(92, 18);
             this.lbl_DonGia.TabIndex = 31;
-            this.lbl_DonGia.Text = "Đơn giá:";
+            this.lbl_DonGia.Text = "Đơn giá (đ):";
             // 
             // txt_VAT
             // 
@@ -222,15 +222,15 @@ namespace PharmacyManagement
             this.txt_VAT.TabIndex = 27;
             this.txt_VAT.TextChanged += new System.EventHandler(this.txt_VAT_TextChanged);
             // 
-            // lvl_VAT
+            // lbl_VAT
             // 
-            this.lvl_VAT.AutoSize = true;
-            this.lvl_VAT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvl_VAT.Location = new System.Drawing.Point(666, 225);
-            this.lvl_VAT.Name = "lvl_VAT";
-            this.lvl_VAT.Size = new System.Drawing.Size(39, 18);
-            this.lvl_VAT.TabIndex = 33;
-            this.lvl_VAT.Text = "VAT:";
+            this.lbl_VAT.AutoSize = true;
+            this.lbl_VAT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_VAT.Location = new System.Drawing.Point(666, 225);
+            this.lbl_VAT.Name = "lbl_VAT";
+            this.lbl_VAT.Size = new System.Drawing.Size(65, 18);
+            this.lbl_VAT.TabIndex = 33;
+            this.lbl_VAT.Text = "VAT(%):";
             // 
             // bt_Xoa
             // 
@@ -322,7 +322,7 @@ namespace PharmacyManagement
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_SoLo);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_VAT);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_SoLo);
-            this.pn_ThongTinThuoc.Controls.Add(this.lvl_VAT);
+            this.pn_ThongTinThuoc.Controls.Add(this.lbl_VAT);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_NhaCungCap);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_DonGia);
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_NhaCungCap);
@@ -389,7 +389,7 @@ namespace PharmacyManagement
         private System.Windows.Forms.TextBox txt_DonGia;
         private System.Windows.Forms.Label lbl_DonGia;
         private System.Windows.Forms.TextBox txt_VAT;
-        private System.Windows.Forms.Label lvl_VAT;
+        private System.Windows.Forms.Label lbl_VAT;
         private System.Windows.Forms.Button bt_Xoa;
         private System.Windows.Forms.Button bt_Sua;
         private System.Windows.Forms.Button bt_TroLai;

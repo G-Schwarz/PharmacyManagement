@@ -460,7 +460,7 @@
             this.savebutton.FlatAppearance.BorderSize = 0;
             this.savebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebutton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.savebutton.ForeColor = System.Drawing.Color.White;
             this.savebutton.Location = new System.Drawing.Point(859, 37);
             this.savebutton.Name = "savebutton";
@@ -476,7 +476,7 @@
             this.cancelbutton.FlatAppearance.BorderSize = 0;
             this.cancelbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.cancelbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelbutton.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelbutton.ForeColor = System.Drawing.Color.White;
             this.cancelbutton.Location = new System.Drawing.Point(709, 37);
             this.cancelbutton.Name = "cancelbutton";
