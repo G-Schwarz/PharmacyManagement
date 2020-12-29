@@ -29,7 +29,9 @@ namespace PharmacyManagement
 
         private void btn_TimKiem_Click(object sender, EventArgs e)
         {
+            //Tim kiem
 
+            row = -1;
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -48,6 +50,8 @@ namespace PharmacyManagement
             if (MessageBox.Show("Bạn có muốn xóa hàng hóa?","",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 //Xoa hang
+
+                row = -1;
             }
         }
 
