@@ -212,10 +212,10 @@
             // lb_Seller
             // 
             this.lb_Seller.AutoSize = true;
-            this.lb_Seller.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Seller.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Seller.Location = new System.Drawing.Point(564, 127);
             this.lb_Seller.Name = "lb_Seller";
-            this.lb_Seller.Size = new System.Drawing.Size(67, 16);
+            this.lb_Seller.Size = new System.Drawing.Size(76, 16);
             this.lb_Seller.TabIndex = 36;
             this.lb_Seller.Text = "Người Bán";
             // 
