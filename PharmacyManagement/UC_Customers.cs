@@ -154,9 +154,6 @@ namespace PharmacyManagement
             load_data("");
 
 
-
-
-
         }
 
         void add_data()
@@ -184,6 +181,11 @@ namespace PharmacyManagement
         }
 
         private void txb_CompanyName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
