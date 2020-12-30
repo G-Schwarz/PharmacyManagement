@@ -21,5 +21,15 @@ namespace PharmacyManagement
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_BaoCaoDoanhSo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

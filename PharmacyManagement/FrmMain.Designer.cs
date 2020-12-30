@@ -40,18 +40,16 @@ namespace PharmacyManagement
             this.Btn_Customers = new System.Windows.Forms.Button();
             this.Btn_Storage = new System.Windows.Forms.Button();
             this.Btn_Sale = new System.Windows.Forms.Button();
-            this.Btn_Employee = new System.Windows.Forms.Button();
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_UControls = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.uC_Settings1 = new PharmacyManagement.UC_Settings();
             this.uC_Index1 = new PharmacyManagement.UC_Index();
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
-            this.uC_employee1 = new PharmacyManagement.UC_Employee();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
@@ -68,7 +66,6 @@ namespace PharmacyManagement
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Customers);
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Storage);
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Sale);
-            this.Pnl_Sidemenu.Controls.Add(this.Btn_Employee);
             this.Pnl_Sidemenu.Controls.Add(this.Btn_Overview);
             this.Pnl_Sidemenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Pnl_Sidemenu.Location = new System.Drawing.Point(0, 0);
@@ -86,7 +83,7 @@ namespace PharmacyManagement
             this.btn_Setting.ForeColor = System.Drawing.Color.Snow;
             this.btn_Setting.Image = ((System.Drawing.Image)(resources.GetObject("btn_Setting.Image")));
             this.btn_Setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Setting.Location = new System.Drawing.Point(0, 521);
+            this.btn_Setting.Location = new System.Drawing.Point(0, 450);
             this.btn_Setting.Name = "btn_Setting";
             this.btn_Setting.Size = new System.Drawing.Size(175, 65);
             this.btn_Setting.TabIndex = 6;
@@ -104,7 +101,7 @@ namespace PharmacyManagement
             this.btn_Index.ForeColor = System.Drawing.Color.Snow;
             this.btn_Index.Image = ((System.Drawing.Image)(resources.GetObject("btn_Index.Image")));
             this.btn_Index.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Index.Location = new System.Drawing.Point(0, 375);
+            this.btn_Index.Location = new System.Drawing.Point(0, 300);
             this.btn_Index.Name = "btn_Index";
             this.btn_Index.Size = new System.Drawing.Size(175, 65);
             this.btn_Index.TabIndex = 5;
@@ -144,7 +141,7 @@ namespace PharmacyManagement
             this.Btn_Customers.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Customers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Customers.Image")));
             this.Btn_Customers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Customers.Location = new System.Drawing.Point(0, 446);
+            this.Btn_Customers.Location = new System.Drawing.Point(0, 375);
             this.Btn_Customers.Name = "Btn_Customers";
             this.Btn_Customers.Size = new System.Drawing.Size(175, 65);
             this.Btn_Customers.TabIndex = 4;
@@ -162,7 +159,7 @@ namespace PharmacyManagement
             this.Btn_Storage.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Storage.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Storage.Image")));
             this.Btn_Storage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Storage.Location = new System.Drawing.Point(0, 300);
+            this.Btn_Storage.Location = new System.Drawing.Point(0, 225);
             this.Btn_Storage.Name = "Btn_Storage";
             this.Btn_Storage.Size = new System.Drawing.Size(175, 65);
             this.Btn_Storage.TabIndex = 3;
@@ -180,31 +177,13 @@ namespace PharmacyManagement
             this.Btn_Sale.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Sale.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Sale.Image")));
             this.Btn_Sale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Sale.Location = new System.Drawing.Point(0, 225);
+            this.Btn_Sale.Location = new System.Drawing.Point(0, 150);
             this.Btn_Sale.Name = "Btn_Sale";
             this.Btn_Sale.Size = new System.Drawing.Size(175, 65);
             this.Btn_Sale.TabIndex = 2;
             this.Btn_Sale.Text = "     Bán Hàng";
             this.Btn_Sale.UseVisualStyleBackColor = false;
             this.Btn_Sale.Click += new System.EventHandler(this.Btn_Sale_Click);
-            // 
-            // Btn_Employee
-            // 
-            this.Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
-            this.Btn_Employee.FlatAppearance.BorderSize = 0;
-            this.Btn_Employee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.Btn_Employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Employee.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
-            this.Btn_Employee.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_Employee.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Employee.Image")));
-            this.Btn_Employee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Employee.Location = new System.Drawing.Point(0, 150);
-            this.Btn_Employee.Name = "Btn_Employee";
-            this.Btn_Employee.Size = new System.Drawing.Size(175, 65);
-            this.Btn_Employee.TabIndex = 1;
-            this.Btn_Employee.Text = "     Nhân Sự";
-            this.Btn_Employee.UseVisualStyleBackColor = false;
-            this.Btn_Employee.Click += new System.EventHandler(this.Btn_Employee_Click);
             // 
             // Btn_Overview
             // 
@@ -244,12 +223,15 @@ namespace PharmacyManagement
             this.pnl_UControls.Controls.Add(this.uC_Storage1);
             this.pnl_UControls.Controls.Add(this.uC_Sale1);
             this.pnl_UControls.Controls.Add(this.uC_overview1);
-            this.pnl_UControls.Controls.Add(this.uC_employee1);
             this.pnl_UControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_UControls.Location = new System.Drawing.Point(0, 0);
             this.pnl_UControls.Name = "pnl_UControls";
             this.pnl_UControls.Size = new System.Drawing.Size(976, 589);
             this.pnl_UControls.TabIndex = 5;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // uC_Settings1
             // 
@@ -264,7 +246,7 @@ namespace PharmacyManagement
             // 
             this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Index1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Index1.Name = "uC_Index1";
             this.uC_Index1.Size = new System.Drawing.Size(976, 589);
             this.uC_Index1.TabIndex = 5;
@@ -274,7 +256,7 @@ namespace PharmacyManagement
             this.uC_Customers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Customers1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Customers1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Customers1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Customers1.Name = "uC_Customers1";
             this.uC_Customers1.Size = new System.Drawing.Size(976, 589);
             this.uC_Customers1.TabIndex = 4;
@@ -294,7 +276,7 @@ namespace PharmacyManagement
             // 
             this.uC_Sale1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Sale1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Sale1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Sale1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Sale1.Name = "uC_Sale1";
             this.uC_Sale1.Size = new System.Drawing.Size(976, 589);
             this.uC_Sale1.TabIndex = 2;
@@ -310,19 +292,6 @@ namespace PharmacyManagement
             this.uC_overview1.Name = "uC_overview1";
             this.uC_overview1.Size = new System.Drawing.Size(976, 589);
             this.uC_overview1.TabIndex = 0;
-            // 
-            // uC_employee1
-            // 
-            this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.uC_employee1.Name = "uC_employee1";
-            this.uC_employee1.Size = new System.Drawing.Size(976, 589);
-            this.uC_employee1.TabIndex = 1;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 
@@ -352,13 +321,12 @@ namespace PharmacyManagement
         private System.Windows.Forms.Button Btn_Customers;
         private System.Windows.Forms.Button Btn_Storage;
         private System.Windows.Forms.Button Btn_Sale;
-        private System.Windows.Forms.Button Btn_Employee;
         private System.Windows.Forms.Label Lb_Name;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private UC_Customers uC_Customers1;
         private UC_Storage uC_Storage1;
         private UC_Sale uC_Sale1;
-        private PharmacyManagement.UC_Employee uC_employee1;
+        //private PharmacyManagement.UC_Employee uC_employee1;
         private PharmacyManagement.UC_Overview uC_overview1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnl_UControls;

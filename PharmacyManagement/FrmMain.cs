@@ -20,7 +20,7 @@ namespace PharmacyManagement
         private void FrmMain_Load(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.Orange;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -29,7 +29,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = true;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;
@@ -47,7 +47,7 @@ namespace PharmacyManagement
         private void Btn_Overview_Click(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.Orange;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -56,7 +56,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = true;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;
@@ -67,7 +67,7 @@ namespace PharmacyManagement
         private void Btn_Employee_Click(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.Orange;
+            //Btn_Employee.BackColor = System.Drawing.Color.Orange;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
@@ -76,7 +76,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = true;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;
@@ -87,7 +87,7 @@ namespace PharmacyManagement
         private void Btn_Sale_Click(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            
             Btn_Sale.BackColor = System.Drawing.Color.Orange;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -96,7 +96,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = true;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;
@@ -107,7 +107,7 @@ namespace PharmacyManagement
         private void Btn_Storage_Click(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.Orange;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -116,7 +116,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = true;
             uC_Customers1.Visible = false;
@@ -127,7 +127,7 @@ namespace PharmacyManagement
         private void Btn_Customers_Click(object sender, EventArgs e)
         {   // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.Orange;
@@ -136,7 +136,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = true;
@@ -148,7 +148,7 @@ namespace PharmacyManagement
         {
             // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -157,7 +157,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;
@@ -169,7 +169,7 @@ namespace PharmacyManagement
         {
             // Color
             Btn_Overview.BackColor = System.Drawing.Color.SteelBlue;
-            Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
+            //Btn_Employee.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Sale.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Storage.BackColor = System.Drawing.Color.SteelBlue;
             Btn_Customers.BackColor = System.Drawing.Color.SteelBlue;
@@ -178,7 +178,7 @@ namespace PharmacyManagement
 
             // Visible
             uC_overview1.Visible = false;
-            uC_employee1.Visible = false;
+            
             uC_Sale1.Visible = false;
             uC_Storage1.Visible = false;
             uC_Customers1.Visible = false;

@@ -7,11 +7,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace PharmacyManagement
 {
     public partial class FrmImport : Form
     {
+        SqlConnection con = new SqlConnection();
+        //SqlCommand cmd;
+        DataTable dt, dt1;
+        SqlDataAdapter da, da1;
+        DataSet ds, ds1;
+        SqlCommand com = new SqlCommand();
+        SqlCommandBuilder db, db1;
+        SqlDataReader dr1;
+
+        public void get_data()
+        {
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+        }
+
+        public void load_data(string a)
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from CUSTOMER";
+
+
+            da = new SqlDataAdapter
+                ("select "
+                + "[CustomerID]     AS 'ID' ,"
+                + "[CustomerType]   AS 'Loại Khách hàng' ,"
+                + "[CustomerName]   AS 'Tên Khách hàng' ,"
+                + "[Gender]         AS 'Giới tính', "
+                + "[Phone]          AS 'SĐT', "
+                + "[Addr]           AS 'Địa chỉ', "
+                + "[Company]        AS 'Tên công ty', "
+                //+ "[TIN]            AS 'Category ID', "
+                + "[Email]          AS 'Email', "
+                + "[Facebook]       AS 'Facebook', "
+                + "[Debts]          AS 'Nợ' "
+                + "from CUSTOMER"
+                + a, con);
+
+            db = new SqlCommandBuilder(da);
+            dt = new DataTable();
+            ds = new DataSet();
+            da.Fill(ds, "Customer");
+            dt = ds.Tables["Customer"];
+            //dataGridView1.DataSource = dt;
+
+            con.Close();
+        }
+
+
+
+
+
+
+
+
+
+
+
         public FrmImport()
         {
             InitializeComponent();
@@ -83,7 +143,7 @@ namespace PharmacyManagement
 
         private void btn_XoaPhieuNhap_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có muốn hủy phiếu nhập?","",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn hủy phiếu nhập?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 dgv_GioHang.Rows.Clear();
                 dgv_GioHang.Refresh();
@@ -104,9 +164,9 @@ namespace PharmacyManagement
 
         private void btn_LuuPhieuNhap_Click(object sender, EventArgs e)
         {
-            //Luu tung dong vao gio hang
+            //Luu tung mat hang vao gio hang
             //VD: for int row = 0; row <= datagridview row; row++ {Push row vao database}
-            if (MessageBox.Show("Bạn có muốn tạo phiếu nhập?","",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn tạo phiếu nhập?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 this.Close();
             }
@@ -116,7 +176,7 @@ namespace PharmacyManagement
         {
             txt_SoHang.Text = dgv_GioHang.Rows.Count.ToString();
             txt_SoHang.Refresh();
-            long tongtien= 0;
+            long tongtien = 0;
             foreach (DataGridViewRow row in dgv_GioHang.Rows)
             {
                 tongtien += long.Parse(row.Cells[10].Value.ToString());
@@ -134,7 +194,7 @@ namespace PharmacyManagement
             }
             else
             {
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa hàng?","",MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa hàng?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     dgv_GioHang.Rows.RemoveAt(current_row);
                     CapNhatSoHang();
@@ -151,5 +211,7 @@ namespace PharmacyManagement
         {
 
         }
+
+
     }
 }

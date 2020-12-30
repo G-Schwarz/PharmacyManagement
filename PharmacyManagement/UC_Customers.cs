@@ -146,16 +146,7 @@ namespace PharmacyManagement
                 int result = com.ExecuteNonQuery();
 
             con.Close();
-
-
-
-
-
             load_data("");
-
-
-
-
 
         }
 
@@ -184,6 +175,11 @@ namespace PharmacyManagement
         }
 
         private void txb_CompanyName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
