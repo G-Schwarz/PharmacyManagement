@@ -33,13 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_NhapHang = new System.Windows.Forms.Button();
             this.dgv_Thuoc = new System.Windows.Forms.DataGridView();
-            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_MaThuoc = new System.Windows.Forms.Label();
             this.txt_MaThuoc = new System.Windows.Forms.TextBox();
             this.lbl_TenThuoc = new System.Windows.Forms.Label();
@@ -54,8 +47,6 @@
             this.lbl_HSD = new System.Windows.Forms.Label();
             this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
             this.dtp_HSD = new System.Windows.Forms.DateTimePicker();
-            this.bt_TimKiem = new System.Windows.Forms.Button();
-            this.uC_Storage_PillDetail1 = new PharmacyManagement.UC_Storage_PillDetail();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,9 +67,11 @@
             this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhapHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhapHang.ForeColor = System.Drawing.Color.White;
+
             this.btn_NhapHang.Location = new System.Drawing.Point(21, 3);
             this.btn_NhapHang.Name = "btn_NhapHang";
             this.btn_NhapHang.Size = new System.Drawing.Size(130, 42);
+
             this.btn_NhapHang.TabIndex = 1;
             this.btn_NhapHang.Text = "Nhập Hàng";
             this.btn_NhapHang.UseVisualStyleBackColor = false;
@@ -97,14 +90,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Thuoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Thuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Thuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaThuoc,
-            this.TenThuoc,
-            this.SoLo,
-            this.NhaCungCap,
-            this.NgayNhap,
-            this.SoLuong,
-            this.HanDung});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,7 +98,9 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Thuoc.DefaultCellStyle = dataGridViewCellStyle2;
+
             this.dgv_Thuoc.Location = new System.Drawing.Point(12, 211);
+
             this.dgv_Thuoc.Name = "dgv_Thuoc";
             this.dgv_Thuoc.ReadOnly = true;
             this.dgv_Thuoc.RowHeadersWidth = 51;
@@ -123,6 +110,7 @@
             this.dgv_Thuoc.TabStop = false;
             this.dgv_Thuoc.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thuoc_CellContentDoubleClick);
             // 
+
             // MaThuoc
             // 
             this.MaThuoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -185,6 +173,7 @@
             this.HanDung.ReadOnly = true;
             this.HanDung.Width = 67;
             // 
+
             // lbl_MaThuoc
             // 
             this.lbl_MaThuoc.AutoSize = true;
@@ -198,7 +187,9 @@
             // txt_MaThuoc
             // 
             this.txt_MaThuoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.txt_MaThuoc.Location = new System.Drawing.Point(12, 83);
+
             this.txt_MaThuoc.Name = "txt_MaThuoc";
             this.txt_MaThuoc.Size = new System.Drawing.Size(215, 26);
             this.txt_MaThuoc.TabIndex = 4;
@@ -216,7 +207,9 @@
             // txt_TenThuoc
             // 
             this.txt_TenThuoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.txt_TenThuoc.Location = new System.Drawing.Point(247, 83);
+
             this.txt_TenThuoc.Name = "txt_TenThuoc";
             this.txt_TenThuoc.Size = new System.Drawing.Size(215, 26);
             this.txt_TenThuoc.TabIndex = 6;
@@ -234,7 +227,9 @@
             // txt_SoLo
             // 
             this.txt_SoLo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.txt_SoLo.Location = new System.Drawing.Point(487, 83);
+
             this.txt_SoLo.Name = "txt_SoLo";
             this.txt_SoLo.Size = new System.Drawing.Size(215, 26);
             this.txt_SoLo.TabIndex = 8;
@@ -242,7 +237,9 @@
             // txt_NhaCungCap
             // 
             this.txt_NhaCungCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.txt_NhaCungCap.Location = new System.Drawing.Point(738, 83);
+
             this.txt_NhaCungCap.Name = "txt_NhaCungCap";
             this.txt_NhaCungCap.Size = new System.Drawing.Size(215, 26);
             this.txt_NhaCungCap.TabIndex = 9;
@@ -270,7 +267,9 @@
             // txt_SoLuong
             // 
             this.txt_SoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.txt_SoLuong.Location = new System.Drawing.Point(247, 157);
+
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.Size = new System.Drawing.Size(215, 26);
             this.txt_SoLuong.TabIndex = 11;
@@ -300,7 +299,9 @@
             this.dtp_NgayNhap.CalendarFont = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+
             this.dtp_NgayNhap.Location = new System.Drawing.Point(12, 157);
+
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(200, 26);
             this.dtp_NgayNhap.TabIndex = 10;
@@ -310,11 +311,14 @@
             this.dtp_HSD.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_HSD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+
             this.dtp_HSD.Location = new System.Drawing.Point(487, 157);
+
             this.dtp_HSD.Name = "dtp_HSD";
             this.dtp_HSD.Size = new System.Drawing.Size(200, 26);
             this.dtp_HSD.TabIndex = 12;
             // 
+
             // bt_TimKiem
             // 
             this.bt_TimKiem.BackColor = System.Drawing.Color.SteelBlue;
@@ -338,12 +342,12 @@
             this.uC_Storage_PillDetail1.Size = new System.Drawing.Size(976, 463);
             this.uC_Storage_PillDetail1.TabIndex = 16;
             // 
+
             // UC_Storage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgv_Thuoc);
-            this.Controls.Add(this.bt_TimKiem);
             this.Controls.Add(this.dtp_HSD);
             this.Controls.Add(this.dtp_NgayNhap);
             this.Controls.Add(this.lbl_HSD);
@@ -360,9 +364,11 @@
             this.Controls.Add(this.lbl_MaThuoc);
             this.Controls.Add(this.btn_NhapHang);
             this.Controls.Add(this.label1);
+
             this.Controls.Add(this.uC_Storage_PillDetail1);
             this.Name = "UC_Storage";
             this.Size = new System.Drawing.Size(976, 514);
+
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -374,13 +380,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_NhapHang;
         private System.Windows.Forms.DataGridView dgv_Thuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NhaCungCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HanDung;
         private System.Windows.Forms.Label lbl_MaThuoc;
         private System.Windows.Forms.TextBox txt_MaThuoc;
         private System.Windows.Forms.Label lbl_TenThuoc;
@@ -395,7 +394,5 @@
         private System.Windows.Forms.Label lbl_HSD;
         private System.Windows.Forms.DateTimePicker dtp_NgayNhap;
         private System.Windows.Forms.DateTimePicker dtp_HSD;
-        private System.Windows.Forms.Button bt_TimKiem;
-        private UC_Storage_PillDetail uC_Storage_PillDetail1;
     }
 }
