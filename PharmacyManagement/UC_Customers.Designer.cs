@@ -474,9 +474,13 @@
             // txb_CustomerID
             // 
             this.txb_CustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
 
             this.txb_CustomerID.Location = new System.Drawing.Point(34, 46);
 
+=======
+            this.txb_CustomerID.Location = new System.Drawing.Point(34, 41);
+>>>>>>> parent of db6cfce... Minor placement adjustment
             this.txb_CustomerID.Name = "txb_CustomerID";
             this.txb_CustomerID.Size = new System.Drawing.Size(261, 30);
             this.txb_CustomerID.TabIndex = 96;
