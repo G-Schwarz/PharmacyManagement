@@ -213,7 +213,6 @@ namespace PharmacyManagement
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_Luu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmEditIndex";
             this.Text = "FrmEditIndex";
             this.pn_ThongTinThuoc.ResumeLayout(false);
