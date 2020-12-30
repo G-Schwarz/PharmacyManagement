@@ -46,6 +46,7 @@ namespace PharmacyManagement
             this.pnl_UControls = new System.Windows.Forms.Panel();
             this.uC_Settings1 = new PharmacyManagement.UC_Settings();
             this.uC_Index1 = new PharmacyManagement.UC_Index();
+            this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
@@ -81,7 +82,7 @@ namespace PharmacyManagement
             this.btn_Setting.FlatAppearance.BorderSize = 0;
             this.btn_Setting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Setting.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Setting.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Setting.ForeColor = System.Drawing.Color.Snow;
             this.btn_Setting.Image = ((System.Drawing.Image)(resources.GetObject("btn_Setting.Image")));
             this.btn_Setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,7 +100,7 @@ namespace PharmacyManagement
             this.btn_Index.FlatAppearance.BorderSize = 0;
             this.btn_Index.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.btn_Index.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Index.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Index.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Index.ForeColor = System.Drawing.Color.Snow;
             this.btn_Index.Image = ((System.Drawing.Image)(resources.GetObject("btn_Index.Image")));
             this.btn_Index.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,7 +130,7 @@ namespace PharmacyManagement
             this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Name.Location = new System.Drawing.Point(0, 0);
             this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
+            this.Lb_Name.Size = new System.Drawing.Size(191, 82);
             this.Lb_Name.TabIndex = 0;
             this.Lb_Name.Text = "G7 Ph";
             // 
@@ -139,7 +140,7 @@ namespace PharmacyManagement
             this.Btn_Customers.FlatAppearance.BorderSize = 0;
             this.Btn_Customers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.Btn_Customers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Customers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Btn_Customers.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.Btn_Customers.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Customers.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Customers.Image")));
             this.Btn_Customers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,7 +158,7 @@ namespace PharmacyManagement
             this.Btn_Storage.FlatAppearance.BorderSize = 0;
             this.Btn_Storage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.Btn_Storage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Storage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Btn_Storage.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.Btn_Storage.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Storage.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Storage.Image")));
             this.Btn_Storage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,7 +176,7 @@ namespace PharmacyManagement
             this.Btn_Sale.FlatAppearance.BorderSize = 0;
             this.Btn_Sale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.Btn_Sale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Sale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Btn_Sale.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.Btn_Sale.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Sale.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Sale.Image")));
             this.Btn_Sale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,7 +194,7 @@ namespace PharmacyManagement
             this.Btn_Employee.FlatAppearance.BorderSize = 0;
             this.Btn_Employee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.Btn_Employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Employee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Btn_Employee.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold);
             this.Btn_Employee.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Employee.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Employee.Image")));
             this.Btn_Employee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,7 +212,7 @@ namespace PharmacyManagement
             this.Btn_Overview.FlatAppearance.BorderSize = 0;
             this.Btn_Overview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.Btn_Overview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Overview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Overview.Font = new System.Drawing.Font("Futura", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Overview.ForeColor = System.Drawing.Color.Snow;
             this.Btn_Overview.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Overview.Image")));
             this.Btn_Overview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,6 +240,7 @@ namespace PharmacyManagement
             // 
             this.pnl_UControls.Controls.Add(this.uC_Settings1);
             this.pnl_UControls.Controls.Add(this.uC_Index1);
+            this.pnl_UControls.Controls.Add(this.uC_Customers1);
             this.pnl_UControls.Controls.Add(this.uC_Storage1);
             this.pnl_UControls.Controls.Add(this.uC_Sale1);
             this.pnl_UControls.Controls.Add(this.uC_overview1);
@@ -253,7 +255,7 @@ namespace PharmacyManagement
             // 
             this.uC_Settings1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Settings1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Settings1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Settings1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Settings1.Name = "uC_Settings1";
             this.uC_Settings1.Size = new System.Drawing.Size(976, 589);
             this.uC_Settings1.TabIndex = 6;
@@ -262,10 +264,22 @@ namespace PharmacyManagement
             // 
             this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Index1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Index1.Name = "uC_Index1";
             this.uC_Index1.Size = new System.Drawing.Size(976, 589);
             this.uC_Index1.TabIndex = 5;
+            // 
+            // uC_Customers1
+            // 
+            this.uC_Customers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Customers1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Customers1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Customers1.Name = "uC_Customers1";
+            this.uC_Customers1.Size = new System.Drawing.Size(976, 589);
+            this.uC_Customers1.TabIndex = 4;
+            this.uC_Customers1.Visible = false;
+            this.uC_Customers1.Load += new System.EventHandler(this.uC_Customers1_Load);
             // 
             // uC_Storage1
             // 
@@ -301,7 +315,7 @@ namespace PharmacyManagement
             // 
             this.uC_employee1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_employee1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_employee1.Name = "uC_employee1";
             this.uC_employee1.Size = new System.Drawing.Size(976, 589);
             this.uC_employee1.TabIndex = 1;
