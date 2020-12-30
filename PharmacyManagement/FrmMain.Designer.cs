@@ -43,13 +43,13 @@ namespace PharmacyManagement
             this.Btn_Overview = new System.Windows.Forms.Button();
             this.Pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_UControls = new System.Windows.Forms.Panel();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.uC_Settings1 = new PharmacyManagement.UC_Settings();
             this.uC_Index1 = new PharmacyManagement.UC_Index();
             this.uC_Customers1 = new PharmacyManagement.UC_Customers();
             this.uC_Storage1 = new PharmacyManagement.UC_Storage();
             this.uC_Sale1 = new PharmacyManagement.UC_Sale();
             this.uC_overview1 = new PharmacyManagement.UC_Overview();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Pnl_Sidemenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
@@ -229,10 +229,6 @@ namespace PharmacyManagement
             this.pnl_UControls.Size = new System.Drawing.Size(976, 589);
             this.pnl_UControls.TabIndex = 5;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // uC_Settings1
             // 
             this.uC_Settings1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -256,7 +252,7 @@ namespace PharmacyManagement
             this.uC_Customers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.uC_Customers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Customers1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Customers1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Customers1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Customers1.Name = "uC_Customers1";
             this.uC_Customers1.Size = new System.Drawing.Size(976, 589);
             this.uC_Customers1.TabIndex = 4;
@@ -292,6 +288,10 @@ namespace PharmacyManagement
             this.uC_overview1.Name = "uC_overview1";
             this.uC_overview1.Size = new System.Drawing.Size(976, 589);
             this.uC_overview1.TabIndex = 0;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FrmMain
             // 

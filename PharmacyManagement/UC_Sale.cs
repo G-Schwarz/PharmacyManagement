@@ -2,19 +2,38 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using DTO;
+using BUS;
 
 namespace PharmacyManagement
 {
     public partial class UC_Sale : UserControl
     {
+
+
+
+
+
+
+
+
+
+
         public UC_Sale()
         {
             InitializeComponent();
+        }
+
+        private void uC_Sale_Receipt1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void UC_Sale_Load(object sender, EventArgs e)

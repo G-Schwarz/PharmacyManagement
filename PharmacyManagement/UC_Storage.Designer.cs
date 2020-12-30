@@ -80,6 +80,7 @@
             // 
             // dgv_Thuoc
             // 
+            this.dgv_Thuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Thuoc.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_Thuoc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;

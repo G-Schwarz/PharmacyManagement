@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_DoanhSoThangNay = new System.Windows.Forms.Label();
             this.lb_DoanhSoThangTruoc = new System.Windows.Forms.Label();
@@ -120,17 +120,17 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(85, 257);
             this.chart1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(871, 369);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -375,9 +375,9 @@
             this.label1.Location = new System.Drawing.Point(122, 64);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 19);
+            this.label1.Size = new System.Drawing.Size(18, 19);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Sắp hết hàng:";
+            this.label1.Text = "0";
             // 
             // lb_CanhBaoHangHetHanView
             // 
@@ -389,9 +389,9 @@
             this.lb_CanhBaoHangHetHanView.Location = new System.Drawing.Point(134, 27);
             this.lb_CanhBaoHangHetHanView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_CanhBaoHangHetHanView.Name = "lb_CanhBaoHangHetHanView";
-            this.lb_CanhBaoHangHetHanView.Size = new System.Drawing.Size(153, 19);
+            this.lb_CanhBaoHangHetHanView.Size = new System.Drawing.Size(18, 19);
             this.lb_CanhBaoHangHetHanView.TabIndex = 5;
-            this.lb_CanhBaoHangHetHanView.Text = "Hàng sắp hết hạn:";
+            this.lb_CanhBaoHangHetHanView.Text = "0";
             // 
             // UC_Overview
             // 
@@ -408,6 +408,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_Overview";
             this.Size = new System.Drawing.Size(1589, 633);
+            this.Load += new System.EventHandler(this.UC_Overview_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

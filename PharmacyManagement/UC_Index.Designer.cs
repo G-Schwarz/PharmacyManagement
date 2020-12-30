@@ -68,7 +68,7 @@
             this.btn_Them.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.ForeColor = System.Drawing.Color.White;
             this.btn_Them.Location = new System.Drawing.Point(29, 4);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(173, 52);
             this.btn_Them.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.btn_Xoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
             this.btn_Xoa.Location = new System.Drawing.Point(249, 4);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(173, 52);
             this.btn_Xoa.TabIndex = 3;
@@ -104,7 +104,7 @@
             this.btn_Sua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sua.ForeColor = System.Drawing.Color.White;
             this.btn_Sua.Location = new System.Drawing.Point(468, 4);
-            this.btn_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(173, 52);
             this.btn_Sua.TabIndex = 4;
@@ -127,7 +127,7 @@
             this.pn_ThongTinThuoc.Controls.Add(this.lbl_SoLuong);
             this.pn_ThongTinThuoc.Controls.Add(this.txt_LoaiThuoc);
             this.pn_ThongTinThuoc.Location = new System.Drawing.Point(69, 63);
-            this.pn_ThongTinThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_ThongTinThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.pn_ThongTinThuoc.Name = "pn_ThongTinThuoc";
             this.pn_ThongTinThuoc.Size = new System.Drawing.Size(1137, 228);
             this.pn_ThongTinThuoc.TabIndex = 42;
@@ -137,7 +137,7 @@
             // 
             this.txt_TenHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenHang.Location = new System.Drawing.Point(447, 54);
-            this.txt_TenHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_TenHang.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenHang.Name = "txt_TenHang";
             this.txt_TenHang.Size = new System.Drawing.Size(285, 30);
             this.txt_TenHang.TabIndex = 2;
@@ -146,7 +146,7 @@
             // 
             this.txt_MaHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaHang.Location = new System.Drawing.Point(0, 54);
-            this.txt_MaHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MaHang.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaHang.Name = "txt_MaHang";
             this.txt_MaHang.Size = new System.Drawing.Size(285, 30);
             this.txt_MaHang.TabIndex = 1;
@@ -166,7 +166,7 @@
             // 
             this.txt_DongGoi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DongGoi.Location = new System.Drawing.Point(819, 54);
-            this.txt_DongGoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_DongGoi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_DongGoi.Name = "txt_DongGoi";
             this.txt_DongGoi.Size = new System.Drawing.Size(285, 30);
             this.txt_DongGoi.TabIndex = 3;
@@ -179,7 +179,7 @@
             this.btn_TimKiem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TimKiem.ForeColor = System.Drawing.Color.White;
             this.btn_TimKiem.Location = new System.Drawing.Point(845, 148);
-            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(213, 52);
             this.btn_TimKiem.TabIndex = 11;
@@ -213,7 +213,7 @@
             // 
             this.txt_GiaBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GiaBan.Location = new System.Drawing.Point(447, 148);
-            this.txt_GiaBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_GiaBan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_GiaBan.Name = "txt_GiaBan";
             this.txt_GiaBan.Size = new System.Drawing.Size(285, 30);
             this.txt_GiaBan.TabIndex = 5;
@@ -244,16 +244,17 @@
             // 
             this.txt_LoaiThuoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_LoaiThuoc.Location = new System.Drawing.Point(4, 148);
-            this.txt_LoaiThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_LoaiThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_LoaiThuoc.Name = "txt_LoaiThuoc";
             this.txt_LoaiThuoc.Size = new System.Drawing.Size(285, 30);
             this.txt_LoaiThuoc.TabIndex = 4;
             // 
             // dgv_DanhMuc
             // 
+            this.dgv_DanhMuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DanhMuc.Location = new System.Drawing.Point(69, 299);
-            this.dgv_DanhMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_DanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_DanhMuc.Name = "dgv_DanhMuc";
             this.dgv_DanhMuc.ReadOnly = true;
             this.dgv_DanhMuc.RowHeadersWidth = 51;
@@ -271,7 +272,7 @@
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Index";
             this.Size = new System.Drawing.Size(1301, 633);
             this.Load += new System.EventHandler(this.UC_Index_Load);

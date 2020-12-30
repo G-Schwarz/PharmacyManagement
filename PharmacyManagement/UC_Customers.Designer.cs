@@ -34,6 +34,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.savebutton = new System.Windows.Forms.Button();
+            this.cancelbutton = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txb_Addresses = new System.Windows.Forms.TextBox();
             this.txb_CompanyName = new System.Windows.Forms.TextBox();
@@ -63,16 +66,13 @@
             this.txb_CustomerName = new System.Windows.Forms.TextBox();
             this.txb_CustomerID = new System.Windows.Forms.TextBox();
             this.cb_CustomerGroup = new System.Windows.Forms.ComboBox();
-            this.savebutton = new System.Windows.Forms.Button();
-            this.cancelbutton = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.lb_CustomerType);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1267, 110);
             this.panel1.TabIndex = 20;
@@ -96,7 +96,7 @@
             this.btn_AddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AddCustomer.ForeColor = System.Drawing.Color.White;
             this.btn_AddCustomer.Location = new System.Drawing.Point(1145, 46);
-            this.btn_AddCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_AddCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddCustomer.Name = "btn_AddCustomer";
             this.btn_AddCustomer.Size = new System.Drawing.Size(120, 46);
             this.btn_AddCustomer.TabIndex = 25;
@@ -122,7 +122,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(20, 60);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(415, 33);
             this.comboBox1.TabIndex = 20;
@@ -130,11 +130,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 20);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1251, 501);
@@ -144,10 +145,55 @@
             // 
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(4, 121);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1297, 508);
             this.panel2.TabIndex = 21;
+            // 
+            // savebutton
+            // 
+            this.savebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.savebutton.FlatAppearance.BorderSize = 0;
+            this.savebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebutton.ForeColor = System.Drawing.Color.White;
+            this.savebutton.Location = new System.Drawing.Point(1145, 46);
+            this.savebutton.Margin = new System.Windows.Forms.Padding(4);
+            this.savebutton.Name = "savebutton";
+            this.savebutton.Size = new System.Drawing.Size(120, 46);
+            this.savebutton.TabIndex = 26;
+            this.savebutton.Text = "Lưu";
+            this.savebutton.UseVisualStyleBackColor = false;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
+            // 
+            // cancelbutton
+            // 
+            this.cancelbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.cancelbutton.FlatAppearance.BorderSize = 0;
+            this.cancelbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.cancelbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelbutton.ForeColor = System.Drawing.Color.White;
+            this.cancelbutton.Location = new System.Drawing.Point(945, 46);
+            this.cancelbutton.Margin = new System.Windows.Forms.Padding(4);
+            this.cancelbutton.Name = "cancelbutton";
+            this.cancelbutton.Size = new System.Drawing.Size(120, 46);
+            this.cancelbutton.TabIndex = 27;
+            this.cancelbutton.Text = "Hủy";
+            this.cancelbutton.UseVisualStyleBackColor = false;
+            this.cancelbutton.Click += new System.EventHandler(this.cancelbutton_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.cancelbutton);
+            this.panel6.Controls.Add(this.savebutton);
+            this.panel6.Location = new System.Drawing.Point(4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1267, 110);
+            this.panel6.TabIndex = 27;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel3
             // 
@@ -176,17 +222,16 @@
             this.panel3.Controls.Add(this.txb_CustomerID);
             this.panel3.Controls.Add(this.cb_CustomerGroup);
             this.panel3.Location = new System.Drawing.Point(4, 121);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1297, 508);
-            this.panel3.TabIndex = 22;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.TabIndex = 28;
             // 
             // txb_Addresses
             // 
             this.txb_Addresses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Addresses.Location = new System.Drawing.Point(45, 321);
-            this.txb_Addresses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_Addresses.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Addresses.Name = "txb_Addresses";
             this.txb_Addresses.Size = new System.Drawing.Size(1200, 30);
             this.txb_Addresses.TabIndex = 120;
@@ -195,17 +240,16 @@
             // 
             this.txb_CompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CompanyName.Location = new System.Drawing.Point(980, 238);
-            this.txb_CompanyName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CompanyName.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CompanyName.Name = "txb_CompanyName";
             this.txb_CompanyName.Size = new System.Drawing.Size(261, 30);
             this.txb_CompanyName.TabIndex = 119;
-            this.txb_CompanyName.TextChanged += new System.EventHandler(this.txb_CompanyName_TextChanged);
             // 
             // txb_CMND
             // 
             this.txb_CMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CMND.Location = new System.Drawing.Point(45, 143);
-            this.txb_CMND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CMND.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CMND.Name = "txb_CMND";
             this.txb_CMND.Size = new System.Drawing.Size(261, 30);
             this.txb_CMND.TabIndex = 118;
@@ -214,7 +258,7 @@
             // 
             this.txb_PhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_PhoneNo.Location = new System.Drawing.Point(352, 238);
-            this.txb_PhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_PhoneNo.Margin = new System.Windows.Forms.Padding(4);
             this.txb_PhoneNo.Name = "txb_PhoneNo";
             this.txb_PhoneNo.Size = new System.Drawing.Size(261, 30);
             this.txb_PhoneNo.TabIndex = 117;
@@ -223,7 +267,7 @@
             // 
             this.txb_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Email.Location = new System.Drawing.Point(671, 238);
-            this.txb_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Email.Name = "txb_Email";
             this.txb_Email.Size = new System.Drawing.Size(261, 30);
             this.txb_Email.TabIndex = 116;
@@ -259,7 +303,7 @@
             this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.White;
             this.btn_Cancel.Location = new System.Drawing.Point(1077, 519);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(165, 37);
             this.btn_Cancel.TabIndex = 113;
@@ -275,7 +319,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(883, 519);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 37);
             this.button1.TabIndex = 112;
@@ -385,7 +429,7 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(671, 146);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 100;
@@ -395,7 +439,7 @@
             this.panel4.Controls.Add(this.rbtn_Male);
             this.panel4.Controls.Add(this.rbtn_Femal);
             this.panel4.Location = new System.Drawing.Point(980, 146);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 30);
             this.panel4.TabIndex = 99;
@@ -405,7 +449,7 @@
             this.rbtn_Male.AutoSize = true;
             this.rbtn_Male.FlatAppearance.BorderSize = 0;
             this.rbtn_Male.Location = new System.Drawing.Point(0, 4);
-            this.rbtn_Male.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Male.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Male.Name = "rbtn_Male";
             this.rbtn_Male.Size = new System.Drawing.Size(58, 21);
             this.rbtn_Male.TabIndex = 28;
@@ -418,7 +462,7 @@
             this.rbtn_Femal.AutoSize = true;
             this.rbtn_Femal.FlatAppearance.BorderSize = 0;
             this.rbtn_Femal.Location = new System.Drawing.Point(139, 4);
-            this.rbtn_Femal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Femal.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Femal.Name = "rbtn_Femal";
             this.rbtn_Femal.Size = new System.Drawing.Size(47, 21);
             this.rbtn_Femal.TabIndex = 29;
@@ -431,7 +475,7 @@
             this.panel5.Controls.Add(this.rbtn_Personal);
             this.panel5.Controls.Add(this.rtbn_Company);
             this.panel5.Location = new System.Drawing.Point(980, 53);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 30);
             this.panel5.TabIndex = 98;
@@ -441,7 +485,7 @@
             this.rbtn_Personal.AutoSize = true;
             this.rbtn_Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_Personal.Location = new System.Drawing.Point(0, 4);
-            this.rbtn_Personal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_Personal.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_Personal.Name = "rbtn_Personal";
             this.rbtn_Personal.Size = new System.Drawing.Size(95, 24);
             this.rbtn_Personal.TabIndex = 28;
@@ -454,7 +498,7 @@
             this.rtbn_Company.AutoSize = true;
             this.rtbn_Company.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbn_Company.Location = new System.Drawing.Point(139, 4);
-            this.rtbn_Company.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbn_Company.Margin = new System.Windows.Forms.Padding(4);
             this.rtbn_Company.Name = "rtbn_Company";
             this.rtbn_Company.Size = new System.Drawing.Size(92, 24);
             this.rtbn_Company.TabIndex = 29;
@@ -466,7 +510,7 @@
             // 
             this.txb_CustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CustomerName.Location = new System.Drawing.Point(352, 57);
-            this.txb_CustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CustomerName.Name = "txb_CustomerName";
             this.txb_CustomerName.Size = new System.Drawing.Size(261, 30);
             this.txb_CustomerName.TabIndex = 97;
@@ -475,7 +519,7 @@
             // 
             this.txb_CustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_CustomerID.Location = new System.Drawing.Point(45, 57);
-            this.txb_CustomerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_CustomerID.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CustomerID.Name = "txb_CustomerID";
             this.txb_CustomerID.Size = new System.Drawing.Size(261, 30);
             this.txb_CustomerID.TabIndex = 96;
@@ -485,79 +529,34 @@
             this.cb_CustomerGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_CustomerGroup.FormattingEnabled = true;
             this.cb_CustomerGroup.Location = new System.Drawing.Point(671, 53);
-            this.cb_CustomerGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_CustomerGroup.Margin = new System.Windows.Forms.Padding(4);
             this.cb_CustomerGroup.Name = "cb_CustomerGroup";
             this.cb_CustomerGroup.Size = new System.Drawing.Size(261, 33);
             this.cb_CustomerGroup.TabIndex = 95;
-            // 
-            // savebutton
-            // 
-            this.savebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.savebutton.FlatAppearance.BorderSize = 0;
-            this.savebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savebutton.ForeColor = System.Drawing.Color.White;
-            this.savebutton.Location = new System.Drawing.Point(1145, 46);
-            this.savebutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.savebutton.Name = "savebutton";
-            this.savebutton.Size = new System.Drawing.Size(120, 46);
-            this.savebutton.TabIndex = 26;
-            this.savebutton.Text = "Lưu";
-            this.savebutton.UseVisualStyleBackColor = false;
-            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
-            // 
-            // cancelbutton
-            // 
-            this.cancelbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.cancelbutton.FlatAppearance.BorderSize = 0;
-            this.cancelbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.cancelbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelbutton.ForeColor = System.Drawing.Color.White;
-            this.cancelbutton.Location = new System.Drawing.Point(945, 46);
-            this.cancelbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cancelbutton.Name = "cancelbutton";
-            this.cancelbutton.Size = new System.Drawing.Size(120, 46);
-            this.cancelbutton.TabIndex = 27;
-            this.cancelbutton.Text = "Hủy";
-            this.cancelbutton.UseVisualStyleBackColor = false;
-            this.cancelbutton.Click += new System.EventHandler(this.cancelbutton_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.cancelbutton);
-            this.panel6.Controls.Add(this.savebutton);
-            this.panel6.Location = new System.Drawing.Point(4, 4);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1267, 110);
-            this.panel6.TabIndex = 27;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // UC_Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Customers";
             this.Size = new System.Drawing.Size(1301, 633);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -569,6 +568,9 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button savebutton;
+        private System.Windows.Forms.Button cancelbutton;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txb_Addresses;
         private System.Windows.Forms.TextBox txb_CompanyName;
@@ -598,8 +600,5 @@
         private System.Windows.Forms.TextBox txb_CustomerName;
         private System.Windows.Forms.TextBox txb_CustomerID;
         private System.Windows.Forms.ComboBox cb_CustomerGroup;
-        private System.Windows.Forms.Button savebutton;
-        private System.Windows.Forms.Button cancelbutton;
-        private System.Windows.Forms.Panel panel6;
     }
 }
