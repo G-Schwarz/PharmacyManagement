@@ -116,8 +116,12 @@ namespace PharmacyManagement
 
             this.txt_NhaCungCap.Location = new System.Drawing.Point(975, 44);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txt_NhaCungCap.Margin = new System.Windows.Forms.Padding(2);
 
+=======
+            this.txt_NhaCungCap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.txt_NhaCungCap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 >>>>>>> parent of db6cfce... Minor placement adjustment
@@ -141,9 +145,13 @@ namespace PharmacyManagement
             this.lbl_GiamGia.AutoSize = true;
             this.lbl_GiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.lbl_GiamGia.Location = new System.Drawing.Point(972, 96);
 
+=======
+            this.lbl_GiamGia.Location = new System.Drawing.Point(972, 82);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.lbl_GiamGia.Location = new System.Drawing.Point(972, 82);
 >>>>>>> parent of db6cfce... Minor placement adjustment
@@ -517,9 +525,14 @@ namespace PharmacyManagement
             this.txt_SoHang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SoHang.ForeColor = System.Drawing.Color.Black;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.txt_SoHang.Location = new System.Drawing.Point(1014, 396);
             this.txt_SoHang.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.txt_SoHang.Location = new System.Drawing.Point(1014, 332);
+            this.txt_SoHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.txt_SoHang.Location = new System.Drawing.Point(1014, 332);
             this.txt_SoHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -538,9 +551,14 @@ namespace PharmacyManagement
             this.txt_TongTien.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TongTien.ForeColor = System.Drawing.Color.Black;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.txt_TongTien.Location = new System.Drawing.Point(1014, 470);
             this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.txt_TongTien.Location = new System.Drawing.Point(1014, 410);
+            this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.txt_TongTien.Location = new System.Drawing.Point(1014, 410);
             this.txt_TongTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -560,10 +578,15 @@ namespace PharmacyManagement
             this.btn_XoaPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaPhieuNhap.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1040, 589);
             this.btn_XoaPhieuNhap.Margin = new System.Windows.Forms.Padding(2);
 
+=======
+            this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1014, 539);
+            this.btn_XoaPhieuNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.btn_XoaPhieuNhap.Location = new System.Drawing.Point(1014, 539);
             this.btn_XoaPhieuNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -584,10 +607,15 @@ namespace PharmacyManagement
             this.btn_LuuPhieuNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_LuuPhieuNhap.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1040, 656);
             this.btn_LuuPhieuNhap.Margin = new System.Windows.Forms.Padding(2);
 
+=======
+            this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1014, 614);
+            this.btn_LuuPhieuNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.btn_LuuPhieuNhap.Location = new System.Drawing.Point(1014, 614);
             this.btn_LuuPhieuNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -608,10 +636,15 @@ namespace PharmacyManagement
             this.btn_XoaHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XoaHang.ForeColor = System.Drawing.Color.White;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             this.btn_XoaHang.Location = new System.Drawing.Point(1040, 519);
             this.btn_XoaHang.Margin = new System.Windows.Forms.Padding(2);
 
+=======
+            this.btn_XoaHang.Location = new System.Drawing.Point(1014, 469);
+            this.btn_XoaHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.btn_XoaHang.Location = new System.Drawing.Point(1014, 469);
             this.btn_XoaHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

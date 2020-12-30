@@ -29,9 +29,15 @@
         private void InitializeComponent()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+=======
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
@@ -69,8 +75,13 @@
             this.panel1.Controls.Add(this.lb_DoanhSoThangTruoc);
             this.panel1.Controls.Add(this.lb_Doanhso);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(25, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel1.Location = new System.Drawing.Point(64, 48);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.panel1.Location = new System.Drawing.Point(64, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -119,15 +130,19 @@
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
 <<<<<<< HEAD
+<<<<<<< HEAD
             chartArea3.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart1.Legends.Add(legend3);
 =======
+=======
+>>>>>>> parent of db6cfce... Minor placement adjustment
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
+<<<<<<< HEAD
 >>>>>>> parent of db6cfce... Minor placement adjustment
             this.chart1.Location = new System.Drawing.Point(64, 209);
             this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -138,10 +153,18 @@
             series3.Name = "Series1";
             this.chart1.Series.Add(series3);
 =======
+=======
+            this.chart1.Location = new System.Drawing.Point(64, 209);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Name = "chart1";
+>>>>>>> parent of db6cfce... Minor placement adjustment
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
+<<<<<<< HEAD
+>>>>>>> parent of db6cfce... Minor placement adjustment
+=======
 >>>>>>> parent of db6cfce... Minor placement adjustment
             this.chart1.Size = new System.Drawing.Size(653, 300);
             this.chart1.TabIndex = 4;
@@ -155,8 +178,13 @@
             this.panel2.Controls.Add(this.lb_HoaDonThangTruoc);
             this.panel2.Controls.Add(this.lb_HoaDon);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(334, 48);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel2.Location = new System.Drawing.Point(383, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.panel2.Location = new System.Drawing.Point(383, 48);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -208,8 +236,13 @@
             this.panel3.Controls.Add(this.lb_BaoCaoHoaDon);
             this.panel3.Controls.Add(this.lb_BaoCaoTrongNgay);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel3.Location = new System.Drawing.Point(670, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel3.Location = new System.Drawing.Point(699, 48);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.panel3.Location = new System.Drawing.Point(699, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -259,8 +292,13 @@
             this.panel4.Controls.Add(this.lb_CanhBaoHangHetHan);
             this.panel4.Controls.Add(this.lb_CanhBao);
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel4.Location = new System.Drawing.Point(992, 48);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.panel4.Location = new System.Drawing.Point(1011, 48);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> parent of db6cfce... Minor placement adjustment
 =======
             this.panel4.Location = new System.Drawing.Point(1011, 48);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
