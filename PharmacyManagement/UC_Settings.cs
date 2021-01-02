@@ -37,7 +37,7 @@ namespace PharmacyManagement
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            FrmMain.Close();
+            //FrmMain.Close();
         }
     }
 }

@@ -53,6 +53,18 @@
     <Compile Include="FrmImport.Designer.cs">
       <DependentUpon>FrmImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIndexAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndexAdd.Designer.cs">
+      <DependentUpon>FrmIndexAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIndexInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIndexInfo.Designer.cs">
+      <DependentUpon>FrmIndexInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,12 @@
     </Compile>
     <EmbeddedResource Include="FrmImport.resx">
       <DependentUpon>FrmImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndexAdd.resx">
+      <DependentUpon>FrmIndexAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIndexInfo.resx">
+      <DependentUpon>FrmIndexInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

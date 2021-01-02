@@ -28,7 +28,7 @@ namespace PharmacyManagement
 
         public void get_data()
         {
-            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
         public void load_data()
@@ -109,8 +109,8 @@ namespace PharmacyManagement
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            //Form frm = new FrmAddIndex();
-            row = -1;
+            Form form = new FrmIndexAdd();
+            form.Show();
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -142,7 +142,8 @@ namespace PharmacyManagement
 
         private void dgv_DanhMuc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            row = e.RowIndex;
+            Form form = new FrmIndexInfo();
+            form.Show();
         }
     }
 }

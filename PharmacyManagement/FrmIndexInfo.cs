@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,20 +10,21 @@ using System.Windows.Forms;
 
 namespace PharmacyManagement
 {
-    public partial class UC_Sale_Main : UserControl
+    public partial class FrmIndexInfo : Form
     {
-        public UC_Sale_Main()
+        public FrmIndexInfo()
         {
             InitializeComponent();
         }
-        private void UC_Sale_Main_Load(object sender, EventArgs e)
+
+        private void FrmIndexInfo_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Dgv_ProductList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_Return_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
