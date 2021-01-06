@@ -185,5 +185,10 @@ namespace PharmacyManagement
             uC_Index1.Visible = true;
             uC_Settings1.Visible = false;
         }
+
+        private void uC_Settings1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -127,7 +127,7 @@ namespace PharmacyManagement
             this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Name.Location = new System.Drawing.Point(0, 0);
             this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(153, 64);
+            this.Lb_Name.Size = new System.Drawing.Size(191, 82);
             this.Lb_Name.TabIndex = 0;
             this.Lb_Name.Text = "G7 Ph";
             // 
@@ -237,12 +237,13 @@ namespace PharmacyManagement
             this.uC_Settings1.Name = "uC_Settings1";
             this.uC_Settings1.Size = new System.Drawing.Size(976, 589);
             this.uC_Settings1.TabIndex = 6;
+            this.uC_Settings1.Load += new System.EventHandler(this.uC_Settings1_Load);
             // 
             // uC_Index1
             // 
             this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Index1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Index1.Name = "uC_Index1";
             this.uC_Index1.Size = new System.Drawing.Size(976, 589);
             this.uC_Index1.TabIndex = 5;
@@ -263,7 +264,7 @@ namespace PharmacyManagement
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uC_Storage1.Name = "uC_Storage1";
             this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;

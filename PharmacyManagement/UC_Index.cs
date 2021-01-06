@@ -28,7 +28,7 @@ namespace PharmacyManagement
 
         public void get_data()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
         public void load_data()
@@ -57,31 +57,12 @@ namespace PharmacyManagement
             db = new SqlCommandBuilder(da);
             dt = new DataTable();
             ds = new DataSet();
-            da.Fill(ds, "Customer");
-            dt = ds.Tables["Customer"];
+            da.Fill(ds, "PRODUCT");
+            dt = ds.Tables["PRODUCT"];
             dgv_DanhMuc.DataSource = dt;
 
             con.Close();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         public UC_Index()
         {
@@ -100,11 +81,18 @@ namespace PharmacyManagement
 
         }
 
-        private void btn_TimKiem_Click(object sender, EventArgs e)
+        private void btn_Reload_Click(object sender, EventArgs e)
         {
-            //Tim kiem
+            load_data();
+        }
 
-            row = -1;
+        private void txt_MaHang_TextChanged(object sender, EventArgs e)
+        {
+            DataView dv = new DataView(dt);
+                dv.RowFilter = string.Format("[Mã Thuốc] LIKE '%{0}%'", txt_MaHang.Text);
+
+
+            dgv_DanhMuc.DataSource = dv;
         }
 
         private void btn_Them_Click(object sender, EventArgs e)

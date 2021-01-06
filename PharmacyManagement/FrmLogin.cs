@@ -24,7 +24,7 @@ namespace PharmacyManagement
             this.Size = new Size(800, 450);
             InitializeComponent();
 
-            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
 
 
         }

@@ -39,5 +39,10 @@ namespace PharmacyManagement
         {
             //FrmMain.Close();
         }
+
+        private void pnl_AccountManagement_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

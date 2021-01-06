@@ -28,10 +28,10 @@ namespace PharmacyManagement
 
         public void get_data()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
-        public void load_data(string a)
+        public void load_data()
         {
             con.Open();
             com.Connection = con;
@@ -41,7 +41,7 @@ namespace PharmacyManagement
             da = new SqlDataAdapter
                 ("select "
                 + "[CustomerID]     AS 'ID' ,"
-                + "[CustomerType]   AS 'Loại Khách hàng' ,"
+                + "[CustomerType]    ,"
                 + "[CustomerName]   AS 'Tên Khách hàng' ,"
                 + "[Gender]         AS 'Giới tính', "
                 + "[Phone]          AS 'SĐT', "
@@ -51,8 +51,7 @@ namespace PharmacyManagement
                 + "[Email]          AS 'Email', "
                 + "[Facebook]       AS 'Facebook', "
                 + "[Debts]          AS 'Nợ' "
-                + "from CUSTOMER" 
-                + a, con);
+                + "from CUSTOMER", con);
 
             db = new SqlCommandBuilder(da);
             dt = new DataTable();
@@ -78,7 +77,7 @@ namespace PharmacyManagement
             comboBox1.DataSource = dt;
             con.Close();
 
-            
+            /*
             if (comboBox1.Text == "")
             {
                 load_data("");
@@ -88,12 +87,25 @@ namespace PharmacyManagement
                 load_data("where CustomerType = 1");
             }
             else load_data("where CustomerType = 0");
-            
+            */
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //load_combo();
+        {           
+            DataView dv = new DataView(dt);
+            if (comboBox1.Text == null)
+            {
+                dv.RowFilter = string.Format("", comboBox1.Text);
+            }
+            if (comboBox1.Text == "True")
+            {
+                dv.RowFilter = string.Format("CustomerType = 1", comboBox1.Text);
+            }
+            if (comboBox1.Text == "False")
+            {
+                dv.RowFilter = string.Format("CustomerType = 0", comboBox1.Text);
+            }
+            dataGridView1.DataSource = dv;
         }
 
 
@@ -121,9 +133,6 @@ namespace PharmacyManagement
         {
             listopen();
 
-            
-
-
 
             SqlCommand com = new SqlCommand("INSERT INTO CUSTOMER " +
                 "(CustomerID ,CustomerName  ,Phone ,Addr ,Company ,TIN ,Email ,Facebook ,Debts) " +
@@ -146,7 +155,7 @@ namespace PharmacyManagement
                 int result = com.ExecuteNonQuery();
 
             con.Close();
-            load_data("");
+            load_data();
 
         }
 
@@ -166,6 +175,7 @@ namespace PharmacyManagement
             panel6.Enabled = false;
             get_data();
             load_combo();
+            load_data();
             
         }
 
@@ -180,6 +190,11 @@ namespace PharmacyManagement
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

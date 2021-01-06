@@ -29,7 +29,7 @@ namespace PharmacyManagement
 
         public void get_data()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
         public void load_data()

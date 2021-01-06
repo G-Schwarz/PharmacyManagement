@@ -21,5 +21,10 @@ namespace PharmacyManagement
         {
             this.Close();
         }
+
+        private void FrmReceiptDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

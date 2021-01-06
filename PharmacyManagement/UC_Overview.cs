@@ -29,7 +29,7 @@ namespace PharmacyManagement
 
         public void get_data()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-LQSH5N4;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
         public void load_data_lastmonth()
@@ -41,8 +41,8 @@ namespace PharmacyManagement
                 + "COUNT(INVOICE.InvoiceID)[Hoa Don]"
 
                 + "FROM[INVOICE]"
-                + "GROUP BY MONTH(INVOICE.InvoiceDate)"
-                + "HAVING MONTH(INVOICE.InvoiceDate) < (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
+                + "GROUP BY MONTH(INVOICE.InvoiceDate)";
+                //+ "HAVING MONTH(INVOICE.InvoiceDate) < (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
 
             dr = com.ExecuteReader();
             
@@ -64,8 +64,8 @@ namespace PharmacyManagement
                 + "COUNT(INVOICE.InvoiceID)[Hoa Don]"
 
                 + "FROM[INVOICE]"
-                + "GROUP BY MONTH(INVOICE.InvoiceDate)"
-                + "HAVING MONTH(INVOICE.InvoiceDate) = (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
+                + "GROUP BY MONTH(INVOICE.InvoiceDate)";
+                //+ "HAVING MONTH(INVOICE.InvoiceDate) = (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
 
             dr = com.ExecuteReader();
 
@@ -101,21 +101,10 @@ namespace PharmacyManagement
             con.Close();
         }
 
+        private void lb_DoanhSoThangTruocView_Click(object sender, EventArgs e)
+        {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 
         public UC_Overview()
         {
@@ -124,6 +113,7 @@ namespace PharmacyManagement
             load_data_lastmonth();
             load_data_thismonth();
             load_data_today();
+
         }
 
         private void lb_Doanhso_Click(object sender, EventArgs e)
