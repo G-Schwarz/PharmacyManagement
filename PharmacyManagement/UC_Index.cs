@@ -63,12 +63,27 @@ namespace PharmacyManagement
 
             con.Close();
         }
+        void load_combo()
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select ProductTypeID from PRODUCT_TYPE";
+            dr1 = com.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Type", typeof(string));
+            dt.Load(dr1);
+            comboBox3.ValueMember = "ProductTypeID";
+            comboBox3.DataSource = dt;
+            con.Close();
+        }
 
         public UC_Index()
         {
             InitializeComponent();
             get_data();
             load_data();
+            load_combo();
         }
         private int row = -1;
         private void UC_Index_Load(object sender, EventArgs e)
@@ -93,6 +108,11 @@ namespace PharmacyManagement
 
 
             dgv_DanhMuc.DataSource = dv;
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btn_Them_Click(object sender, EventArgs e)

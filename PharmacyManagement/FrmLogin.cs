@@ -79,10 +79,13 @@ namespace PharmacyManagement
             //panel1.Location = new Point(0, 0);
             //panel1.Size = new Size(this.Width, this.Height);
             //panel1.Width=this.form 
+            this.panel1.Width = this.Width;
+            this.panel1.Height = this.Height;
+            
             Graphics panel1_graphics = e.Graphics;
             Pen pen = new Pen(Color.FromArgb(64, 196, 255));
             Rectangle area = new Rectangle(0, 0, this.panel1.Width, this.panel1.Height);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(64, 196, 255), Color.FromArgb(69, 128, 229), LinearGradientMode.Vertical);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(69, 128, 229), Color.FromArgb(114, 174, 246), 75);
             panel1_graphics.FillRectangle(lgb, area);
             panel1_graphics.DrawRectangle(pen, area);
         }
@@ -98,6 +101,11 @@ namespace PharmacyManagement
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

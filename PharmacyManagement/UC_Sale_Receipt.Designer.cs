@@ -52,34 +52,37 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(19, 73);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(441, 22);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cb_Status
             // 
             this.cb_Status.FormattingEnabled = true;
             this.cb_Status.Location = new System.Drawing.Point(648, 25);
-            this.cb_Status.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Status.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Status.Name = "cb_Status";
             this.cb_Status.Size = new System.Drawing.Size(160, 24);
             this.cb_Status.TabIndex = 1;
+            this.cb_Status.SelectedIndexChanged += new System.EventHandler(this.cb_Status_SelectedIndexChanged);
             // 
             // cb_Type
             // 
             this.cb_Type.FormattingEnabled = true;
             this.cb_Type.Location = new System.Drawing.Point(868, 23);
-            this.cb_Type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Type.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Type.Name = "cb_Type";
             this.cb_Type.Size = new System.Drawing.Size(160, 24);
             this.cb_Type.TabIndex = 2;
+            this.cb_Type.SelectedIndexChanged += new System.EventHandler(this.cb_Type_SelectedIndexChanged);
             // 
             // dtp_From
             // 
             this.dtp_From.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_From.Location = new System.Drawing.Point(19, 25);
-            this.dtp_From.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_From.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_From.Name = "dtp_From";
             this.dtp_From.Size = new System.Drawing.Size(265, 22);
             this.dtp_From.TabIndex = 3;
@@ -88,7 +91,7 @@
             // 
             this.dtp_To.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_To.Location = new System.Drawing.Point(327, 25);
-            this.dtp_To.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_To.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_To.Name = "dtp_To";
             this.dtp_To.Size = new System.Drawing.Size(265, 22);
             this.dtp_To.TabIndex = 4;
@@ -96,10 +99,11 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(521, 73);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(441, 22);
             this.textBox2.TabIndex = 5;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btn_Search
             // 
@@ -110,7 +114,7 @@
             this.btn_Search.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.White;
             this.btn_Search.Location = new System.Drawing.Point(1023, 73);
-            this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Search.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(171, 28);
             this.btn_Search.TabIndex = 6;
@@ -143,7 +147,7 @@
             // 
             this.panel1.Controls.Add(this.dgv_ReceiptList);
             this.panel1.Location = new System.Drawing.Point(4, 134);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1293, 428);
             this.panel1.TabIndex = 10;
@@ -156,7 +160,7 @@
             this.dgv_ReceiptList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_ReceiptList.GridColor = System.Drawing.Color.White;
             this.dgv_ReceiptList.Location = new System.Drawing.Point(0, 0);
-            this.dgv_ReceiptList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_ReceiptList.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_ReceiptList.Name = "dgv_ReceiptList";
             this.dgv_ReceiptList.RowHeadersWidth = 51;
             this.dgv_ReceiptList.Size = new System.Drawing.Size(1293, 428);
@@ -179,7 +183,7 @@
             this.panel2.Controls.Add(this.lb_From);
             this.panel2.Controls.Add(this.cb_Type);
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1293, 123);
             this.panel2.TabIndex = 11;
@@ -235,7 +239,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Sale_Receipt";
             this.Size = new System.Drawing.Size(1301, 566);
             this.Load += new System.EventHandler(this.UC_Sale_Receipt_Load);

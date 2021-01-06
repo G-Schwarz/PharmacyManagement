@@ -32,6 +32,26 @@ namespace PharmacyManagement
             con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
+        private void cb_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public void load_data()
         {
             con.Open();
