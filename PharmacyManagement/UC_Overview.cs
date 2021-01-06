@@ -32,6 +32,74 @@ namespace PharmacyManagement
             con.ConnectionString = @"Data Source=MINIKAZE;Initial Catalog=DB_DRUGSTORE;Integrated Security=True";
         }
 
+        public void load_data()
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from CUSTOMER";
+
+
+            da = new SqlDataAdapter
+                (
+                "(SELECT TOP (2) YEAR(INVOICE.InvoiceDate) as [Year],"
+                + "MONTH(INVOICE.InvoiceDate) as [MonthNum],"
+                + "DATENAME(MONTH, DATEADD(M, MONTH(INVOICE.InvoiceDate), -1)) Month,"
+                + "SUM(INVOICE.Total)[Doanh So],"
+                + "COUNT(INVOICE.InvoiceID)[Hoa Don]"
+                + "FROM[INVOICE]"
+                + "WHERE YEAR(INVOICE.InvoiceDate) = YEAR(GETDATE()) - 1"
+                + "GROUP BY  YEAR(INVOICE.InvoiceDate), MONTH(INVOICE.InvoiceDate))"
+
+                + "union"
+
+                + "(SELECT YEAR(INVOICE.InvoiceDate) as [Year],"
+                + "MONTH(INVOICE.InvoiceDate) as [MonthNum],"
+                + "DATENAME(MONTH, DATEADD(M, MONTH(INVOICE.InvoiceDate), -1)) Month,"
+
+                + "SUM(INVOICE.Total)[Doanh So],"
+                + "COUNT(INVOICE.InvoiceID)[Hoa Don]"
+                + "FROM[INVOICE]"
+                + "WHERE YEAR(INVOICE.InvoiceDate) = YEAR(GETDATE())"
+                + "GROUP BY  YEAR(INVOICE.InvoiceDate), MONTH(INVOICE.InvoiceDate))"
+
+                + "order by[Year], [MonthNum]" , con);
+
+            db = new SqlCommandBuilder(da);
+            dt = new DataTable();
+            ds = new DataSet();
+            da.Fill(ds, "Customer");
+            dt = ds.Tables["Customer"];
+            TB_Overview.DataSource = dt;
+
+            con.Close();
+
+
+
+            C_Overview.Series[0].XValueMember = "Month";
+            C_Overview.Series[0].YValueMembers = "Doanh So";
+
+            C_Overview2.Series[0].XValueMember = "Month";
+            C_Overview2.Series[0].YValueMembers = "Hoa Don";
+
+
+            C_Overview2.DataSource = dt;
+
+            C_Overview.DataSource = dt;
+            
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         public void load_data_lastmonth()
         {
             con.Open();
@@ -41,15 +109,15 @@ namespace PharmacyManagement
                 + "COUNT(INVOICE.InvoiceID)[Hoa Don]"
 
                 + "FROM[INVOICE]"
-                + "GROUP BY MONTH(INVOICE.InvoiceDate)";
-                //+ "HAVING MONTH(INVOICE.InvoiceDate) < (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
+                + "GROUP BY MONTH(INVOICE.InvoiceDate)"
+                + "HAVING MONTH(INVOICE.InvoiceDate) = (SELECT DATEPART(M, DATEADD(M, 0, GETDATE())))";
 
             dr = com.ExecuteReader();
             
             while (dr.Read())
             {
-                lb_DoanhSoThangTruocView.Text = dr.GetValue(1).ToString();
-                lb_HoaDonThangTruocView.Text = dr.GetValue(2).ToString();
+                lb_DoanhSoThangTruocView.Text = "Tháng trước: " + dr.GetValue(1).ToString();
+                lb_HoaDonThangTruocView.Text = "Tháng trước: " + dr.GetValue(2).ToString();
             }
             
             con.Close();
@@ -71,8 +139,8 @@ namespace PharmacyManagement
 
             while (dr.Read())
             {
-                lb_DoanhSoThangNayView.Text = dr.GetValue(1).ToString();
-                lb_HoaDonThangNayView.Text = dr.GetValue(2).ToString();
+                lb_DoanhSoThangNayView.Text = "Tháng này: " +dr.GetValue(1).ToString();
+                lb_HoaDonThangNayView.Text = "Tháng này: " + dr.GetValue(2).ToString();
             }
 
             con.Close();
@@ -94,8 +162,8 @@ namespace PharmacyManagement
 
             while (dr.Read())
             {
-                lb_BaoCaoHoaDonView.Text = dr.GetValue(1).ToString();
-                lb_BaoCaoDoanhSoView.Text = dr.GetValue(2).ToString();
+                lb_BaoCaoHoaDonView.Text = "Hóa dơn: " + dr.GetValue(1).ToString();
+                lb_BaoCaoDoanhSoView.Text = "Doanh số: " + dr.GetValue(2).ToString();
             }
 
             con.Close();
@@ -106,10 +174,26 @@ namespace PharmacyManagement
 
         }
 
+        private void TB_Overview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void C_Overview_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public UC_Overview()
         {
             InitializeComponent();
             get_data();
+            load_data();
             load_data_lastmonth();
             load_data_thismonth();
             load_data_today();
