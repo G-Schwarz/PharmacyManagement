@@ -22,5 +22,11 @@ namespace PharmacyManagement
             Form form = new FrmImportDetails();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new FrmImportAdd();
+            form.Show();
+        }
     }
 }

@@ -250,6 +250,7 @@
             this.uC_Import1.Name = "uC_Import1";
             this.uC_Import1.Size = new System.Drawing.Size(947, 561);
             this.uC_Import1.TabIndex = 21;
+            this.uC_Import1.Visible = false;
             // 
             // UC_Storage
             // 
