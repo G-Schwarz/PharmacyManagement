@@ -64,10 +64,9 @@
             // cb_Status
             // 
             this.cb_Status.FormattingEnabled = true;
-            this.cb_Status.Location = new System.Drawing.Point(756, 108);
-            this.cb_Status.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Status.Location = new System.Drawing.Point(567, 88);
             this.cb_Status.Name = "cb_Status";
-            this.cb_Status.Size = new System.Drawing.Size(265, 24);
+            this.cb_Status.Size = new System.Drawing.Size(200, 21);
             this.cb_Status.TabIndex = 49;
             // 
             // Total
@@ -140,53 +139,47 @@
             this.Tax,
             this.Discount,
             this.Total});
-            this.dgv_RecptDetails.Location = new System.Drawing.Point(27, 292);
-            this.dgv_RecptDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_RecptDetails.Location = new System.Drawing.Point(20, 237);
             this.dgv_RecptDetails.Name = "dgv_RecptDetails";
             this.dgv_RecptDetails.RowHeadersWidth = 51;
-            this.dgv_RecptDetails.Size = new System.Drawing.Size(1027, 366);
+            this.dgv_RecptDetails.Size = new System.Drawing.Size(770, 297);
             this.dgv_RecptDetails.TabIndex = 47;
             // 
             // tb_CustomerType
             // 
-            this.tb_CustomerType.Location = new System.Drawing.Point(49, 180);
-            this.tb_CustomerType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_CustomerType.Location = new System.Drawing.Point(37, 146);
             this.tb_CustomerType.Name = "tb_CustomerType";
-            this.tb_CustomerType.Size = new System.Drawing.Size(265, 22);
+            this.tb_CustomerType.Size = new System.Drawing.Size(200, 20);
             this.tb_CustomerType.TabIndex = 46;
             // 
             // txb_Seller
             // 
-            this.txb_Seller.Location = new System.Drawing.Point(756, 180);
-            this.txb_Seller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_Seller.Location = new System.Drawing.Point(567, 146);
             this.txb_Seller.Name = "txb_Seller";
-            this.txb_Seller.Size = new System.Drawing.Size(265, 22);
+            this.txb_Seller.Size = new System.Drawing.Size(200, 20);
             this.txb_Seller.TabIndex = 45;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(49, 247);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(37, 201);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(701, 22);
+            this.textBox2.Size = new System.Drawing.Size(527, 20);
             this.textBox2.TabIndex = 44;
             // 
             // cb_PaymentMethod
             // 
             this.cb_PaymentMethod.FormattingEnabled = true;
-            this.cb_PaymentMethod.Location = new System.Drawing.Point(404, 178);
-            this.cb_PaymentMethod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_PaymentMethod.Location = new System.Drawing.Point(303, 145);
             this.cb_PaymentMethod.Name = "cb_PaymentMethod";
-            this.cb_PaymentMethod.Size = new System.Drawing.Size(265, 24);
+            this.cb_PaymentMethod.Size = new System.Drawing.Size(200, 21);
             this.cb_PaymentMethod.TabIndex = 43;
             // 
             // ckb_BanDon
             // 
             this.ckb_BanDon.AutoSize = true;
-            this.ckb_BanDon.Location = new System.Drawing.Point(808, 247);
-            this.ckb_BanDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_BanDon.Location = new System.Drawing.Point(606, 201);
             this.ckb_BanDon.Name = "ckb_BanDon";
-            this.ckb_BanDon.Size = new System.Drawing.Size(85, 21);
+            this.ckb_BanDon.Size = new System.Drawing.Size(68, 17);
             this.ckb_BanDon.TabIndex = 41;
             this.ckb_BanDon.Text = "Bán Đơn";
             this.ckb_BanDon.UseVisualStyleBackColor = true;
@@ -199,20 +192,18 @@
             // 
             // txb_RecptCode
             // 
-            this.txb_RecptCode.Location = new System.Drawing.Point(49, 108);
-            this.txb_RecptCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txb_RecptCode.Location = new System.Drawing.Point(37, 88);
             this.txb_RecptCode.Name = "txb_RecptCode";
-            this.txb_RecptCode.Size = new System.Drawing.Size(265, 22);
+            this.txb_RecptCode.Size = new System.Drawing.Size(200, 20);
             this.txb_RecptCode.TabIndex = 40;
             // 
             // lb_PaymentMethod
             // 
             this.lb_PaymentMethod.AutoSize = true;
             this.lb_PaymentMethod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_PaymentMethod.Location = new System.Drawing.Point(400, 156);
-            this.lb_PaymentMethod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_PaymentMethod.Location = new System.Drawing.Point(300, 127);
             this.lb_PaymentMethod.Name = "lb_PaymentMethod";
-            this.lb_PaymentMethod.Size = new System.Drawing.Size(217, 19);
+            this.lb_PaymentMethod.Size = new System.Drawing.Size(174, 16);
             this.lb_PaymentMethod.TabIndex = 39;
             this.lb_PaymentMethod.Text = "Phương Thức Thanh Toán";
             // 
@@ -220,10 +211,9 @@
             // 
             this.lb_CustomerType.AutoSize = true;
             this.lb_CustomerType.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_CustomerType.Location = new System.Drawing.Point(45, 156);
-            this.lb_CustomerType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_CustomerType.Location = new System.Drawing.Point(34, 127);
             this.lb_CustomerType.Name = "lb_CustomerType";
-            this.lb_CustomerType.Size = new System.Drawing.Size(105, 19);
+            this.lb_CustomerType.Size = new System.Drawing.Size(85, 16);
             this.lb_CustomerType.TabIndex = 38;
             this.lb_CustomerType.Text = "Khách Hàng";
             // 
@@ -231,10 +221,9 @@
             // 
             this.lb_Note.AutoSize = true;
             this.lb_Note.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Note.Location = new System.Drawing.Point(45, 225);
-            this.lb_Note.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_Note.Location = new System.Drawing.Point(34, 183);
             this.lb_Note.Name = "lb_Note";
-            this.lb_Note.Size = new System.Drawing.Size(66, 22);
+            this.lb_Note.Size = new System.Drawing.Size(51, 16);
             this.lb_Note.TabIndex = 37;
             this.lb_Note.Text = "Ghi Chú";
             // 
@@ -242,10 +231,9 @@
             // 
             this.lb_Seller.AutoSize = true;
             this.lb_Seller.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Seller.Location = new System.Drawing.Point(752, 156);
-            this.lb_Seller.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_Seller.Location = new System.Drawing.Point(564, 127);
             this.lb_Seller.Name = "lb_Seller";
-            this.lb_Seller.Size = new System.Drawing.Size(95, 19);
+            this.lb_Seller.Size = new System.Drawing.Size(76, 16);
             this.lb_Seller.TabIndex = 36;
             this.lb_Seller.Text = "Người Bán";
             // 
@@ -253,10 +241,9 @@
             // 
             this.lb_SaleDate.AutoSize = true;
             this.lb_SaleDate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_SaleDate.Location = new System.Drawing.Point(400, 86);
-            this.lb_SaleDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_SaleDate.Location = new System.Drawing.Point(300, 70);
             this.lb_SaleDate.Name = "lb_SaleDate";
-            this.lb_SaleDate.Size = new System.Drawing.Size(85, 19);
+            this.lb_SaleDate.Size = new System.Drawing.Size(69, 16);
             this.lb_SaleDate.TabIndex = 35;
             this.lb_SaleDate.Text = "Ngày Bán";
             // 
@@ -264,10 +251,9 @@
             // 
             this.lb_Status.AutoSize = true;
             this.lb_Status.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Status.Location = new System.Drawing.Point(752, 86);
-            this.lb_Status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_Status.Location = new System.Drawing.Point(564, 70);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(92, 19);
+            this.lb_Status.Size = new System.Drawing.Size(76, 16);
             this.lb_Status.TabIndex = 34;
             this.lb_Status.Text = "Trạng Thái";
             // 
@@ -275,10 +261,9 @@
             // 
             this.lb_RecptCode.AutoSize = true;
             this.lb_RecptCode.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_RecptCode.Location = new System.Drawing.Point(45, 86);
-            this.lb_RecptCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_RecptCode.Location = new System.Drawing.Point(34, 70);
             this.lb_RecptCode.Name = "lb_RecptCode";
-            this.lb_RecptCode.Size = new System.Drawing.Size(106, 19);
+            this.lb_RecptCode.Size = new System.Drawing.Size(86, 16);
             this.lb_RecptCode.TabIndex = 33;
             this.lb_RecptCode.Text = "Mã Hóa Đơn";
             // 
@@ -287,20 +272,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(20, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 32);
+            this.label1.Size = new System.Drawing.Size(171, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chi tiết hóa đơn";
             // 
             // dtp_SellDate
             // 
             this.dtp_SellDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_SellDate.Location = new System.Drawing.Point(404, 108);
-            this.dtp_SellDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_SellDate.Location = new System.Drawing.Point(303, 88);
             this.dtp_SellDate.Name = "dtp_SellDate";
-            this.dtp_SellDate.Size = new System.Drawing.Size(265, 22);
+            this.dtp_SellDate.Size = new System.Drawing.Size(200, 20);
             this.dtp_SellDate.TabIndex = 42;
             // 
             // pnl_RecpDetailsBanner
@@ -309,9 +292,8 @@
             this.pnl_RecpDetailsBanner.Controls.Add(this.label1);
             this.pnl_RecpDetailsBanner.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_RecpDetailsBanner.Location = new System.Drawing.Point(0, 0);
-            this.pnl_RecpDetailsBanner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_RecpDetailsBanner.Name = "pnl_RecpDetailsBanner";
-            this.pnl_RecpDetailsBanner.Size = new System.Drawing.Size(1077, 65);
+            this.pnl_RecpDetailsBanner.Size = new System.Drawing.Size(808, 53);
             this.pnl_RecpDetailsBanner.TabIndex = 32;
             // 
             // btn_Return
@@ -319,12 +301,12 @@
             this.btn_Return.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_Return.FlatAppearance.BorderSize = 0;
             this.btn_Return.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Return.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Return.ForeColor = System.Drawing.Color.White;
-            this.btn_Return.Location = new System.Drawing.Point(27, 665);
-            this.btn_Return.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Return.Location = new System.Drawing.Point(20, 540);
             this.btn_Return.Name = "btn_Return";
-            this.btn_Return.Size = new System.Drawing.Size(209, 52);
+            this.btn_Return.Size = new System.Drawing.Size(157, 42);
             this.btn_Return.TabIndex = 48;
             this.btn_Return.Text = "Trở lại";
             this.btn_Return.UseVisualStyleBackColor = false;
@@ -332,10 +314,10 @@
             // 
             // FrmReceiptDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(1077, 736);
+            this.ClientSize = new System.Drawing.Size(808, 598);
             this.Controls.Add(this.cb_Status);
             this.Controls.Add(this.btn_Return);
             this.Controls.Add(this.dgv_RecptDetails);
@@ -355,7 +337,6 @@
             this.Controls.Add(this.dtp_SellDate);
             this.Controls.Add(this.pnl_RecpDetailsBanner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmReceiptDetails";
             this.Text = "FrmReceiptDetails";
             this.Load += new System.EventHandler(this.FrmReceiptDetails_Load);

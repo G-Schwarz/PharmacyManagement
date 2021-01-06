@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmImport.cs">
+    <Compile Include="FrmImportAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmImport.Designer.cs">
-      <DependentUpon>FrmImport.cs</DependentUpon>
+    <Compile Include="FrmImportAdd.Designer.cs">
+      <DependentUpon>FrmImportAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmImportDetails.cs">
       <SubType>Form</SubType>
@@ -89,11 +89,11 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_AddImport.cs">
+    <Compile Include="UC_Import.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_AddImport.Designer.cs">
-      <DependentUpon>UC_AddImport.cs</DependentUpon>
+    <Compile Include="UC_Import.Designer.cs">
+      <DependentUpon>UC_Import.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_Index.cs">
       <SubType>UserControl</SubType>
@@ -157,8 +157,11 @@
     <Compile Include="UC_Test.Designer.cs">
       <DependentUpon>UC_Test.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmImport.resx">
-      <DependentUpon>FrmImport.cs</DependentUpon>
+    <EmbeddedResource Include="FrmImportAdd.resx">
+      <DependentUpon>FrmImportAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportDetails.resx">
+      <DependentUpon>FrmImportDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIndexAdd.resx">
       <DependentUpon>FrmIndexAdd.cs</DependentUpon>
@@ -175,8 +178,8 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_AddImport.resx">
-      <DependentUpon>UC_AddImport.cs</DependentUpon>
+    <EmbeddedResource Include="UC_Import.resx">
+      <DependentUpon>UC_Import.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Index.resx">
       <DependentUpon>UC_Index.cs</DependentUpon>

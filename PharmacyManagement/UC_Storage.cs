@@ -70,17 +70,6 @@ namespace PharmacyManagement
             con.Close();
         }
 
-
-
-
-
-
-
-
-
-
-
-
         public UC_Storage()
         {
 
@@ -100,6 +89,13 @@ namespace PharmacyManagement
 
         }
 
+        private void btn_StorageManagement_Click(object sender, EventArgs e)
+        {
+            btn_StorageManagement.BackColor = System.Drawing.Color.Orange;
+            btn_Import.BackColor = System.Drawing.Color.SteelBlue;
+            uC_Import1.Visible = false;
+        }
+
         private void dgv_Thuoc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
@@ -113,8 +109,9 @@ namespace PharmacyManagement
 
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            Form form_NhapHang = new FrmImport();
-            form_NhapHang.Show();
+            btn_StorageManagement.BackColor = System.Drawing.Color.SteelBlue;
+            btn_Import.BackColor = System.Drawing.Color.Orange;
+            uC_Import1.Visible = true;
         }
 
         private void uC_Storage_PillDetail1_Load(object sender, EventArgs e)
@@ -124,7 +121,9 @@ namespace PharmacyManagement
 
         private void UC_Storage_Load(object sender, EventArgs e)
         {
-
+            btn_StorageManagement.BackColor = System.Drawing.Color.Orange;
+            btn_Import.BackColor = System.Drawing.Color.SteelBlue;
+            uC_Import1.Visible = false;
         }
     }
 }

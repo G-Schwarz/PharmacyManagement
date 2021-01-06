@@ -30,7 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_NhapHang = new System.Windows.Forms.Button();
+            this.btn_Import = new System.Windows.Forms.Button();
             this.dgv_Thuoc = new System.Windows.Forms.DataGridView();
             this.lbl_FromDate = new System.Windows.Forms.Label();
             this.lbl_ToDate = new System.Windows.Forms.Label();
@@ -45,24 +45,26 @@
             this.cb_StorageProductGroup = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cb_StorageHSD = new System.Windows.Forms.ComboBox();
+            this.btn_StorageManagement = new System.Windows.Forms.Button();
+            this.uC_Import1 = new PharmacyManagement.UC_Import();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_NhapHang
+            // btn_Import
             // 
-            this.btn_NhapHang.BackColor = System.Drawing.Color.SteelBlue;
-            this.btn_NhapHang.FlatAppearance.BorderSize = 0;
-            this.btn_NhapHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhapHang.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NhapHang.ForeColor = System.Drawing.Color.White;
-            this.btn_NhapHang.Location = new System.Drawing.Point(21, 17);
-            this.btn_NhapHang.Name = "btn_NhapHang";
-            this.btn_NhapHang.Size = new System.Drawing.Size(130, 42);
-            this.btn_NhapHang.TabIndex = 1;
-            this.btn_NhapHang.Text = "Nhập Hàng";
-            this.btn_NhapHang.UseVisualStyleBackColor = false;
-            this.btn_NhapHang.Click += new System.EventHandler(this.btn_NhapHang_Click);
+            this.btn_Import.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Import.FlatAppearance.BorderSize = 0;
+            this.btn_Import.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Import.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Import.ForeColor = System.Drawing.Color.White;
+            this.btn_Import.Location = new System.Drawing.Point(202, 17);
+            this.btn_Import.Name = "btn_Import";
+            this.btn_Import.Size = new System.Drawing.Size(130, 42);
+            this.btn_Import.TabIndex = 1;
+            this.btn_Import.Text = "Nhập Hàng";
+            this.btn_Import.UseVisualStyleBackColor = false;
+            this.btn_Import.Click += new System.EventHandler(this.btn_NhapHang_Click);
             // 
             // dgv_Thuoc
             // 
@@ -226,10 +228,35 @@
             this.cb_StorageHSD.Size = new System.Drawing.Size(215, 26);
             this.cb_StorageHSD.TabIndex = 19;
             // 
+            // btn_StorageManagement
+            // 
+            this.btn_StorageManagement.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_StorageManagement.FlatAppearance.BorderSize = 0;
+            this.btn_StorageManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btn_StorageManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StorageManagement.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StorageManagement.ForeColor = System.Drawing.Color.White;
+            this.btn_StorageManagement.Location = new System.Drawing.Point(21, 17);
+            this.btn_StorageManagement.Name = "btn_StorageManagement";
+            this.btn_StorageManagement.Size = new System.Drawing.Size(130, 42);
+            this.btn_StorageManagement.TabIndex = 20;
+            this.btn_StorageManagement.Text = "Tồn kho";
+            this.btn_StorageManagement.UseVisualStyleBackColor = false;
+            this.btn_StorageManagement.Click += new System.EventHandler(this.btn_StorageManagement_Click);
+            // 
+            // uC_Import1
+            // 
+            this.uC_Import1.Location = new System.Drawing.Point(3, 65);
+            this.uC_Import1.Name = "uC_Import1";
+            this.uC_Import1.Size = new System.Drawing.Size(947, 561);
+            this.uC_Import1.TabIndex = 21;
+            // 
             // UC_Storage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.uC_Import1);
+            this.Controls.Add(this.btn_StorageManagement);
             this.Controls.Add(this.cb_StorageHSD);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_StorageProductGroup);
@@ -244,9 +271,9 @@
             this.Controls.Add(this.lbl_StorageProductType);
             this.Controls.Add(this.lbl_ToDate);
             this.Controls.Add(this.lbl_FromDate);
-            this.Controls.Add(this.btn_NhapHang);
+            this.Controls.Add(this.btn_Import);
             this.Name = "UC_Storage";
-            this.Size = new System.Drawing.Size(971, 514);
+            this.Size = new System.Drawing.Size(971, 631);
             this.Load += new System.EventHandler(this.UC_Storage_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Thuoc)).EndInit();
             this.ResumeLayout(false);
@@ -255,7 +282,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_NhapHang;
+        private System.Windows.Forms.Button btn_Import;
         private System.Windows.Forms.DataGridView dgv_Thuoc;
         private System.Windows.Forms.Label lbl_FromDate;
         private System.Windows.Forms.Label lbl_ToDate;
@@ -270,5 +297,7 @@
         private System.Windows.Forms.ComboBox cb_StorageProductGroup;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_StorageHSD;
+        private System.Windows.Forms.Button btn_StorageManagement;
+        private UC_Import uC_Import1;
     }
 }
