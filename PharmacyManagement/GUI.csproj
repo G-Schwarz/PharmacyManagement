@@ -53,6 +53,12 @@
     <Compile Include="FrmImport.Designer.cs">
       <DependentUpon>FrmImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmImportDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportDetails.Designer.cs">
+      <DependentUpon>FrmImportDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIndexAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AddImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddImport.Designer.cs">
+      <DependentUpon>UC_AddImport.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_Index.cs">
       <SubType>UserControl</SubType>
@@ -162,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddImport.resx">
+      <DependentUpon>UC_AddImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Index.resx">
       <DependentUpon>UC_Index.cs</DependentUpon>
