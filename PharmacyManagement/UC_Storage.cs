@@ -70,6 +70,43 @@ namespace PharmacyManagement
             con.Close();
         }
 
+
+
+        void load_combo()
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "SELECT [ProductTypeName] FROM [PRODUCT_TYPE]";
+            dr1 = com.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Type", typeof(string));
+            dt.Load(dr1);
+            cb_StorageProductType.ValueMember = "ProductTypeName";
+            cb_StorageProductType.DataSource = dt;
+            con.Close();
+
+        }
+
+        void load_combo1()
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "SELECT [ProductGroupName] FROM [PRODUCT_GROUP]";
+            dr1 = com.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Type", typeof(string));
+            dt.Load(dr1);
+            cb_StorageProductGroup.ValueMember = "ProductGroupName";
+            cb_StorageProductGroup.DataSource = dt;
+            con.Close();
+
+        }
+
+
+
+
         public UC_Storage()
         {
 
@@ -77,6 +114,8 @@ namespace PharmacyManagement
             //uC_Storage_PillDetail1.Hide();
             get_data();
             load_data();
+            load_combo();
+            load_combo1();
         }
 
         private void UC_Storage_Load_1(object sender, EventArgs e)
@@ -94,6 +133,24 @@ namespace PharmacyManagement
             btn_StorageManagement.BackColor = System.Drawing.Color.Orange;
             btn_Import.BackColor = System.Drawing.Color.SteelBlue;
             uC_Import1.Visible = false;
+        }
+
+        private void uC_Import1_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void txt_StorageSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataView dv = new DataView(dt);
+            dv.RowFilter = string.Format("[Mã Thuốc] LIKE '%{0}%' OR [Tên Thuốc] LIKE '%{0}%'", txt_StorageSearch.Text);
+            dgv_Thuoc.DataSource = dv;
+        }
+
+        private void cb_StorageProductType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void dgv_Thuoc_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

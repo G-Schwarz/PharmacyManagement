@@ -98,6 +98,54 @@ namespace PharmacyManagement
 
 
 
+        public void load_data1()
+        {
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from CUSTOMER";
+
+
+            da = new SqlDataAdapter
+                ("SELECT TOP(10)[ProductID],"
+               + "SUM([Quantity])[Quantity]"
+               + "FROM[DB_DRUGSTORE].[dbo].[INVOICE_DETAILS]"
+               + "GROUP BY[ProductID]", con);
+
+            db = new SqlCommandBuilder(da);
+            dt = new DataTable();
+            ds = new DataSet();
+            da.Fill(ds, "Customer");
+            dt = ds.Tables["Customer"];
+            
+
+            con.Close();
+
+            C_OverviewTop.Series[0].XValueMember = "ProductID";
+            C_OverviewTop.Series[0].YValueMembers = "Quantity";
+
+            C_OverviewTop.DataSource = dt;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public void load_data_lastmonth()
@@ -194,6 +242,7 @@ namespace PharmacyManagement
             InitializeComponent();
             get_data();
             load_data();
+            load_data1();
             load_data_lastmonth();
             load_data_thismonth();
             load_data_today();

@@ -135,7 +135,9 @@
             // dgv_DanhMuc
             // 
             this.dgv_DanhMuc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_DanhMuc.BackgroundColor = System.Drawing.Color.White;
             this.dgv_DanhMuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DanhMuc.GridColor = System.Drawing.Color.White;
             this.dgv_DanhMuc.Location = new System.Drawing.Point(21, 139);
             this.dgv_DanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_DanhMuc.Name = "dgv_DanhMuc";

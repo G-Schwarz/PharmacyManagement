@@ -36,7 +36,7 @@ namespace PharmacyManagement
             this.btn_Setting = new System.Windows.Forms.Button();
             this.btn_Index = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Lb_Name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Btn_Customers = new System.Windows.Forms.Button();
             this.Btn_Storage = new System.Windows.Forms.Button();
             this.Btn_Sale = new System.Windows.Forms.Button();
@@ -112,24 +112,23 @@ namespace PharmacyManagement
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Controls.Add(this.Lb_Name);
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(172, 74);
+            this.panel3.Size = new System.Drawing.Size(172, 75);
             this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // Lb_Name
+            // label1
             // 
-            this.Lb_Name.AutoSize = true;
-            this.Lb_Name.BackColor = System.Drawing.Color.Orange;
-            this.Lb_Name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Lb_Name.Font = new System.Drawing.Font("Monotype Corsiva", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Name.Location = new System.Drawing.Point(0, 0);
-            this.Lb_Name.Name = "Lb_Name";
-            this.Lb_Name.Size = new System.Drawing.Size(191, 82);
-            this.Lb_Name.TabIndex = 0;
-            this.Lb_Name.Text = "G7 Ph";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 40.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, -8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 83);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "G7";
             // 
             // Btn_Customers
             // 
@@ -243,7 +242,7 @@ namespace PharmacyManagement
             // 
             this.uC_Index1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Index1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Index1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Index1.Name = "uC_Index1";
             this.uC_Index1.Size = new System.Drawing.Size(976, 589);
             this.uC_Index1.TabIndex = 5;
@@ -264,7 +263,7 @@ namespace PharmacyManagement
             // 
             this.uC_Storage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uC_Storage1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_Storage1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_Storage1.Name = "uC_Storage1";
             this.uC_Storage1.Size = new System.Drawing.Size(976, 589);
             this.uC_Storage1.TabIndex = 3;
@@ -301,8 +300,11 @@ namespace PharmacyManagement
             this.Controls.Add(this.Pnl_Main);
             this.Controls.Add(this.Pnl_Sidemenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhà thuốc";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.Pnl_Sidemenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -323,7 +325,6 @@ namespace PharmacyManagement
         private System.Windows.Forms.Button Btn_Customers;
         private System.Windows.Forms.Button Btn_Storage;
         private System.Windows.Forms.Button Btn_Sale;
-        private System.Windows.Forms.Label Lb_Name;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private UC_Customers uC_Customers1;
         private UC_Storage uC_Storage1;
@@ -336,6 +337,7 @@ namespace PharmacyManagement
         private System.Windows.Forms.Button btn_Index;
         private UC_Settings uC_Settings1;
         private UC_Index uC_Index1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

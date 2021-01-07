@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_DoanhSoThangNayView = new System.Windows.Forms.Label();
             this.lb_DoanhSoThangTruocView = new System.Windows.Forms.Label();
@@ -51,20 +54,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb_CanhBao = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.C_Overview = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.C_OverviewTop = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.C_Overview2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.C_Overview = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.TB_Overview = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.C_Overview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.C_OverviewTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.C_Overview2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.C_Overview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TB_Overview)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -288,6 +295,9 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.flowLayoutPanel1);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.C_OverviewTop);
             this.panel5.Controls.Add(this.C_Overview2);
             this.panel5.Controls.Add(this.C_Overview);
             this.panel5.Location = new System.Drawing.Point(25, 200);
@@ -295,48 +305,100 @@
             this.panel5.Size = new System.Drawing.Size(1250, 800);
             this.panel5.TabIndex = 6;
             // 
-            // C_Overview
+            // flowLayoutPanel1
             // 
-            this.C_Overview.BorderlineColor = System.Drawing.Color.Transparent;
-            this.C_Overview.BorderSkin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            chartArea2.BorderColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            chartArea2.ShadowColor = System.Drawing.Color.White;
-            this.C_Overview.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.C_Overview.Legends.Add(legend2);
-            this.C_Overview.Location = new System.Drawing.Point(5, 450);
-            this.C_Overview.Margin = new System.Windows.Forms.Padding(5);
-            this.C_Overview.Name = "C_Overview";
-            this.C_Overview.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            this.C_Overview.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Doanh Thu";
-            this.C_Overview.Series.Add(series2);
-            this.C_Overview.Size = new System.Drawing.Size(1240, 350);
-            this.C_Overview.TabIndex = 7;
-            this.C_Overview.Text = "chart1";
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(525, 283);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.label4.Location = new System.Drawing.Point(712, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(354, 24);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "BẢNG THỐNG KÊ CỦA CÁC THÁNG";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.label3.Location = new System.Drawing.Point(138, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(303, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "TOP 10 SẢN PHẨM BÁN CHẠY";
+            // 
+            // C_OverviewTop
+            // 
+            this.C_OverviewTop.BackColor = System.Drawing.Color.Transparent;
+            this.C_OverviewTop.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.C_OverviewTop.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.C_OverviewTop.Legends.Add(legend1);
+            this.C_OverviewTop.Location = new System.Drawing.Point(5, 78);
+            this.C_OverviewTop.Margin = new System.Windows.Forms.Padding(5);
+            this.C_OverviewTop.Name = "C_OverviewTop";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Legend = "Legend1";
+            series1.Name = "Thuốc";
+            this.C_OverviewTop.Series.Add(series1);
+            this.C_OverviewTop.Size = new System.Drawing.Size(610, 700);
+            this.C_OverviewTop.TabIndex = 7;
+            this.C_OverviewTop.Text = "chart1";
             // 
             // C_Overview2
             // 
             this.C_Overview2.BackColor = System.Drawing.Color.Transparent;
             this.C_Overview2.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.C_Overview2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.C_Overview2.Legends.Add(legend1);
-            this.C_Overview2.Location = new System.Drawing.Point(5, 5);
+            chartArea2.Name = "ChartArea1";
+            this.C_Overview2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.C_Overview2.Legends.Add(legend2);
+            this.C_Overview2.Location = new System.Drawing.Point(625, 85);
             this.C_Overview2.Margin = new System.Windows.Forms.Padding(5);
             this.C_Overview2.Name = "C_Overview2";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series1.Legend = "Legend1";
-            series1.Name = "Hoa Don";
-            this.C_Overview2.Series.Add(series1);
-            this.C_Overview2.Size = new System.Drawing.Size(1240, 435);
+            this.C_Overview2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Hoa Don";
+            this.C_Overview2.Series.Add(series2);
+            this.C_Overview2.Size = new System.Drawing.Size(620, 350);
             this.C_Overview2.TabIndex = 7;
             this.C_Overview2.Text = "chart1";
+            // 
+            // C_Overview
+            // 
+            this.C_Overview.BorderlineColor = System.Drawing.Color.Transparent;
+            this.C_Overview.BorderSkin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            chartArea3.BorderColor = System.Drawing.Color.Transparent;
+            chartArea3.Name = "ChartArea1";
+            chartArea3.ShadowColor = System.Drawing.Color.White;
+            this.C_Overview.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.C_Overview.Legends.Add(legend3);
+            this.C_Overview.Location = new System.Drawing.Point(625, 445);
+            this.C_Overview.Margin = new System.Windows.Forms.Padding(5);
+            this.C_Overview.Name = "C_Overview";
+            this.C_Overview.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            this.C_Overview.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series3.Legend = "Legend1";
+            series3.Name = "Doanh Thu";
+            this.C_Overview.Series.Add(series3);
+            this.C_Overview.Size = new System.Drawing.Size(620, 350);
+            this.C_Overview.TabIndex = 7;
+            this.C_Overview.Text = "chart1";
             // 
             // TB_Overview
             // 
@@ -359,12 +421,16 @@
             this.panel6.Size = new System.Drawing.Size(400, 800);
             this.panel6.TabIndex = 7;
             // 
-            // flowLayoutPanel1
+            // dataGridView1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(525, 283);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(25, 78);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(350, 700);
+            this.dataGridView1.TabIndex = 1;
             // 
             // label2
             // 
@@ -377,17 +443,6 @@
             this.label2.Size = new System.Drawing.Size(293, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "DANH SÁCH HÀNG HẾT HẠN";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(350, 700);
-            this.dataGridView1.TabIndex = 1;
             // 
             // UC_Overview
             // 
@@ -416,8 +471,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.C_Overview)).EndInit();
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.C_OverviewTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.C_Overview2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.C_Overview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TB_Overview)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -452,5 +509,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart C_OverviewTop;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

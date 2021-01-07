@@ -67,13 +67,13 @@ namespace PharmacyManagement
         {
             con.Open();
             com.Connection = con;
-            com.CommandText = "select ProductTypeID from PRODUCT_TYPE";
+            com.CommandText = "select ProductTypeName from PRODUCT_TYPE";
             dr1 = com.ExecuteReader();
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Type", typeof(string));
             dt.Load(dr1);
-            comboBox3.ValueMember = "ProductTypeID";
+            comboBox3.ValueMember = "ProductTypeName";
             comboBox3.DataSource = dt;
             con.Close();
         }
@@ -112,7 +112,11 @@ namespace PharmacyManagement
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            DataView dv = new DataView(dt);
+            dv.RowFilter = string.Format("[Loại Thuốc] LIKE '%{0}%'", comboBox3.Text);
 
+
+            dgv_DanhMuc.DataSource = dv;
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
